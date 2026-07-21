@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-07-21T17:42:52Z",
+  "manifest": {
+    "slug": "lineuparr",
+    "name": "Lineuparr",
+    "description": "Mirror real-world provider channel lineups by creating channel groups, channels, and fuzzy-matching IPTV streams to them.",
+    "author": "PiratesIRC",
+    "license": "MIT",
+    "repo_url": "https://github.com/PiratesIRC/Dispatcharr-Lineuparr-Plugin",
+    "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
+    "registry_name": "swvn-dispatch/PluginsRepoV2",
+    "last_updated": "2026-06-29T07:27:58-04:00",
+    "latest": {
+      "version": "1.26.1791747",
+      "commit_sha": "ed8ee868bb90d6f2db8c20e4e67ee0014fdf8fa7",
+      "commit_sha_short": "ed8ee86",
+      "build_timestamp": "2026-07-21T17:42:04Z",
+      "last_updated": "2026-06-29T07:27:58-04:00",
+      "checksum_md5": "5e20e00c3cadff07d41fc3fcb68bba2a",
+      "checksum_sha256": "ce446ba58fe77b164f7bfe748bf6b3102f7226d84deee27166668beb8c4d6213",
+      "min_dispatcharr_version": "v0.20.0",
+      "latest_url": "lineuparr-1.26.1791747/lineuparr-1.26.1791747.zip",
+      "url": "lineuparr-1.26.1791747/lineuparr-1.26.1791747.zip",
+      "size": 297
+    },
+    "versions": [
+      {
+        "version": "1.26.1791747",
+        "commit_sha": "ed8ee868bb90d6f2db8c20e4e67ee0014fdf8fa7",
+        "commit_sha_short": "ed8ee86",
+        "build_timestamp": "2026-07-21T17:42:04Z",
+        "last_updated": "2026-06-29T07:27:58-04:00",
+        "checksum_md5": "5e20e00c3cadff07d41fc3fcb68bba2a",
+        "checksum_sha256": "ce446ba58fe77b164f7bfe748bf6b3102f7226d84deee27166668beb8c4d6213",
+        "min_dispatcharr_version": "v0.20.0",
+        "url": "lineuparr-1.26.1791747/lineuparr-1.26.1791747.zip",
+        "size": 297
+      }
+    ]
+  }
+}

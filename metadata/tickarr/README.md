@@ -1,0 +1,61 @@
+[Back to All Plugins](../../README.md)
+
+# Tickarr
+
+**Version:** `0.3.03` | **Author:** jstevenscl | **Last Updated:** Jul 10 2026, 00:22 UTC
+
+Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports Ticker, Custom Text, EAS/JAS Weather Alerts
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](https://spdx.org/licenses/MIT.html) [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/jstevenscl/tickarr)
+
+## Downloads
+
+### Latest Release
+
+- **Download:** [`tickarr-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/tickarr-0.3.03/tickarr-0.3.03.zip)
+- **Built:** Jul 21 2026, 17:42 UTC
+- **Source Commit:** [`eff1cb7`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/eff1cb74b2969f737f76e22f0b5a6f87e18251e4)
+
+**Checksums:**
+```
+MD5:    fc6498692454c22fa910b3236c5a34b5
+SHA256: 2a4a7192bf6b21e98094b450938f8f90a159b7ab7594dc47591cfb55ccd20fa1
+```
+
+### All Versions
+
+| Version | Download | Built | Commit | MD5 | SHA256 |
+|---------|----------|-------|--------|-----|--------|
+| `0.3.03` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/tickarr-0.3.03/tickarr-0.3.03.zip) | Jul 21 2026, 17:42 UTC | [`eff1cb7`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/eff1cb74b2969f737f76e22f0b5a6f87e18251e4) | fc6498692454c22fa910b3236c5a34b5 | 2a4a7192bf6b21e98094b450938f8f90a159b7ab7594dc47591cfb55ccd20fa1 |
+
+---
+
+**Source:** [Browse Plugin](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/tickarr)
+
+**Metadata:** [View full manifest](./manifest.json)
+
+---
+
+## Plugin README
+
+# Tickarr
+
+Dynamic text overlays for IPTV channels managed by Dispatcharr.
+
+## Features
+
+- **SiriusXM Now Playing** — auto-maps Dispatcharr channels to SiriusXM stations and displays the current artist and track in a centered overlay box
+- **Custom Text** — user-defined static or scrolling text, with always-on or timed display schedules
+- **Sports Ticker** — live scores from the ESPN API across 23 leagues and NASCAR, with single-color and multi-color rendering modes
+
+## Requirements
+
+- Dispatcharr v0.25.0 or later
+
+## Documentation
+
+Full setup instructions, settings reference, and troubleshooting: https://github.com/jstevenscl/tickarr/blob/master/docs/USERGUIDE.md
+
+## Source
+
+https://github.com/jstevenscl/tickarr

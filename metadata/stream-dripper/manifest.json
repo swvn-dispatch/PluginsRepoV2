@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-07-21T17:42:52Z",
+  "manifest": {
+    "slug": "stream-dripper",
+    "name": "Stream Dripper",
+    "description": "Automatically drops all active streams once per day at a configured time, with a manual drop-now button.",
+    "author": "Megamannen",
+    "license": "Artistic-2.0",
+    "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
+    "registry_name": "swvn-dispatch/PluginsRepoV2",
+    "last_updated": "2026-03-29T11:51:09-04:00",
+    "latest": {
+      "version": "1.0.0",
+      "commit_sha": "4e8f1b108c1e84f60520710d13e54eb2fb519648",
+      "commit_sha_short": "4e8f1b1",
+      "build_timestamp": "2026-07-21T17:42:20Z",
+      "last_updated": "2026-03-29T11:51:09-04:00",
+      "checksum_md5": "2f111ea5bf69151e9454d14fd9765278",
+      "checksum_sha256": "10af29c8d1c06b8c59ee94f33772dbdd6990000126e072a097d990abe1e8fe82",
+      "latest_url": "stream-dripper-1.0.0/stream-dripper-1.0.0.zip",
+      "url": "stream-dripper-1.0.0/stream-dripper-1.0.0.zip",
+      "size": 30
+    },
+    "versions": [
+      {
+        "version": "1.0.0",
+        "commit_sha": "4e8f1b108c1e84f60520710d13e54eb2fb519648",
+        "commit_sha_short": "4e8f1b1",
+        "build_timestamp": "2026-07-21T17:42:20Z",
+        "last_updated": "2026-03-29T11:51:09-04:00",
+        "checksum_md5": "2f111ea5bf69151e9454d14fd9765278",
+        "checksum_sha256": "10af29c8d1c06b8c59ee94f33772dbdd6990000126e072a097d990abe1e8fe82",
+        "url": "stream-dripper-1.0.0/stream-dripper-1.0.0.zip",
+        "size": 30
+      }
+    ]
+  }
+}

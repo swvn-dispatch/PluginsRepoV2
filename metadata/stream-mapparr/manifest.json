@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-07-21T17:42:52Z",
+  "manifest": {
+    "slug": "stream-mapparr",
+    "name": "Stream-Mapparr",
+    "description": "Automatically add matching streams to channels based on name similarity and quality precedence. Supports unlimited stream matching, channel visibility management, and CSV export cleanup.",
+    "author": "PiratesIRC",
+    "license": "MIT",
+    "source_type": "external",
+    "source_url": "https://github.com/PiratesIRC/Stream-Mapparr/releases/download/{version}/Stream-Mapparr.zip",
+    "repo_url": "https://github.com/PiratesIRC/Stream-Mapparr",
+    "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
+    "registry_name": "swvn-dispatch/PluginsRepoV2",
+    "last_updated": "2026-07-18T20:23:39Z",
+    "latest": {
+      "version": "1.26.1992013",
+      "commit_sha": "6c60baff03b2eae96218cbfd06e0c9442a40fb14",
+      "commit_sha_short": "6c60baf",
+      "build_timestamp": "2026-07-21T17:42:23Z",
+      "last_updated": "2026-07-18T20:23:39Z",
+      "checksum_md5": "287b5b17e34bd430e08af0889d166af8",
+      "checksum_sha256": "7ae476f9dcafb5e1d14897f57fc9eae5993f05b3c06130f02617754662b7aa34",
+      "min_dispatcharr_version": "v0.20.0",
+      "source_url": "https://github.com/PiratesIRC/Stream-Mapparr/releases/download/1.26.1992013/Stream-Mapparr.zip",
+      "latest_url": "stream-mapparr-1.26.1992013/stream-mapparr-1.26.1992013.zip",
+      "url": "stream-mapparr-1.26.1992013/stream-mapparr-1.26.1992013.zip",
+      "size": 502
+    },
+    "versions": [
+      {
+        "version": "1.26.1992013",
+        "commit_sha": "6c60baff03b2eae96218cbfd06e0c9442a40fb14",
+        "commit_sha_short": "6c60baf",
+        "build_timestamp": "2026-07-21T17:42:23Z",
+        "last_updated": "2026-07-18T20:23:39Z",
+        "checksum_md5": "287b5b17e34bd430e08af0889d166af8",
+        "checksum_sha256": "7ae476f9dcafb5e1d14897f57fc9eae5993f05b3c06130f02617754662b7aa34",
+        "min_dispatcharr_version": "v0.20.0",
+        "source_url": "https://github.com/PiratesIRC/Stream-Mapparr/releases/download/1.26.1992013/Stream-Mapparr.zip",
+        "url": "stream-mapparr-1.26.1992013/stream-mapparr-1.26.1992013.zip",
+        "size": 502
+      }
+    ]
+  }
+}

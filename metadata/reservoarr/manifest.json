@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-07-21T17:42:52Z",
+  "manifest": {
+    "slug": "reservoarr",
+    "name": "reservoarr",
+    "description": "Delay-buffer stream profile that absorbs IPTV CDN gaps so Plex Live TV stops dying",
+    "author": "brko7",
+    "maintainers": [
+      "brko7"
+    ],
+    "license": "MIT",
+    "source_type": "external",
+    "source_url": "https://github.com/brko7/reservoarr/releases/download/v{version}/reservoarr-{version}.zip",
+    "repo_url": "https://github.com/brko7/reservoarr",
+    "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
+    "registry_name": "swvn-dispatch/PluginsRepoV2",
+    "last_updated": "2026-07-03T12:10:20-04:00",
+    "latest": {
+      "version": "6.3.1",
+      "commit_sha": "87eb4462b4d69c9c7fed119696b027be4b6ed2c2",
+      "commit_sha_short": "87eb446",
+      "build_timestamp": "2026-07-21T17:42:15Z",
+      "last_updated": "2026-07-03T12:10:20-04:00",
+      "checksum_md5": "8a7ad55909de876961f97c680544f5a8",
+      "checksum_sha256": "87639f84417d02b06649466f287fa6e9ad28a5255b7e34e4b721cc49bec5d73b",
+      "min_dispatcharr_version": "v0.25.0",
+      "source_url": "https://github.com/brko7/reservoarr/releases/download/v6.3.1/reservoarr-6.3.1.zip",
+      "latest_url": "reservoarr-6.3.1/reservoarr-6.3.1.zip",
+      "url": "reservoarr-6.3.1/reservoarr-6.3.1.zip",
+      "size": 36
+    },
+    "versions": [
+      {
+        "version": "6.3.1",
+        "commit_sha": "87eb4462b4d69c9c7fed119696b027be4b6ed2c2",
+        "commit_sha_short": "87eb446",
+        "build_timestamp": "2026-07-21T17:42:15Z",
+        "last_updated": "2026-07-03T12:10:20-04:00",
+        "checksum_md5": "8a7ad55909de876961f97c680544f5a8",
+        "checksum_sha256": "87639f84417d02b06649466f287fa6e9ad28a5255b7e34e4b721cc49bec5d73b",
+        "min_dispatcharr_version": "v0.25.0",
+        "source_url": "https://github.com/brko7/reservoarr/releases/download/v6.3.1/reservoarr-6.3.1.zip",
+        "url": "reservoarr-6.3.1/reservoarr-6.3.1.zip",
+        "size": 36
+      }
+    ]
+  }
+}

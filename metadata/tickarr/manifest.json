@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-07-21T17:42:52Z",
+  "manifest": {
+    "slug": "tickarr",
+    "name": "Tickarr",
+    "description": "Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports Ticker, Custom Text, EAS/JAS Weather Alerts",
+    "author": "jstevenscl",
+    "license": "MIT",
+    "source_type": "external",
+    "source_url": "https://github.com/jstevenscl/tickarr/releases/download/v{version}/tickarr-{version}.zip",
+    "repo_url": "https://github.com/jstevenscl/tickarr",
+    "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
+    "registry_name": "swvn-dispatch/PluginsRepoV2",
+    "last_updated": "2026-07-09T20:22:40-04:00",
+    "latest": {
+      "version": "0.3.03",
+      "commit_sha": "eff1cb74b2969f737f76e22f0b5a6f87e18251e4",
+      "commit_sha_short": "eff1cb7",
+      "build_timestamp": "2026-07-21T17:42:31Z",
+      "last_updated": "2026-07-09T20:22:40-04:00",
+      "checksum_md5": "fc6498692454c22fa910b3236c5a34b5",
+      "checksum_sha256": "2a4a7192bf6b21e98094b450938f8f90a159b7ab7594dc47591cfb55ccd20fa1",
+      "source_url": "https://github.com/jstevenscl/tickarr/releases/download/v0.3.03/tickarr-0.3.03.zip",
+      "latest_url": "tickarr-0.3.03/tickarr-0.3.03.zip",
+      "url": "tickarr-0.3.03/tickarr-0.3.03.zip",
+      "size": 2124
+    },
+    "versions": [
+      {
+        "version": "0.3.03",
+        "commit_sha": "eff1cb74b2969f737f76e22f0b5a6f87e18251e4",
+        "commit_sha_short": "eff1cb7",
+        "build_timestamp": "2026-07-21T17:42:31Z",
+        "last_updated": "2026-07-09T20:22:40-04:00",
+        "checksum_md5": "fc6498692454c22fa910b3236c5a34b5",
+        "checksum_sha256": "2a4a7192bf6b21e98094b450938f8f90a159b7ab7594dc47591cfb55ccd20fa1",
+        "source_url": "https://github.com/jstevenscl/tickarr/releases/download/v0.3.03/tickarr-0.3.03.zip",
+        "url": "tickarr-0.3.03/tickarr-0.3.03.zip",
+        "size": 2124
+      }
+    ]
+  }
+}
