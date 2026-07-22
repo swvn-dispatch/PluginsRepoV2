@@ -50,6 +50,6 @@ def test_render_plugin_block_uses_version_count():
         is_deprecated=True, plugin_name="old", plugin_raw=raw, manifest=None,
         last_updated="2024-01-01T00:00:00Z", commit_sha="abc", commit_sha_short="abc",
         version_count=3, repository="org/repo", source_branch="main",
-        releases_branch="releases", root_url="https://dl", has_source_readme=False)
+        releases_branch="releases", download_base_url="https://dl", has_source_readme=False)
     assert "### [Old](https://github.com/org/repo/blob/releases/metadata/old/README.md) (deprecated)" in block
     assert "- [All Versions (3 available)](./metadata/old)" in block

@@ -88,16 +88,24 @@ def test_trim_description():
     assert len(long) == 200 and long.endswith("...")
 
 
-def test_root_manifest_compact_matches_jq(tmp_path):
+def test_root_manifest_split_base_urls_key_order(tmp_path):
     import shutil
     import subprocess
     entry = m.build_root_entry(PLUGIN_RAW, "demo", META, 10, "", "",
-                               "u", "https://raw/m.json")
+                               "u", "metadata/demo/manifest.json")
     root = m.build_root_manifest("https://github.com/org/repo", "org/repo",
-                                 "https://dl", [entry])
+                                 "https://github.com/org/repo/releases/download",
+                                 "https://org.github.io/repo", [entry])
+    # root_url split into download_base_url + metadata_base_url, in this order
+    assert list(root.keys()) == [
+        "registry_url", "registry_name", "download_base_url",
+        "metadata_base_url", "plugins",
+    ]
+    assert "root_url" not in root
     compact = jsonio.dumps(root)
     if shutil.which("jq"):
         jq_out = subprocess.run(["jq", "-c", "."], input=compact,
                                 capture_output=True, text=True, check=True).stdout.strip()
-        assert compact == jq_out  # stable round-trip through real jq
-    assert json.loads(compact)["plugins"][0]["slug"] == "demo"
+        assert compact == jq_out
+    # manifest_url in each entry is now a relative path
+    assert json.loads(compact)["plugins"][0]["manifest_url"] == "metadata/demo/manifest.json"
