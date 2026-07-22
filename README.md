@@ -53,6 +53,7 @@ Standardizes broadcast (OTA) and premium/cable channel names using network data 
 
 ---
 
+
 ### [Dispatcharr Exporter](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/dispatcharr-exporter/README.md)
 
 **Version:** `3.1.0` | **Author:** sethwv | **Last Updated:** Jul 18 2026, 17:29 UTC
@@ -71,6 +72,7 @@ Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitori
 
 ---
 
+
 ### [Ranked Matchups (Top Games)](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/dispatcharr-ranked-matchups/README.md)
 
 **Version:** `1.12.0` | **Author:** Jacob-Lasky | **Last Updated:** Jul 20 2026, 14:01 UTC
@@ -86,6 +88,7 @@ Cross-sport interestingness curator. Pulls upcoming games per enabled sport, sco
 **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/dispatcharr-ranked-matchups) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/dispatcharr-ranked-matchups/README.md) | **Last Change:** [`624eca0`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/624eca0ac2a7f2e6114a1674acd256b939fdd6c6)
 
 ---
+
 
 ### [Dispatchwrapparr](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/dispatchwrapparr/README.md)
 
@@ -105,6 +108,7 @@ An intelligent DRM/Clearkey capable stream profile for Dispatcharr
 
 ---
 
+
 ### [Embyfin Stream Cleanup](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/embyfin-stream-cleanup/README.md)
 
 **Version:** `1.3.0` | **Author:** sethwv | **Last Updated:** Jul 17 2026, 21:38 UTC
@@ -122,6 +126,7 @@ Monitors Dispatcharr client activity and terminates idle Emby/Jellyfin connectio
 **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/embyfin-stream-cleanup) | **Last Change:** [`c5c8cd5`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/c5c8cd52948305d6eb701297b666e37dfc5b0c79)
 
 ---
+
 
 ### [EPG Janitor](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/epg-janitor/README.md)
 
@@ -141,6 +146,7 @@ Scans for channels with EPG assignments but no program data. Auto-matches EPG to
 
 ---
 
+
 ### [EPGeditARR](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/epgeditarr/README.md)
 
 **Version:** `0.2.07` | **Author:** jstevenscl | **Last Updated:** May 19 2026, 16:17 UTC
@@ -156,6 +162,7 @@ Transform and clean your EPG data using regex and find/replace rules. Creates vi
 **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/epgeditarr) | **Last Change:** [`fc6f5f6`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/fc6f5f6fff939c45828f221f47c3355b33cf4b66)
 
 ---
+
 
 ### [Event Channel Managarr](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/event-channel-managarr/README.md)
 
@@ -175,6 +182,7 @@ Automates channel visibility by hiding channels without events and showing those
 
 ---
 
+
 ### [IPTV Checker](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/iptv-checker/README.md)
 
 **Version:** `1.26.1741204` | **Author:** PiratesIRC | **Last Updated:** Jun 23 2026, 22:27 UTC
@@ -192,6 +200,7 @@ A Dispatcharr Plugin that goes through a playlist to check IPTV channels
 **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/iptv-checker) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/iptv-checker/README.md) | **Last Change:** [`4de0ece`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/4de0eceafadffce2377d5de075af6dfa94ebead9)
 
 ---
+
 
 ### [Lineuparr](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/lineuparr/README.md)
 
@@ -211,6 +220,7 @@ Mirror real-world provider channel lineups by creating channel groups, channels,
 
 ---
 
+
 ### [M3U Expiration Notifier](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/m3u-expiration-notifier/README.md)
 
 **Version:** `1.0.0` | **Author:** barryanderson | **Last Updated:** Jul 17 2026, 00:26 UTC
@@ -226,6 +236,7 @@ Checks your M3U account expiration dates on a schedule and emails you before (an
 **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/m3u-expiration-notifier) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/m3u-expiration-notifier/README.md) | **Last Change:** [`af83e50`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/af83e5054bf456bbe78b841eabc3a3373abbbae1)
 
 ---
+
 
 ### [Multiview](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/multiview/README.md)
 
@@ -245,6 +256,7 @@ Tile multiple Dispatcharr channel streams into multi-view outputs using FFmpeg
 
 ---
 
+
 ### [reservoarr](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/reservoarr/README.md)
 
 **Version:** `6.3.1` | **Author:** brko7 | **Last Updated:** Jul 03 2026, 16:10 UTC
@@ -263,6 +275,7 @@ Delay-buffer stream profile that absorbs IPTV CDN gaps so Plex Live TV stops dyi
 
 ---
 
+
 ### [Stream Dripper](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/stream-dripper/README.md)
 
 **Version:** `1.0.0` | **Author:** Megamannen | **Last Updated:** Mar 29 2026, 15:51 UTC
@@ -278,6 +291,7 @@ Automatically drops all active streams once per day at a configured time, with a
 **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/stream-dripper) | **Last Change:** [`4e8f1b1`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/4e8f1b108c1e84f60520710d13e54eb2fb519648)
 
 ---
+
 
 ### [Stream-Mapparr](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/stream-mapparr/README.md)
 
@@ -297,6 +311,7 @@ Automatically add matching streams to channels based on name similarity and qual
 
 ---
 
+
 ### [Telegram Alerts](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/telegram-alerts/README.md)
 
 **Version:** `0.4.5` | **Author:** R3XCHRIS | **Last Updated:** Jun 01 2026, 20:07 UTC
@@ -315,6 +330,7 @@ Push Dispatcharr channel/stream/VOD events to a Telegram chat via a bot. Include
 
 ---
 
+
 ### [Tickarr](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/tickarr/README.md)
 
 **Version:** `0.3.03` | **Author:** jstevenscl | **Last Updated:** Jul 10 2026, 00:22 UTC
@@ -331,6 +347,7 @@ Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports 
 
 ---
 
+
 ### [Twitcharr](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/twitcharr/README.md)
 
 **Version:** `1.3.2` | **Author:** eliasbruno124-dev | **Last Updated:** Jul 13 2026, 02:54 UTC
@@ -346,6 +363,7 @@ Twitch live-TV plugin for Dispatcharr with automatic channels, streams, XMLTV gu
 **Maintainers:** eliasbruno124-dev | **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/twitcharr) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/twitcharr/README.md) | **Last Change:** [`2d65eb1`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/2d65eb13b1ad72210ca517520c9d0608d2dc342b)
 
 ---
+
 
 ### [VOD to Media Library](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/vod2mlib/README.md)
 
@@ -365,6 +383,7 @@ Generate .strm files (with optional NFO metadata) from your Dispatcharr VOD cata
 
 ---
 
+
 ### [Waybill](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/waybill/README.md)
 
 **Version:** `1.3.0` | **Author:** Matthew-Beckett | **Last Updated:** May 12 2026, 19:36 UTC
@@ -382,6 +401,7 @@ Waybill matches, renames, and organizes any streams no matter the provider. Infi
 **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/waybill) | **Last Change:** [`cdd18dd`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/cdd18dd7f396035b9cd486d3e45375eed3bcc744)
 
 ---
+
 
 ### [YouTubearr](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/youtubearr/README.md)
 
@@ -401,6 +421,7 @@ Zero-dependency YouTube livestream plugin with automatic monitoring and configur
 
 ---
 
+
 ## Using the Manifest
 
 Fetch `manifest.json` to programmatically access plugin metadata and download URLs:
@@ -411,4 +432,4 @@ curl https://raw.githubusercontent.com/swvn-dispatch/PluginsRepoV2/releases/mani
 
 ---
 
-*Last updated: Jul 21 2026, 17:42 UTC*
+*Last updated: Jul 22 2026, 15:20 UTC*
