@@ -132,6 +132,19 @@ def release_create(tag: str, repo: str, title: str, notes: str, asset: str) -> i
                  "--notes", notes, asset]).returncode
 
 
+def release_create_capture(tag: str, repo: str, title: str, notes: str,
+                           asset: str) -> tuple[int, str]:
+    """Like release_create but returns (returncode, stderr) for conflict handling."""
+    proc = _run(["release", "create", tag, "--repo", repo, "--title", title,
+                 "--notes", notes, asset])
+    return proc.returncode, proc.stderr
+
+
+def pages_url(repo: str) -> str:
+    """GitHub Pages site URL for the repo, or "" when Pages is not configured."""
+    return api(f"repos/{repo}/pages", jq=".html_url // empty") or ""
+
+
 def release_delete(tag: str, repo: str, cleanup_tag: bool = True) -> int:
     args = ["release", "delete", tag, "--repo", repo, "--yes"]
     if cleanup_tag:

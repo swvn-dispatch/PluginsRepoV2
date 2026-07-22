@@ -136,12 +136,21 @@ def build_root_entry(plugin_raw: dict, plugin_name: str, latest_metadata: dict,
     })
 
 
-def build_root_manifest(registry_url: str, registry_name: str, root_url: str,
+def build_root_manifest(registry_url: str, registry_name: str,
+                        download_base_url: str, metadata_base_url: str,
                         root_entries: list[dict]) -> dict:
+    """Root manifest payload.
+
+    ``download_base_url`` is the GitHub Releases base for ZIP paths;
+    ``metadata_base_url`` is the base for manifest paths (GitHub Pages when
+    configured, else raw.githubusercontent.com). Clients compose each plugin's
+    relative ``url`` / ``manifest_url`` with the matching base.
+    """
     return {
         "registry_url": registry_url,
         "registry_name": registry_name,
-        "root_url": root_url,
+        "download_base_url": download_base_url,
+        "metadata_base_url": metadata_base_url,
         "plugins": root_entries,
     }
 
@@ -253,6 +262,19 @@ def _canonical(version: str) -> str:
     return re.sub(r"-[0-9]+$", "", version)
 
 
+ICON_EXTS = ("png", "svg", "jpg", "webp")
+
+
+def _sync_icon(plugin_dir: str, plugin_name: str) -> None:
+    """Copy the source plugin icon (logo.png|svg|jpg|webp, first match) to metadata/<slug>/."""
+    import shutil
+    for ext in ICON_EXTS:
+        src = os.path.join(plugin_dir, f"logo.{ext}")
+        if os.path.isfile(src):
+            shutil.copy(src, f"metadata/{plugin_name}/logo.{ext}")
+            return
+
+
 def strip_signatures() -> None:
     """Remove ``.signature`` from every manifest (no key configured or signing failed)."""
     import glob as _glob
@@ -280,8 +302,11 @@ def generate(source_branch: str, releases_branch: str, repository: str,
     generated_at = datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
     registry_url = f"https://github.com/{repository}"
     registry_name = repository
-    root_url = f"https://github.com/{repository}/releases/download"
+    download_base_url = f"https://github.com/{repository}/releases/download"
     raw_releases_url = f"https://raw.githubusercontent.com/{repository}/{releases_branch}"
+    # Metadata paths resolve against GitHub Pages when configured, else raw.
+    pages = gh.pages_url(repository).rstrip("/")
+    metadata_base_url = pages if pages else raw_releases_url
 
     key_id, signing_failed = import_gpg_key(os.environ.get("GPG_PRIVATE_KEY", ""))
     passphrase = os.environ.get("GPG_PASSPHRASE") or None
@@ -318,6 +343,7 @@ def generate(source_branch: str, releases_branch: str, repository: str,
 
         existing_manifest_file = f"metadata/{plugin_name}/manifest.json"
         os.makedirs(f"metadata/{plugin_name}", exist_ok=True)
+        _sync_icon(plugin_dir, plugin_name)
         existing_manifest = None
         if os.path.isfile(existing_manifest_file):
             try:
@@ -340,8 +366,10 @@ def generate(source_branch: str, releases_branch: str, repository: str,
 
         for release_tag in versioned_tags:
             zip_version = release_tag[len(prefix):]
-            zip_url = f"{plugin_name}-{zip_version}/{plugin_name}-{zip_version}.zip"
             canonical_version = _canonical(zip_version)
+            # Release dir uses the full tag version (may carry a retry suffix);
+            # the ZIP asset filename uses the canonical version (how it was built).
+            zip_url = f"{plugin_name}-{zip_version}/{plugin_name}-{canonical_version}.zip"
 
             metadata: dict = {}
             fresh = os.path.join(build_meta_dir, plugin_key, f"{plugin_key}-{canonical_version}.json")
@@ -368,7 +396,8 @@ def generate(source_branch: str, releases_branch: str, repository: str,
 
         latest_url = ""
         if latest_zip_version:
-            latest_url = f"{plugin_name}-{latest_zip_version}/{plugin_name}-{latest_zip_version}.zip"
+            latest_canonical = _canonical(latest_zip_version)
+            latest_url = f"{plugin_name}-{latest_zip_version}/{plugin_name}-{latest_canonical}.zip"
 
         versioned_zips = override_current_min_max(versioned_zips, current_version, min_da, max_da)
 
@@ -381,13 +410,15 @@ def generate(source_branch: str, releases_branch: str, repository: str,
         if unlisted:
             continue
 
-        manifest_url = f"{raw_releases_url}/metadata/{plugin_name}/manifest.json"
+        # Relative: clients compose it with metadata_base_url from the root manifest.
+        manifest_url = f"metadata/{plugin_name}/manifest.json"
         root_entries.append(build_root_entry(raw, plugin_name, latest_metadata,
                                              latest_size_kb, min_da, max_da,
                                              latest_url, manifest_url))
         plugin_count += 1
 
-    inner_root = build_root_manifest(registry_url, registry_name, root_url, root_entries)
+    inner_root = build_root_manifest(registry_url, registry_name,
+                                     download_base_url, metadata_base_url, root_entries)
     written = write_manifest_if_changed("manifest.json", inner_root, generated_at)
     sign_if_needed("manifest.json", written)
 

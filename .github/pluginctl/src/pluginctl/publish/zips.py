@@ -114,13 +114,24 @@ def run(source_branch: str, repository: str, build_meta_dir: str) -> int:
             "size_kb": zip_size_kb,
         })
         os.makedirs(os.path.join(build_meta_dir, plugin_key), exist_ok=True)
-        with open(os.path.join(build_meta_dir, plugin_key, f"{plugin_key}-{version}.json"),
-                  "w", encoding="utf-8") as fh:
+        meta_file = os.path.join(build_meta_dir, plugin_key, f"{plugin_key}-{version}.json")
+        with open(meta_file, "w", encoding="utf-8") as fh:
             fh.write(jsonio.dumps(meta))
 
         notes = _release_notes(repository, plugin_name, commit_sha, commit_sha_short)
         actions.log(f"  {plugin_name} v{version} - uploading to GitHub Releases")
-        gh.release_create(release_tag, repository, f"{plugin_name} v{version}", notes, zip_path)
+        result = _upload_with_retry(release_tag, repository,
+                                    f"{plugin_name} v{version}", notes, zip_path)
+        if result is None:  # fatal error already reported
+            os.remove(zip_path)
+            return 1
+        _final_tag, upload_skipped = result
+        if upload_skipped:
+            # The release already existed, so the asset on it (not the one we just
+            # rebuilt) is authoritative. Drop the fresh metadata so generate-manifest
+            # falls back to the existing manifest's checksums.
+            if os.path.exists(meta_file):
+                os.remove(meta_file)
         os.remove(zip_path)
 
     with open("changed_plugins.txt", "w", encoding="utf-8") as fh:
@@ -128,6 +139,41 @@ def run(source_branch: str, repository: str, build_meta_dir: str) -> int:
             fh.write(line + "\n")
     actions.log(f"Built {len(changed)} new/updated plugin(s).")
     return 0
+
+
+def classify_release_error(stderr: str) -> str:
+    """Classify a failed `gh release create`: 'exists', 'immutable', or 'fatal'."""
+    if "already exists" in stderr:
+        return "exists"
+    if "immutable" in stderr or "Cannot create ref" in stderr:
+        return "immutable"
+    return "fatal"
+
+
+def _upload_with_retry(release_tag: str, repository: str, title: str, notes: str,
+                       zip_path: str):
+    """Create the release, retrying with a numeric suffix on immutable-tag conflicts.
+
+    Returns (final_tag, upload_skipped) on success/skip, or None on a fatal error
+    (already logged). ``upload_skipped`` is True when the release already existed.
+    """
+    final_tag = release_tag
+    suffix = 0
+    while True:
+        rc, err = gh.release_create_capture(final_tag, repository, title, notes, zip_path)
+        if rc == 0:
+            return final_tag, False
+        kind = classify_release_error(err)
+        if kind == "exists":
+            actions.log(f"  {release_tag} - release already exists, skipping upload")
+            return final_tag, True
+        if kind == "immutable":
+            suffix += 1
+            final_tag = f"{release_tag}-{suffix}"
+            actions.log(f"  Tag conflict on {release_tag}, retrying as {final_tag}")
+            continue
+        actions.eprint(err)
+        return None
 
 
 def _release_notes(repository: str, plugin_name: str, commit_sha: str,
