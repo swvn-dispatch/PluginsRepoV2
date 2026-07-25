@@ -2,7 +2,7 @@
 
 # Tickarr
 
-**Version:** `0.3.03` | **Author:** jstevenscl | **Last Updated:** Jul 10 2026, 00:22 UTC
+**Version:** `0.3.04` | **Author:** jstevenscl | **Last Updated:** Jul 25 2026, 15:21 UTC
 
 Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports Ticker, Custom Text, EAS/JAS Weather Alerts
 
@@ -12,20 +12,21 @@ Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports 
 
 ### Latest Release
 
-- **Download:** [`tickarr-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/tickarr-0.3.03/tickarr-0.3.03.zip)
-- **Built:** Jul 21 2026, 17:42 UTC
-- **Source Commit:** [`eff1cb7`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/eff1cb74b2969f737f76e22f0b5a6f87e18251e4)
+- **Download:** [`tickarr-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/tickarr-0.3.04/tickarr-0.3.04.zip)
+- **Built:** Jul 25 2026, 15:57 UTC
+- **Source Commit:** [`cb170b2`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/cb170b274029cbc8db67d6c12b043b1b510ba8fd)
 
 **Checksums:**
 ```
-MD5:    fc6498692454c22fa910b3236c5a34b5
-SHA256: 2a4a7192bf6b21e98094b450938f8f90a159b7ab7594dc47591cfb55ccd20fa1
+MD5:    5971171b4a77ab426fe53fe8eaf04d3e
+SHA256: b73982da652895da2dc6c660ca8885ec4955c33f9c3e43f23a16b9876d69c14b
 ```
 
 ### All Versions
 
 | Version | Download | Built | Commit | MD5 | SHA256 |
 |---------|----------|-------|--------|-----|--------|
+| `0.3.04` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/tickarr-0.3.04/tickarr-0.3.04.zip) | Jul 25 2026, 15:57 UTC | [`cb170b2`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/cb170b274029cbc8db67d6c12b043b1b510ba8fd) | 5971171b4a77ab426fe53fe8eaf04d3e | b73982da652895da2dc6c660ca8885ec4955c33f9c3e43f23a16b9876d69c14b |
 | `0.3.03` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/tickarr-0.3.03/tickarr-0.3.03.zip) | Jul 21 2026, 17:42 UTC | [`eff1cb7`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/eff1cb74b2969f737f76e22f0b5a6f87e18251e4) | fc6498692454c22fa910b3236c5a34b5 | 2a4a7192bf6b21e98094b450938f8f90a159b7ab7594dc47591cfb55ccd20fa1 |
 
 ---

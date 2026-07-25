@@ -17,7 +17,7 @@ This branch contains all published plugin releases.
 | [`Dispatchwrapparr`](#dispatchwrapparr) | `1.7.6` | jordandalley | MIT | An intelligent DRM/Clearkey capable stream profile for Dispatcharr |
 | [`Embyfin Stream Cleanup`](#embyfin-stream-cleanup) | `1.3.0` | sethwv | MIT | Monitors Dispatcharr client activity and terminates idle Emby/Jellyfin connections |
 | [`EPG Janitor`](#epg-janitor) | `1.26.1791309` | PiratesIRC | MIT | Scans for channels with EPG assignments but no program data. Auto-matches EPG to channels using intelligent fuzzy matching with aliases, removes EPG from hidden channels, and manages EPG assignments. |
-| [`EPGeditARR`](#epgeditarr) | `0.2.07` | jstevenscl | MIT | Transform and clean your EPG data using regex and find/replace rules. Creates virtual copies of your sources — originals are never touched. Fills placeholder schedules for channels with no EPG, and provides a full SiriusXM toolkit: fill EPG from the community XMLTV (741 channels, sports smart blocks), sort into official lineup order, assign logos, and rename channels using the official SiriusXM API channel database. |
+| [`EPGeditARR`](#epgeditarr) | `0.2.08` | jstevenscl | MIT | Transform and clean your EPG data using regex and find/replace rules. Creates virtual copies of your sources — originals are never touched. Fills placeholder schedules for channels with no EPG, and provides a full SiriusXM toolkit: fill EPG from the community XMLTV (741 channels, sports smart blocks), sort into official lineup order, assign logos, and rename channels using the official SiriusXM API channel database. |
 | [`Event Channel Managarr`](#event-channel-managarr) | `1.26.1711720` | PiratesIRC | MIT | Automates channel visibility by hiding channels without events and showing those with events, based on EPG data and channel names. Optionally manages dummy EPG for channels without real EPG. |
 | [`IPTV Checker`](#iptv-checker) | `1.26.1741204` | PiratesIRC | MIT | A Dispatcharr Plugin that goes through a playlist to check IPTV channels |
 | [`Lineuparr`](#lineuparr) | `1.26.1791747` | PiratesIRC | MIT | Mirror real-world provider channel lineups by creating channel groups, channels, and fuzzy-matching IPTV streams to them. |
@@ -27,7 +27,7 @@ This branch contains all published plugin releases.
 | [`Stream Dripper`](#stream-dripper) | `1.0.0` | Megamannen | Artistic-2.0 | Automatically drops all active streams once per day at a configured time, with a manual drop-now button. |
 | [`Stream-Mapparr`](#stream-mapparr) | `1.26.1992013` | PiratesIRC | MIT | Automatically add matching streams to channels based on name similarity and quality precedence. Supports unlimited stream matching, channel visibility management, and CSV export cleanup. |
 | [`Telegram Alerts`](#telegram-alerts) | `0.4.5` | R3XCHRIS | MIT | Push Dispatcharr channel/stream/VOD events to a Telegram chat via a bot. Includes a manual test action, per-event toggles, and an optional cron-driven daily report (public IP + geo + speedtest + activity + source health). |
-| [`Tickarr`](#tickarr) | `0.3.03` | jstevenscl | MIT | Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports Ticker, Custom Text, EAS/JAS Weather Alerts |
+| [`Tickarr`](#tickarr) | `0.3.04` | jstevenscl | MIT | Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports Ticker, Custom Text, EAS/JAS Weather Alerts |
 | [`Twitcharr`](#twitcharr) | `1.3.2` | eliasbruno124-dev | MIT | Twitch live-TV plugin for Dispatcharr with automatic channels, streams, XMLTV guide data and Streamlink playback. |
 | [`VOD to Media Library`](#vod-to-media-library) | `1.16.0` | R3XCHRIS | MIT | Generate .strm files (with optional NFO metadata) from your Dispatcharr VOD catalogue so Jellyfin / Emby / Kodi / ChannelsDVR can index your movies and series. Adds a cron-driven auto-rescan that picks up newly-added episodes nightly. Optional category-nested folder layout for genre-organised libraries. |
 | [`Waybill`](#waybill) | `1.3.0` | Matthew-Beckett | MIT | Waybill matches, renames, and organizes any streams no matter the provider. Infinitely configurable pipelines for total control. |
@@ -149,17 +149,17 @@ Scans for channels with EPG assignments but no program data. Auto-matches EPG to
 
 ### [EPGeditARR](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/epgeditarr/README.md)
 
-**Version:** `0.2.07` | **Author:** jstevenscl | **Last Updated:** May 19 2026, 16:17 UTC
+**Version:** `0.2.08` | **Author:** jstevenscl | **Last Updated:** Jul 25 2026, 15:40 UTC
 
 Transform and clean your EPG data using regex and find/replace rules. Creates virtual copies of your sources — originals are never touched. Fills placeholder schedules for channels with no EPG, and provides a full SiriusXM toolkit: fill EPG from the community XMLTV (741 channels, sports smart blocks), sort into official lineup order, assign logos, and rename channels using the official SiriusXM API channel database.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](https://spdx.org/licenses/MIT.html) [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/jstevenscl/epgeditarr)
 
 **Downloads:**
-- [Latest Release (`0.2.07`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/epgeditarr-0.2.07/epgeditarr-0.2.07.zip)
-- [All Versions (1 available)](./metadata/epgeditarr)
+- [Latest Release (`0.2.08`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/epgeditarr-0.2.08/epgeditarr-0.2.08.zip)
+- [All Versions (2 available)](./metadata/epgeditarr)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/epgeditarr) | **Last Change:** [`fc6f5f6`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/fc6f5f6fff939c45828f221f47c3355b33cf4b66)
+**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/epgeditarr) | **Last Change:** [`b938d2f`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/b938d2fa68b4cadcb718f7902b99c1743a12fb14)
 
 ---
 
@@ -333,17 +333,17 @@ Push Dispatcharr channel/stream/VOD events to a Telegram chat via a bot. Include
 
 ### [Tickarr](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/tickarr/README.md)
 
-**Version:** `0.3.03` | **Author:** jstevenscl | **Last Updated:** Jul 10 2026, 00:22 UTC
+**Version:** `0.3.04` | **Author:** jstevenscl | **Last Updated:** Jul 25 2026, 15:21 UTC
 
 Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports Ticker, Custom Text, EAS/JAS Weather Alerts
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](https://spdx.org/licenses/MIT.html) [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/jstevenscl/tickarr)
 
 **Downloads:**
-- [Latest Release (`0.3.03`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/tickarr-0.3.03/tickarr-0.3.03.zip)
-- [All Versions (1 available)](./metadata/tickarr)
+- [Latest Release (`0.3.04`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/tickarr-0.3.04/tickarr-0.3.04.zip)
+- [All Versions (2 available)](./metadata/tickarr)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/tickarr) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/tickarr/README.md) | **Last Change:** [`eff1cb7`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/eff1cb74b2969f737f76e22f0b5a6f87e18251e4)
+**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/tickarr) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/tickarr/README.md) | **Last Change:** [`cb170b2`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/cb170b274029cbc8db67d6c12b043b1b510ba8fd)
 
 ---
 
@@ -432,4 +432,4 @@ curl https://raw.githubusercontent.com/swvn-dispatch/PluginsRepoV2/releases/mani
 
 ---
 
-*Last updated: Jul 22 2026, 15:28 UTC*
+*Last updated: Jul 25 2026, 15:58 UTC*
