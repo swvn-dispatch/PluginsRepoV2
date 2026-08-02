@@ -2,7 +2,7 @@
 
 # YouTubearr
 
-**Version:** `1.30.0` | **Author:** jeff-gooch | **Last Updated:** Jun 28 2026, 00:18 UTC
+**Version:** `1.30.1` | **Author:** jeff-gooch | **Last Updated:** Jul 31 2026, 23:07 UTC
 
 Zero-dependency YouTube livestream plugin with automatic monitoring and configurable numbering
 
@@ -14,20 +14,21 @@ Zero-dependency YouTube livestream plugin with automatic monitoring and configur
 
 ### Latest Release
 
-- **Download:** [`youtubearr-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/youtubearr-1.30.0/youtubearr-1.30.0.zip)
-- **Built:** Jul 21 2026, 17:42 UTC
-- **Source Commit:** [`5f3a8d5`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/5f3a8d5c3febd0f564298152b52a42fbf6ea3df5)
+- **Download:** [`youtubearr-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/youtubearr-1.30.1/youtubearr-1.30.1.zip)
+- **Built:** Aug 02 2026, 13:39 UTC
+- **Source Commit:** [`1e79c55`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/1e79c55fd33ce921c6c938990945e0ab23a7ef07)
 
 **Checksums:**
 ```
-MD5:    5f151828e136c21664bc74dbd005068e
-SHA256: eeadcb2a20863a07eabe4d7a17ead9b36adf687a9e45589460a144b14aa6b861
+MD5:    aade92b916078c40bdf2600314220ae1
+SHA256: fd91281b439da005d9e763cab062ba56916b8b3135f28d266423dd88912fc374
 ```
 
 ### All Versions
 
 | Version | Download | Built | Commit | MD5 | SHA256 |
 |---------|----------|-------|--------|-----|--------|
+| `1.30.1` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/youtubearr-1.30.1/youtubearr-1.30.1.zip) | Aug 02 2026, 13:39 UTC | [`1e79c55`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/1e79c55fd33ce921c6c938990945e0ab23a7ef07) | aade92b916078c40bdf2600314220ae1 | fd91281b439da005d9e763cab062ba56916b8b3135f28d266423dd88912fc374 |
 | `1.30.0` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/youtubearr-1.30.0/youtubearr-1.30.0.zip) | Jul 21 2026, 17:42 UTC | [`5f3a8d5`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/5f3a8d5c3febd0f564298152b52a42fbf6ea3df5) | 5f151828e136c21664bc74dbd005068e | eeadcb2a20863a07eabe4d7a17ead9b36adf687a9e45589460a144b14aa6b861 |
 
 ---
