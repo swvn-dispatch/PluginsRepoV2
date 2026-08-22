@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T17:42:52Z",
+  "generated_at": "2026-08-22T23:06:56Z",
   "manifest": {
     "slug": "epg-janitor",
     "name": "EPG Janitor",
@@ -9,25 +9,41 @@
       "PiratesIRC"
     ],
     "license": "MIT",
+    "source_type": "external",
+    "source_url": "https://github.com/PiratesIRC/Dispatcharr-EPG-Janitor-Plugin/releases/download/{version}/EPG-Janitor.zip",
     "repo_url": "https://github.com/PiratesIRC/Dispatcharr-EPG-Janitor-Plugin",
     "discord_thread": "https://discord.com/channels/1340492560220684331/1420051973994053848",
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
-    "last_updated": "2026-06-29T07:27:31-04:00",
+    "last_updated": "2026-08-16T16:17:04Z",
     "latest": {
-      "version": "1.26.1791309",
-      "commit_sha": "7ffd2ccc1e04038873a22979f325ee68773da6e5",
-      "commit_sha_short": "7ffd2cc",
-      "build_timestamp": "2026-07-21T17:41:50Z",
-      "last_updated": "2026-06-29T07:27:31-04:00",
-      "checksum_md5": "b4350fd30383845dd90afc06531c76b5",
-      "checksum_sha256": "952d486589fb1b68f518166bc91ed7353361a4c668a2ba9325e40d6c13f73899",
+      "version": "1.26.2281111",
+      "commit_sha": "79842f28375fb5829e2ba64029deb1d60f7c5fb1",
+      "commit_sha_short": "79842f2",
+      "build_timestamp": "2026-08-22T23:06:36Z",
+      "last_updated": "2026-08-16T16:17:04Z",
+      "checksum_md5": "8e7ade420998eadd4c60fcb617672989",
+      "checksum_sha256": "239cf4955b3d079ab76c97983a6989472470af7d7cd847b87ac9cabfd8761e30",
       "min_dispatcharr_version": "v0.20.0",
-      "latest_url": "epg-janitor-1.26.1791309/epg-janitor-1.26.1791309.zip",
-      "url": "epg-janitor-1.26.1791309/epg-janitor-1.26.1791309.zip",
-      "size": 449
+      "source_url": "https://github.com/PiratesIRC/Dispatcharr-EPG-Janitor-Plugin/releases/download/1.26.2281111/EPG-Janitor.zip",
+      "latest_url": "epg-janitor-1.26.2281111/epg-janitor-1.26.2281111.zip",
+      "url": "epg-janitor-1.26.2281111/epg-janitor-1.26.2281111.zip",
+      "size": 462
     },
     "versions": [
+      {
+        "version": "1.26.2281111",
+        "commit_sha": "79842f28375fb5829e2ba64029deb1d60f7c5fb1",
+        "commit_sha_short": "79842f2",
+        "build_timestamp": "2026-08-22T23:06:36Z",
+        "last_updated": "2026-08-16T16:17:04Z",
+        "checksum_md5": "8e7ade420998eadd4c60fcb617672989",
+        "checksum_sha256": "239cf4955b3d079ab76c97983a6989472470af7d7cd847b87ac9cabfd8761e30",
+        "min_dispatcharr_version": "v0.20.0",
+        "source_url": "https://github.com/PiratesIRC/Dispatcharr-EPG-Janitor-Plugin/releases/download/1.26.2281111/EPG-Janitor.zip",
+        "url": "epg-janitor-1.26.2281111/epg-janitor-1.26.2281111.zip",
+        "size": 462
+      },
       {
         "version": "1.26.1791309",
         "commit_sha": "7ffd2ccc1e04038873a22979f325ee68773da6e5",

@@ -2,7 +2,7 @@
 
 # VOD to Media Library
 
-**Version:** `1.16.0` | **Author:** R3XCHRIS | **Last Updated:** Jul 01 2026, 21:57 UTC
+**Version:** `1.18.0` | **Author:** R3XCHRIS | **Last Updated:** Aug 19 2026, 16:22 UTC
 
 Generate .strm files (with optional NFO metadata) from your Dispatcharr VOD catalogue so Jellyfin / Emby / Kodi / ChannelsDVR can index your movies and series. Adds a cron-driven auto-rescan that picks up newly-added episodes nightly. Optional category-nested folder layout for genre-organised libraries.
 
@@ -14,20 +14,21 @@ Generate .strm files (with optional NFO metadata) from your Dispatcharr VOD cata
 
 ### Latest Release
 
-- **Download:** [`vod2mlib-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/vod2mlib-1.16.0/vod2mlib-1.16.0.zip)
-- **Built:** Jul 21 2026, 17:42 UTC
-- **Source Commit:** [`3b8487b`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/3b8487b78899906c8181804749514627eccd2f06)
+- **Download:** [`vod2mlib-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/vod2mlib-1.18.0/vod2mlib-1.18.0.zip)
+- **Built:** Aug 22 2026, 23:06 UTC
+- **Source Commit:** [`b7a546e`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/b7a546ea5c82bd2e2889a0a4258c695e82aea041)
 
 **Checksums:**
 ```
-MD5:    26e098d325cfc3197539fe2196cbf3be
-SHA256: b992b95d8d0c30249afe3d816118c5f360ce7c2d3ce0347953d2cabda60136e4
+MD5:    f7699d183e538422fdf0d2c7c6ca8e7b
+SHA256: 1a2e10b1ae86c393c54715ab7c79ea170dbb63883d940dd621e0ded2694fe5e2
 ```
 
 ### All Versions
 
 | Version | Download | Built | Commit | MD5 | SHA256 |
 |---------|----------|-------|--------|-----|--------|
+| `1.18.0` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/vod2mlib-1.18.0/vod2mlib-1.18.0.zip) | Aug 22 2026, 23:06 UTC | [`b7a546e`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/b7a546ea5c82bd2e2889a0a4258c695e82aea041) | f7699d183e538422fdf0d2c7c6ca8e7b | 1a2e10b1ae86c393c54715ab7c79ea170dbb63883d940dd621e0ded2694fe5e2 |
 | `1.16.0` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/vod2mlib-1.16.0/vod2mlib-1.16.0.zip) | Jul 21 2026, 17:42 UTC | [`3b8487b`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/3b8487b78899906c8181804749514627eccd2f06) | 26e098d325cfc3197539fe2196cbf3be | b992b95d8d0c30249afe3d816118c5f360ce7c2d3ce0347953d2cabda60136e4 |
 
 ---

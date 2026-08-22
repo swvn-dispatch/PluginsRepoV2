@@ -1,1 +1,79 @@
-{"generated_at":"2026-08-02T13:39:17Z","manifest":{"slug":"tickarr","name":"Tickarr","description":"Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports Ticker, Custom Text, EAS/JAS Weather Alerts","author":"jstevenscl","license":"MIT","source_type":"external","source_url":"https://github.com/jstevenscl/tickarr/releases/download/v{version}/tickarr-{version}.zip","repo_url":"https://github.com/jstevenscl/tickarr","registry_url":"https://github.com/swvn-dispatch/PluginsRepoV2","registry_name":"swvn-dispatch/PluginsRepoV2","last_updated":"2026-07-28T23:02:08Z","latest":{"version":"0.3.06","commit_sha":"6a2c051ebb8570a04b26fc2b3187e042d6daeefa","commit_sha_short":"6a2c051","build_timestamp":"2026-08-02T13:39:12Z","last_updated":"2026-07-28T23:02:08Z","checksum_md5":"aeff7556515fe838cc3b098c81a3acef","checksum_sha256":"e76a22c2f7ed006ae4c019b0f37934aa8fc795a6174fb263e08f86408e5c22e0","source_url":"https://github.com/jstevenscl/tickarr/releases/download/v0.3.06/tickarr-0.3.06.zip","latest_url":"tickarr-0.3.06/tickarr-0.3.06.zip","url":"tickarr-0.3.06/tickarr-0.3.06.zip","size":2127},"versions":[{"version":"0.3.06","commit_sha":"6a2c051ebb8570a04b26fc2b3187e042d6daeefa","commit_sha_short":"6a2c051","build_timestamp":"2026-08-02T13:39:12Z","last_updated":"2026-07-28T23:02:08Z","checksum_md5":"aeff7556515fe838cc3b098c81a3acef","checksum_sha256":"e76a22c2f7ed006ae4c019b0f37934aa8fc795a6174fb263e08f86408e5c22e0","source_url":"https://github.com/jstevenscl/tickarr/releases/download/v0.3.06/tickarr-0.3.06.zip","url":"tickarr-0.3.06/tickarr-0.3.06.zip","size":2127},{"version":"0.3.04","commit_sha":"cb170b274029cbc8db67d6c12b043b1b510ba8fd","commit_sha_short":"cb170b2","build_timestamp":"2026-07-25T15:57:54Z","last_updated":"2026-07-25T15:21:27Z","checksum_md5":"5971171b4a77ab426fe53fe8eaf04d3e","checksum_sha256":"b73982da652895da2dc6c660ca8885ec4955c33f9c3e43f23a16b9876d69c14b","source_url":"https://github.com/jstevenscl/tickarr/releases/download/v0.3.04/tickarr-0.3.04.zip","url":"tickarr-0.3.04/tickarr-0.3.04.zip","size":2127},{"version":"0.3.03","commit_sha":"eff1cb74b2969f737f76e22f0b5a6f87e18251e4","commit_sha_short":"eff1cb7","build_timestamp":"2026-07-21T17:42:31Z","last_updated":"2026-07-09T20:22:40-04:00","checksum_md5":"fc6498692454c22fa910b3236c5a34b5","checksum_sha256":"2a4a7192bf6b21e98094b450938f8f90a159b7ab7594dc47591cfb55ccd20fa1","source_url":"https://github.com/jstevenscl/tickarr/releases/download/v0.3.03/tickarr-0.3.03.zip","url":"tickarr-0.3.03/tickarr-0.3.03.zip","size":2124}]}}
+{
+  "generated_at": "2026-08-22T23:06:56Z",
+  "manifest": {
+    "slug": "tickarr",
+    "name": "Tickarr",
+    "description": "Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports Ticker, Custom Text, EAS/JAS Weather Alerts",
+    "author": "jstevenscl",
+    "license": "MIT",
+    "source_type": "external",
+    "source_url": "https://github.com/jstevenscl/tickarr/releases/download/v{version}/tickarr-{version}.zip",
+    "repo_url": "https://github.com/jstevenscl/tickarr",
+    "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
+    "registry_name": "swvn-dispatch/PluginsRepoV2",
+    "last_updated": "2026-08-20T20:28:23Z",
+    "latest": {
+      "version": "0.4.01",
+      "commit_sha": "aea0bbe07d8fcfc5846ea3e7bec8336e9451a922",
+      "commit_sha_short": "aea0bbe",
+      "build_timestamp": "2026-08-22T23:06:51Z",
+      "last_updated": "2026-08-20T20:28:23Z",
+      "checksum_md5": "588a60d63980c1238d04a95a47d8bda5",
+      "checksum_sha256": "a1a7e779d320956055dfc1e8c884df01f6e847d764810f217685b99880a60173",
+      "source_url": "https://github.com/jstevenscl/tickarr/releases/download/v0.4.01/tickarr-0.4.01.zip",
+      "latest_url": "tickarr-0.4.01/tickarr-0.4.01.zip",
+      "url": "tickarr-0.4.01/tickarr-0.4.01.zip",
+      "size": 2133
+    },
+    "versions": [
+      {
+        "version": "0.4.01",
+        "commit_sha": "aea0bbe07d8fcfc5846ea3e7bec8336e9451a922",
+        "commit_sha_short": "aea0bbe",
+        "build_timestamp": "2026-08-22T23:06:51Z",
+        "last_updated": "2026-08-20T20:28:23Z",
+        "checksum_md5": "588a60d63980c1238d04a95a47d8bda5",
+        "checksum_sha256": "a1a7e779d320956055dfc1e8c884df01f6e847d764810f217685b99880a60173",
+        "source_url": "https://github.com/jstevenscl/tickarr/releases/download/v0.4.01/tickarr-0.4.01.zip",
+        "url": "tickarr-0.4.01/tickarr-0.4.01.zip",
+        "size": 2133
+      },
+      {
+        "version": "0.3.06",
+        "commit_sha": "6a2c051ebb8570a04b26fc2b3187e042d6daeefa",
+        "commit_sha_short": "6a2c051",
+        "build_timestamp": "2026-08-02T13:39:12Z",
+        "last_updated": "2026-07-28T23:02:08Z",
+        "checksum_md5": "aeff7556515fe838cc3b098c81a3acef",
+        "checksum_sha256": "e76a22c2f7ed006ae4c019b0f37934aa8fc795a6174fb263e08f86408e5c22e0",
+        "source_url": "https://github.com/jstevenscl/tickarr/releases/download/v0.3.06/tickarr-0.3.06.zip",
+        "url": "tickarr-0.3.06/tickarr-0.3.06.zip",
+        "size": 2127
+      },
+      {
+        "version": "0.3.04",
+        "commit_sha": "cb170b274029cbc8db67d6c12b043b1b510ba8fd",
+        "commit_sha_short": "cb170b2",
+        "build_timestamp": "2026-07-25T15:57:54Z",
+        "last_updated": "2026-07-25T15:21:27Z",
+        "checksum_md5": "5971171b4a77ab426fe53fe8eaf04d3e",
+        "checksum_sha256": "b73982da652895da2dc6c660ca8885ec4955c33f9c3e43f23a16b9876d69c14b",
+        "source_url": "https://github.com/jstevenscl/tickarr/releases/download/v0.3.04/tickarr-0.3.04.zip",
+        "url": "tickarr-0.3.04/tickarr-0.3.04.zip",
+        "size": 2127
+      },
+      {
+        "version": "0.3.03",
+        "commit_sha": "eff1cb74b2969f737f76e22f0b5a6f87e18251e4",
+        "commit_sha_short": "eff1cb7",
+        "build_timestamp": "2026-07-21T17:42:31Z",
+        "last_updated": "2026-07-09T20:22:40-04:00",
+        "checksum_md5": "fc6498692454c22fa910b3236c5a34b5",
+        "checksum_sha256": "2a4a7192bf6b21e98094b450938f8f90a159b7ab7594dc47591cfb55ccd20fa1",
+        "source_url": "https://github.com/jstevenscl/tickarr/releases/download/v0.3.03/tickarr-0.3.03.zip",
+        "url": "tickarr-0.3.03/tickarr-0.3.03.zip",
+        "size": 2124
+      }
+    ]
+  }
+}

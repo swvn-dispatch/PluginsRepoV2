@@ -1,29 +1,48 @@
 {
-  "generated_at": "2026-07-21T17:42:52Z",
+  "generated_at": "2026-08-22T23:06:56Z",
   "manifest": {
     "slug": "event-channel-managarr",
     "name": "Event Channel Managarr",
     "description": "Automates channel visibility by hiding channels without events and showing those with events, based on EPG data and channel names. Optionally manages dummy EPG for channels without real EPG.",
     "author": "PiratesIRC",
+    "maintainers": [
+      "PiratesIRC"
+    ],
     "license": "MIT",
+    "source_type": "external",
+    "source_url": "https://github.com/PiratesIRC/Dispatcharr-Event-Channel-Managarr-Plugin/releases/download/v{version}/Event-Channel-Managarr.zip",
     "repo_url": "https://github.com/PiratesIRC/Dispatcharr-Event-Channel-Managarr-Plugin",
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
-    "last_updated": "2026-06-20T14:14:55-04:00",
+    "last_updated": "2026-08-22T15:48:54Z",
     "latest": {
-      "version": "1.26.1711720",
-      "commit_sha": "786eefb3f2ef4df2ee30d52b3bcd16c9af58593f",
-      "commit_sha_short": "786eefb",
-      "build_timestamp": "2026-07-21T17:41:58Z",
-      "last_updated": "2026-06-20T14:14:55-04:00",
-      "checksum_md5": "161fced9ae41a6269272c2c9768e4e55",
-      "checksum_sha256": "1e2df41c088e2b9cead1c618ecd64ec3c5b186e433e81be89ed93031281b66fd",
+      "version": "1.26.2341504",
+      "commit_sha": "59fc293d1d236ef1fc73068b7ca8eb76f62724f0",
+      "commit_sha_short": "59fc293",
+      "build_timestamp": "2026-08-22T23:06:40Z",
+      "last_updated": "2026-08-22T15:48:54Z",
+      "checksum_md5": "708b7ca9b3b61155074785085d3d238d",
+      "checksum_sha256": "56ae74a767fd8894585cbd30f6712d8100a7d48912b8c2e885b19a24a6fbff93",
       "min_dispatcharr_version": "v0.20.0",
-      "latest_url": "event-channel-managarr-1.26.1711720/event-channel-managarr-1.26.1711720.zip",
-      "url": "event-channel-managarr-1.26.1711720/event-channel-managarr-1.26.1711720.zip",
-      "size": 198
+      "source_url": "https://github.com/PiratesIRC/Dispatcharr-Event-Channel-Managarr-Plugin/releases/download/v1.26.2341504/Event-Channel-Managarr.zip",
+      "latest_url": "event-channel-managarr-1.26.2341504/event-channel-managarr-1.26.2341504.zip",
+      "url": "event-channel-managarr-1.26.2341504/event-channel-managarr-1.26.2341504.zip",
+      "size": 212
     },
     "versions": [
+      {
+        "version": "1.26.2341504",
+        "commit_sha": "59fc293d1d236ef1fc73068b7ca8eb76f62724f0",
+        "commit_sha_short": "59fc293",
+        "build_timestamp": "2026-08-22T23:06:40Z",
+        "last_updated": "2026-08-22T15:48:54Z",
+        "checksum_md5": "708b7ca9b3b61155074785085d3d238d",
+        "checksum_sha256": "56ae74a767fd8894585cbd30f6712d8100a7d48912b8c2e885b19a24a6fbff93",
+        "min_dispatcharr_version": "v0.20.0",
+        "source_url": "https://github.com/PiratesIRC/Dispatcharr-Event-Channel-Managarr-Plugin/releases/download/v1.26.2341504/Event-Channel-Managarr.zip",
+        "url": "event-channel-managarr-1.26.2341504/event-channel-managarr-1.26.2341504.zip",
+        "size": 212
+      },
       {
         "version": "1.26.1711720",
         "commit_sha": "786eefb3f2ef4df2ee30d52b3bcd16c9af58593f",

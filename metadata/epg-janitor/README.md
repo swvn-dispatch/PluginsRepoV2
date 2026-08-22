@@ -2,7 +2,7 @@
 
 # EPG Janitor
 
-**Version:** `1.26.1791309` | **Author:** PiratesIRC | **Last Updated:** Jun 29 2026, 11:27 UTC
+**Version:** `1.26.2281111` | **Author:** PiratesIRC | **Last Updated:** Aug 16 2026, 16:17 UTC
 
 Scans for channels with EPG assignments but no program data. Auto-matches EPG to channels using intelligent fuzzy matching with aliases, removes EPG from hidden channels, and manages EPG assignments.
 
@@ -14,20 +14,21 @@ Scans for channels with EPG assignments but no program data. Auto-matches EPG to
 
 ### Latest Release
 
-- **Download:** [`epg-janitor-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/epg-janitor-1.26.1791309/epg-janitor-1.26.1791309.zip)
-- **Built:** Jul 21 2026, 17:41 UTC
-- **Source Commit:** [`7ffd2cc`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/7ffd2ccc1e04038873a22979f325ee68773da6e5)
+- **Download:** [`epg-janitor-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/epg-janitor-1.26.2281111/epg-janitor-1.26.2281111.zip)
+- **Built:** Aug 22 2026, 23:06 UTC
+- **Source Commit:** [`79842f2`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/79842f28375fb5829e2ba64029deb1d60f7c5fb1)
 
 **Checksums:**
 ```
-MD5:    b4350fd30383845dd90afc06531c76b5
-SHA256: 952d486589fb1b68f518166bc91ed7353361a4c668a2ba9325e40d6c13f73899
+MD5:    8e7ade420998eadd4c60fcb617672989
+SHA256: 239cf4955b3d079ab76c97983a6989472470af7d7cd847b87ac9cabfd8761e30
 ```
 
 ### All Versions
 
 | Version | Download | Built | Commit | MD5 | SHA256 |
 |---------|----------|-------|--------|-----|--------|
+| `1.26.2281111` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/epg-janitor-1.26.2281111/epg-janitor-1.26.2281111.zip) | Aug 22 2026, 23:06 UTC | [`79842f2`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/79842f28375fb5829e2ba64029deb1d60f7c5fb1) | 8e7ade420998eadd4c60fcb617672989 | 239cf4955b3d079ab76c97983a6989472470af7d7cd847b87ac9cabfd8761e30 |
 | `1.26.1791309` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/epg-janitor-1.26.1791309/epg-janitor-1.26.1791309.zip) | Jul 21 2026, 17:41 UTC | [`7ffd2cc`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/7ffd2ccc1e04038873a22979f325ee68773da6e5) | b4350fd30383845dd90afc06531c76b5 | 952d486589fb1b68f518166bc91ed7353361a4c668a2ba9325e40d6c13f73899 |
 
 ---
@@ -54,7 +55,8 @@ Dispatcharr v0.20.0 or newer. Python 3.13+ (bundled). No required dependencies (
 ## Key features
 
 - **Auto-Match EPG** — weighted structural scoring (callsign 50 / state 30 / city 20 / network 10) + Lineuparr-style 4-stage fuzzy pipeline (alias → exact → substring → token-sort), takes the higher score. Identical-name matches score 100.
-- **Callsign anchoring** — high-confidence US callsign matching for parenthesized (`ABC (WABC)`), end-of-name (`WABC-DT`), and leading `CALLSIGN (NETWORK)` forms (jesmann-US: `KGTV (ABC)`), gated on a known-callsign allowlist from the loaded DBs so callsign-shaped words aren't promoted. Grandfathered 3-letter callsigns (`(WWL)`, `(WJZ)`) and allowlisted word-callsigns (`(KING)`, `(WAVE)`) anchor too. A shared high-confidence callsign anchors the match; a disagreement rejects a wrong-station candidate.
+- **Callsign anchoring** — high-confidence US callsign matching for parenthesized (`ABC (WABC)`), end-of-name (`WABC-DT`), and leading `CALLSIGN (NETWORK)` forms (jesmann-US: `KGTV (ABC)`). A shared high-confidence callsign anchors the match; a disagreement rejects a wrong-station candidate. Grandfathered 3-letter callsigns (`(WWL)`, `(WJZ)`) and word-shaped callsigns (`(KING)`, `(WAVE)`) anchor too.
+- **Every licensed US station is recognised** — the shipped `us_station_callsigns.json` lists every callsign the FCC licenses, derived from its Licensing and Management System database, and the loaded channel databases add the rest. A callsign-shaped English word such as `KILN` or `WHIP` is never promoted to a station, while a real station whose callsign is also a word is.
 - **Sibling guards & smarter normalization** — numbered/time-shift siblings no longer cross-match (`Fox Sports 1`≠`2`, `BBC One`≠`Two`, `ITV2`≠`ITV2 +1`); number-words fold to digits (`BBC Three`=`BBC 3`), CamelCase and dotted compounds split (`97.2` preserved). Similarity is rapidfuzz-parity with optional `rapidfuzz` acceleration.
 - **Scan & Heal** — find channels whose current EPG has no program data and walk ranked candidates for a working replacement (respects fallback source allowlist).
 - **EPG source selection & priority** — pick eligible sources by name or `*`/`?` wildcard (case-insensitive); only enabled sources are used, and score ties resolve by each source's Dispatcharr `priority` (higher wins). Leave it empty and *all* active sources are eligible — including foreign-country ones (the matcher has no country gate), so scope it to your region (e.g. `*-US`) on single-region installs.
@@ -64,14 +66,15 @@ Dispatcharr v0.20.0 or newer. Python 3.13+ (bundled). No required dependencies (
 - **Performance** — pre-normalization cache + per-EPG attribute cache. ~7–8 min for a 21,480-EPG × 2,950-channel run.
 - **Bulk management** — remove EPG by REGEX, from hidden channels, or from entire groups. Tag channels with missing program data via configurable suffix.
 - **CSV exports** — every dry-run and apply exports results with confidence scores, match method, and reasoning.
+- **EPG Freshness Watchdog (optional, off by default)** — Dispatcharr's own EPG refresh has no retry and no freshness awareness, so a source that fails, or whose guide data simply runs out, stays broken until somebody notices. On a schedule you set, the watchdog checks every active source that has channels mapped to it and refreshes any that has errored or is close to running out of guide data. It records system events only. There is no webhook, no email and no network code of any kind. A button runs the same check immediately.
 
 ## Settings
 
-Organized into sections via UI dividers: Scope, Auto-Match, Scan & Heal, Cleanup & Maintenance, Normalization Toggles, Custom Aliases. Dynamic per-country channel-database toggles (US, UK, CA, DE, ES, FR, IN, MX, NL, AU, BR, NO) auto-generated based on shipped `*_channels.json` files.
+Organized into sections via UI dividers: Scope, Auto-Match, Scan & Heal, Cleanup & Maintenance, Normalization Toggles, Custom Aliases, and EPG Freshness Watchdog. Dynamic per-country channel-database toggles (US, UK, CA, DE, ES, FR, IN, MX, NL, AU, BR, NO) auto-generated based on shipped `*_channels.json` files.
 
 ## Actions
 
-14 color-coded action buttons grouped by destructiveness (blue outlines for info, cyan for dry-runs, green-filled for apply-style, orange/red-filled for destructive) with confirmation dialogs on anything that mutates channel state. Emoji labels.
+15 color-coded action buttons grouped by destructiveness (blue outlines for info, cyan for dry-runs, green-filled for apply-style, orange/red-filled for destructive) with confirmation dialogs on anything that mutates channel state. Emoji labels.
 
 ## How it differs from other matching plugins
 
