@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-22T23:06:56Z",
+  "generated_at": "2026-08-22T23:41:43Z",
   "manifest": {
     "slug": "epg-janitor",
     "name": "EPG Janitor",
@@ -9,6 +9,7 @@
       "PiratesIRC"
     ],
     "license": "MIT",
+    "ai_assisted": true,
     "source_type": "external",
     "source_url": "https://github.com/PiratesIRC/Dispatcharr-EPG-Janitor-Plugin/releases/download/{version}/EPG-Janitor.zip",
     "repo_url": "https://github.com/PiratesIRC/Dispatcharr-EPG-Janitor-Plugin",

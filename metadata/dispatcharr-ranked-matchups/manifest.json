@@ -1,11 +1,12 @@
 {
-  "generated_at": "2026-08-22T23:06:56Z",
+  "generated_at": "2026-08-22T23:41:43Z",
   "manifest": {
     "slug": "dispatcharr-ranked-matchups",
     "name": "Ranked Matchups (Top Games)",
     "description": "Never miss a good game. Scores every upcoming game across 37 leagues, tours and competitions (20 of them soccer, plus NFL, NBA, MLB, NHL, NCAA, UFC, boxing, tennis, golf and motorsport), then builds a Top Matchups group holding only the ones worth watching and shows why each game ranked where it did in its EPG description.",
     "author": "Jacob-Lasky",
     "license": "MIT",
+    "ai_assisted": true,
     "source_type": "external",
     "source_url": "https://github.com/Jacob-Lasky/dispatcharr_ranked_matchups/releases/download/v{version}/plugin.zip",
     "repo_url": "https://github.com/Jacob-Lasky/dispatcharr_ranked_matchups",
