@@ -164,7 +164,7 @@ Automated validation runs on every PR and posts a comment with results. The foll
 | `min_dispatcharr_version` | Must be semver if provided |
 | `max_dispatcharr_version` | Must be semver and ≥ `min_dispatcharr_version` if both provided |
 | `repo_url` / `discord_thread` | Must start with `http://` or `https://` if provided |
-| CodeQL | Python code is scanned for security issues (blocking). The repository also includes dormant informational sandbox-bypass checks that require review when enabled. For external plugins, the release ZIP is downloaded and its contents scanned. See [plugin security](docs/plugin-security.md) |
+| CodeQL | Python code is scanned for security issues (blocking). Informational capability-contract and sandbox-bypass checks require maintainer review and block automatic merging. For external plugins, the release ZIP is downloaded and its contents scanned. See [plugin security](docs/plugin-security.md) |
 | ClamAV | All submitted files are scanned for malware (blocking). For external plugins, the release ZIP is downloaded and scanned |
 | `source_url` | For external plugins: must be an HTTPS URL with a `{version}` placeholder; artifact must be reachable |
 | `repo_url` | Required for external plugins |

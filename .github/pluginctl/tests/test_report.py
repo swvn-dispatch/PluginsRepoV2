@@ -115,7 +115,7 @@ def test_sandbox_bypass_alone_does_not_fail_comment():
     c = report.build_comment(**_base_kwargs(
         codeql_result="success", codeql_sandbox_bypass="1",
         codeql_sandbox_findings="sandbox findings"))
-    assert "Sandbox Bypass Detected" in c
+    assert "Manual Review Required" in c
     assert "## 🎉 All validation checks passed!" in c
     assert "\n---\n" in c
 
@@ -123,7 +123,17 @@ def test_sandbox_bypass_alone_does_not_fail_comment():
 def test_sandbox_bypass_is_hidden_when_codeql_is_skipped():
     c = report.build_comment(**_base_kwargs(
         codeql_result="skipped", codeql_sandbox_bypass="1"))
-    assert "Sandbox Bypass Detected" not in c
+    assert "Manual Review Required" not in c
+
+
+def test_capability_contract_is_informational_and_review_gated():
+    c = report.build_comment(**_base_kwargs(
+        codeql_result="success", codeql_capability_contract="1",
+        codeql_capability_contract_findings="contract findings"))
+    assert "undeclared capability finding" in c
+    assert "Manual Review Required" in c
+    assert "contract findings" in c
+    assert "## 🎉 All validation checks passed!" in c
 
 
 def test_codeql_skipped_notice_no_separator_when_only_success():

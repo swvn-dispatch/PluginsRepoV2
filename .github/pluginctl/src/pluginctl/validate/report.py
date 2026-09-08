@@ -14,6 +14,7 @@ import os
 from dataclasses import dataclass, field
 from typing import Optional
 
+from .. import capabilities
 from ..core import actions, gh, git
 
 MARKER = "<!--PLUGIN_VALIDATION_COMMENT-->"
@@ -91,9 +92,10 @@ def build_comment(*, plugin_count: str, close_pr: bool, close_reason: str,
                   fragment_failed: bool, test_result: str = "skipped",
                    codeql_findings: str = "", codeql_medium_findings: str = "",
                    codeql_low_findings: str = "", clamav_findings: str = "",
-                   other_plugins_section: str = "", codeql_suppressed: str = "",
-                   codeql_suppressed_findings: str = "", codeql_sandbox_bypass: str = "",
-                   codeql_sandbox_findings: str = "") -> str:
+                    other_plugins_section: str = "", codeql_suppressed: str = "",
+                    codeql_suppressed_findings: str = "", codeql_sandbox_bypass: str = "",
+                    codeql_sandbox_findings: str = "", codeql_capability_contract: str = "",
+                    codeql_capability_contract_findings: str = "") -> str:
     L: list[str] = []
     overall_failed = fragment_failed
     if title_valid and title_valid != "true":
@@ -202,8 +204,8 @@ def build_comment(*, plugin_count: str, close_pr: bool, close_reason: str,
             L.append("")
 
         if _needs_separator(codeql_result, codeql_mediums, codeql_lows,
-                             codeql_unscanned_langs, clamav_result, codeql_suppressed,
-                             codeql_sandbox_bypass):
+                              codeql_unscanned_langs, clamav_result, codeql_suppressed,
+                              codeql_sandbox_bypass, codeql_capability_contract):
             L.append("")
             L.append("---")
             L.append("")
@@ -222,10 +224,22 @@ def build_comment(*, plugin_count: str, close_pr: bool, close_reason: str,
             L.append("")
             L.append(f"**CodeQL found {codeql_sandbox_bypass} plugin sandbox-bypass finding(s)**")
             L.append("These findings are informational for CI status, but require maintainer review. "
-                     "The `Sandbox Bypass Detected` label blocks automatic merge.")
+                     "The `Manual Review Required` label blocks automatic merge.")
             L.append("")
             if codeql_sandbox_findings:
                 L.append(codeql_sandbox_findings.rstrip("\n"))
+
+        if (codeql_capability_contract and codeql_capability_contract != "0"
+                and codeql_result != "skipped"):
+            L.append("")
+            L.append(f"**CodeQL found {codeql_capability_contract} undeclared capability finding(s)**")
+            minimum = capabilities.first_enforcing_manifest_version()
+            L.append(f"These findings apply only to runtime-enforcing plugin manifests "
+                     f"(currently version {minimum} and later) and require maintainer review. "
+                     "The `Manual Review Required` label blocks automatic merge.")
+            L.append("")
+            if codeql_capability_contract_findings:
+                L.append(codeql_capability_contract_findings.rstrip("\n"))
 
         if codeql_result and codeql_result not in ("skipped", "success"):
             L.append("")
@@ -322,8 +336,8 @@ def build_comment(*, plugin_count: str, close_pr: bool, close_reason: str,
 
 
 def _needs_separator(codeql_result, codeql_mediums, codeql_lows,
-                      codeql_unscanned_langs, clamav_result, codeql_suppressed="",
-                      codeql_sandbox_bypass="") -> bool:
+                     codeql_unscanned_langs, clamav_result, codeql_suppressed="",
+                      codeql_sandbox_bypass="", codeql_capability_contract="") -> bool:
     if codeql_result and codeql_result != "skipped" and codeql_result != "success":
         return True
     if codeql_mediums and codeql_mediums != "0" and codeql_result != "skipped":
@@ -333,6 +347,8 @@ def _needs_separator(codeql_result, codeql_mediums, codeql_lows,
     if codeql_suppressed and codeql_suppressed != "0" and codeql_result != "skipped":
         return True
     if codeql_sandbox_bypass and codeql_sandbox_bypass != "0" and codeql_result != "skipped":
+        return True
+    if codeql_capability_contract and codeql_capability_contract != "0" and codeql_result != "skipped":
         return True
     if codeql_result == "skipped" and codeql_unscanned_langs:
         return True
@@ -434,6 +450,7 @@ def run(pr_number: str, pr_author: str, plugin_count: str, close_pr: bool,
         codeql_unscanned_langs=os.environ.get("CODEQL_UNSCANNED_LANGS", ""),
         codeql_suppressed=os.environ.get("CODEQL_SUPPRESSED", ""),
         codeql_sandbox_bypass=os.environ.get("CODEQL_SANDBOX_BYPASS", ""),
+        codeql_capability_contract=os.environ.get("CODEQL_CAPABILITY_CONTRACT", ""),
         clamav_result=os.environ.get("CLAMAV_RESULT", ""),
         clamav_infected=os.environ.get("CLAMAV_INFECTED", ""),
         title_valid=os.environ.get("TITLE_VALID", ""),
@@ -449,6 +466,9 @@ def run(pr_number: str, pr_author: str, plugin_count: str, close_pr: bool,
         other_plugins_section=other_section,
         codeql_suppressed_findings=_read("codeql-suppressed-findings/codeql-suppressed-findings.md"),
         codeql_sandbox_findings=_read("codeql-sandbox-findings/codeql-sandbox-findings.md"),
+        codeql_capability_contract_findings=_read(
+            "codeql-capability-contract-findings/codeql-capability-contract-findings.md"
+        ),
     )
 
     with open("pr_comment.txt", "w", encoding="utf-8") as fh:

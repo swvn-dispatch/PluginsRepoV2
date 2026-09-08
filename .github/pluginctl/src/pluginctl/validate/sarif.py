@@ -19,9 +19,10 @@ import os
 import re
 from dataclasses import dataclass
 
-from .. import feature_flags
+from .. import capabilities, feature_flags
 
 ZWSP = "​"
+CAPABILITY_CONTRACT_PREFIX = "plugin/capability-contract/"
 SANDBOX_BYPASS_PREFIX = "plugin/sandbox-bypass/"
 
 # jq: \[(?<c>[^\]]+)\][(][0-9]+[)]  ->  .c   (strip markdown [text](123) links)
@@ -96,8 +97,64 @@ def is_suppressed(result: dict) -> bool:
 
 
 def is_sandbox_bypass_rule(rule_id: str) -> bool:
-    """True for rules provided by the dormant plugin sandbox query pack."""
+    """True for rules detecting attempts to evade current sandbox wrappers."""
     return rule_id.startswith(SANDBOX_BYPASS_PREFIX)
+
+
+def is_capability_contract_rule(rule_id: str) -> bool:
+    return rule_id.startswith(CAPABILITY_CONTRACT_PREFIX)
+
+
+def capability_for_rule(rule_id: str) -> str:
+    for capability_id, policy in capabilities.KNOWN_CAPABILITIES.items():
+        if rule_id in policy.get("codeql_rules", []):
+            return capability_id
+    return ""
+
+
+def _uri_plugin_name(result: dict) -> str:
+    uri, _ = _location(result)
+    parts = uri.replace("\\", "/").split("/")
+    return parts[1] if len(parts) > 2 and parts[0] == "plugins" else ""
+
+
+def _runtime_manifest(plugin_name: str) -> dict | None:
+    """Read a runtime manifest from analyzed source, never catalog metadata."""
+    if not plugin_name:
+        return None
+    catalog_path = os.path.join("plugins", plugin_name, "plugin.json")
+    try:
+        with open(catalog_path, encoding="utf-8") as fh:
+            catalog = json.load(fh)
+    except (OSError, json.JSONDecodeError):
+        catalog = None
+    # The sidecar is created only by the external-release scan. Local plugin
+    # submissions must not be able to override their actual runtime manifest.
+    paths = [catalog_path]
+    if isinstance(catalog, dict) and catalog.get("source_type") == "external":
+        paths.insert(0, os.path.join("plugins", plugin_name, ".dispatcharr-runtime-manifest.json"))
+    for path in paths:
+        try:
+            with open(path, encoding="utf-8") as fh:
+                manifest = json.load(fh)
+        except (OSError, json.JSONDecodeError):
+            continue
+        if isinstance(manifest, dict) and "manifest_version" in manifest:
+            return manifest
+    return None
+
+
+def contract_result_requires_review(result: dict) -> bool:
+    """Only undeclared capabilities in enforcing runtime manifests are findings."""
+    capability_id = capability_for_rule(_rule_id(result))
+    manifest = _runtime_manifest(_uri_plugin_name(result))
+    if not capability_id or manifest is None:
+        return False
+    version = capabilities.parse_manifest_version(manifest)
+    return (
+        capabilities.manifest_version_enforces_sandbox(version)
+        and capability_id not in capabilities.declared_capabilities(manifest)
+    )
 
 
 @dataclass
@@ -108,6 +165,8 @@ class Counts:
     suppressed: int = 0
     sandbox_bypass: int = 0
     sandbox_bypass_detected: int = 0
+    capability_contract: int = 0
+    capability_contract_detected: int = 0
     total: int = 0
 
     @property
@@ -122,16 +181,26 @@ def classify(sarif_objs: list[dict]) -> Counts:
             secmap = build_secmap(run)
             for result in (run.get("results") or []):
                 is_sandbox = is_sandbox_bypass_rule(_rule_id(result))
+                is_contract = is_capability_contract_rule(_rule_id(result))
                 if is_sandbox and not feature_flags.SANDBOX_BYPASS_DETECTION:
+                    continue
+                if is_contract and (
+                    not feature_flags.CAPABILITY_CONTRACT_DETECTION
+                    or not contract_result_requires_review(result)
+                ):
                     continue
                 counts.total += 1
                 if is_sandbox:
                     counts.sandbox_bypass_detected += 1
+                if is_contract:
+                    counts.capability_contract_detected += 1
                 if is_suppressed(result):
                     counts.suppressed += 1
                     continue
                 if is_sandbox:
                     counts.sandbox_bypass += 1
+                if is_contract:
+                    counts.capability_contract += 1
                 sev = severity_of(result, secmap)
                 if is_blocking(sev):
                     counts.blocking += 1
@@ -191,6 +260,11 @@ def findings_table(sarif_objs: list[dict], predicate, repo: str, sha: str,
                 if is_sandbox_bypass_rule(rid):
                     if not feature_flags.SANDBOX_BYPASS_DETECTION or exclude_sandbox_bypass:
                         continue
+                if is_capability_contract_rule(rid) and (
+                    not feature_flags.CAPABILITY_CONTRACT_DETECTION
+                    or not contract_result_requires_review(result)
+                ):
+                    continue
                 sev = severity_of(result, secmap)
                 if not predicate(sev):
                     continue
@@ -230,6 +304,30 @@ def sandbox_findings_table(sarif_objs: list[dict], repo: str, sha: str,
     return "\n".join(lines) + "\n"
 
 
+def capability_contract_findings_table(sarif_objs: list[dict], repo: str, sha: str,
+                                       external_prefixes: list[str]) -> str:
+    """Render unsuppressed undeclared-capability findings only."""
+    lines = ["| Rule | Location | Description |", "|------|----------|-------------|"]
+    if not feature_flags.CAPABILITY_CONTRACT_DETECTION:
+        return "\n".join(lines) + "\n"
+    for obj in sarif_objs:
+        for run in obj.get("runs", []):
+            for result in (run.get("results") or []):
+                if is_suppressed(result) or not is_capability_contract_rule(_rule_id(result)):
+                    continue
+                if not contract_result_requires_review(result):
+                    continue
+                uri, line = _location(result)
+                msg = process_message((result.get("message") or {}).get("text"))
+                is_external = any(uri.startswith(p) for p in external_prefixes)
+                if uri != "?" and line != "?" and not is_external:
+                    loc = f"[{uri}:{line}](https://github.com/{repo}/blob/{sha}/{uri}#L{line})"
+                else:
+                    loc = f"{uri}:{line}"
+                lines.append(f"| `{_rule_id(result)}` | {loc} | {msg} |")
+    return "\n".join(lines) + "\n"
+
+
 def suppressed_findings_table(sarif_objs: list[dict], repo: str, sha: str,
                               external_prefixes: list[str]) -> str:
     """Same shape as :func:`findings_table`, but for suppressed results.
@@ -244,6 +342,11 @@ def suppressed_findings_table(sarif_objs: list[dict], repo: str, sha: str,
                     continue
                 rid = _rule_id(result)
                 if is_sandbox_bypass_rule(rid) and not feature_flags.SANDBOX_BYPASS_DETECTION:
+                    continue
+                if is_capability_contract_rule(rid) and (
+                    not feature_flags.CAPABILITY_CONTRACT_DETECTION
+                    or not contract_result_requires_review(result)
+                ):
                     continue
                 uri, line = _location(result)
                 msg = process_message((result.get("message") or {}).get("text"))
@@ -309,7 +412,7 @@ def run(results_dir: str, repo: str, sha: str, matrix: list[str],
     actions.log(
         f"Found {counts.blocking} high/critical, {counts.medium} medium, "
         f"{counts.low} low, {counts.suppressed} suppressed, "
-        f"{counts.sandbox_bypass} sandbox-bypass, and "
+        f"{counts.sandbox_bypass} sandbox-bypass, {counts.capability_contract} capability-contract, and "
         f"{counts.warnings} other CodeQL result(s)"
     )
     actions.set_output("codeql_errors", str(counts.blocking))
@@ -319,6 +422,8 @@ def run(results_dir: str, repo: str, sha: str, matrix: list[str],
     actions.set_output("codeql_suppressed", str(counts.suppressed))
     actions.set_output("codeql_sandbox_bypass", str(counts.sandbox_bypass))
     actions.set_output("codeql_sandbox_bypass_detected", str(counts.sandbox_bypass_detected))
+    actions.set_output("codeql_capability_contract", str(counts.capability_contract))
+    actions.set_output("codeql_capability_contract_detected", str(counts.capability_contract_detected))
 
     if counts.blocking > 0 and results_dir:
         _write("codeql-findings.md",
@@ -335,6 +440,9 @@ def run(results_dir: str, repo: str, sha: str, matrix: list[str],
     if counts.sandbox_bypass > 0:
         _write("codeql-sandbox-findings.md",
                sandbox_findings_table(objs, repo, sha, external_prefixes))
+    if counts.capability_contract > 0:
+        _write("codeql-capability-contract-findings.md",
+               capability_contract_findings_table(objs, repo, sha, external_prefixes))
     if counts.suppressed > 0:
         _write("codeql-suppressed-findings.md",
                suppressed_findings_table(objs, repo, sha, external_prefixes))

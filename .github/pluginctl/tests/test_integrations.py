@@ -18,14 +18,9 @@ def test_automerge_blocks_on_quarantine():
     assert not d.ok and "QUARANTINE" in d.reason
 
 
-def test_automerge_blocks_on_codeql_suppression():
-    d = automerge.evaluate_labels(["Plugin Update", "CodeQL Suppression Used"], "MERGEABLE")
-    assert not d.ok and "CodeQL Suppression Used" in d.reason
-
-
-def test_automerge_blocks_on_sandbox_bypass_detection():
-    d = automerge.evaluate_labels(["Plugin Update", "Sandbox Bypass Detected"], "MERGEABLE")
-    assert not d.ok and "Sandbox Bypass Detected" in d.reason
+def test_automerge_blocks_on_manual_review_requirement():
+    d = automerge.evaluate_labels(["Plugin Update", "Manual Review Required"], "MERGEABLE")
+    assert not d.ok and "Manual Review Required" in d.reason
 
 
 def test_automerge_requires_mergeable():

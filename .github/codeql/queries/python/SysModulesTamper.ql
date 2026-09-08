@@ -13,8 +13,8 @@ import python
 predicate sensitiveModuleName(Expr expression) {
   exists(StringLiteral literal |
     expression = literal and
-    literal.getText() in ["subprocess", "socket", "os", "urllib.request", "requests",
-      "apps.plugins", "apps.plugins.sandbox"]
+    literal.getText() in ["subprocess", "socket", "urllib.request", "requests",
+      "apps.plugins", "apps.plugins.sandbox", "apps.plugins.context"]
   )
 }
 
@@ -42,4 +42,4 @@ where
     sensitiveModuleName(call.getArg(0)) and
     result = call
   )
-select result, "Changing this sys.modules entry can bypass sandbox-wrapped imports."
+select result, "Changing this sys.modules entry can bypass Dispatcharr's plugin import wrappers."

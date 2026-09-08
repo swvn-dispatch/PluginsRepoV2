@@ -17,8 +17,7 @@ from dataclasses import dataclass
 from ..core import actions, gh
 from ..core.git import run as _git
 
-BLOCKING_LABELS = ("New Plugin", "Repo Update", "Invalid", "QUARANTINE", "CodeQL Suppression Used",
-                   "Sandbox Bypass Detected")
+BLOCKING_LABELS = ("New Plugin", "Repo Update", "Invalid", "QUARANTINE", "Manual Review Required")
 
 
 @dataclass

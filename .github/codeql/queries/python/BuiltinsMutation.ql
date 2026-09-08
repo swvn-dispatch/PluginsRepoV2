@@ -1,6 +1,6 @@
 /**
  * @name Plugin mutation of builtins
- * @description Mutating builtins can alter import and identity behavior outside a plugin sandbox.
+ * @description Mutating the plugin's builtins mapping can replace its guarded import or open hooks.
  * @kind problem
  * @problem.severity warning
  * @precision high
@@ -31,4 +31,4 @@ where
     builtinsObject(call.getArg(0)) and
     result = call
   )
-select result, "Mutating __builtins__ can bypass a Python-level plugin sandbox."
+select result, "Mutating __builtins__ can replace Dispatcharr's plugin-local guarded import or open hooks."

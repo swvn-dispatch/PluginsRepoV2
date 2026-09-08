@@ -1,38 +1,51 @@
 # Plugin Security Checks
 
 Plugin source is checked before merge in two layers. This repository runs static
-analysis while the Dispatcharr application enforces runtime plugin sandboxing.
-Neither layer is a proof that a plugin is safe, but together they give reviewers
-useful signals before distribution.
+analysis while Dispatcharr applies capability checks at runtime for
+`manifest_version` 2 and later. Neither layer is a security boundary: plugins
+share Dispatcharr's Python interpreter, and the runtime wrappers are defense in
+depth.
 
-## Sandbox-bypass queries
+## Capability Contract Queries
 
-The Python CodeQL pack detects shapes associated with attempts to bypass a
-Python-level plugin sandbox:
+The Python CodeQL pack reports direct use of selected guarded APIs when the
+scanned runtime manifest is enforcing and omits the matching capability:
+
+| Rule | Detection |
+|---|---|
+| `subprocess` | `subprocess` process-launch APIs without `subprocess` |
+| `network-listener` | Socket bind/listen calls without `network_listener` |
+| `outbound-network` | Selected HTTP or socket connection calls without `outbound_network` |
+
+`pluginctl.capabilities` mirrors Dispatcharr's capability and manifest-version
+policy. Versions 0 and 1 do not produce contract findings. Future manifest
+versions use the latest known policy, as Dispatcharr does. Unknown future
+capabilities remain valid declarations. For external plugins, the scan saves the
+release manifest separately from catalog metadata. A catalog `plugin.json`
+without a `manifest_version` is not treated as a runtime manifest.
+
+## Sandbox Bypass Queries
+
+The pack separately detects concrete attempts to undermine the current
+plugin-local builtins and import wrappers:
 
 | Rule | Detection |
 |---|---|
 | `sys-modules-tamper` | Replacement of sensitive `sys.modules` entries |
 | `ctypes-usage` | Native-code access through `ctypes` |
 | `builtins-mutation` | Mutation of `__builtins__` |
-| `subclass-gadget-exact` | Subclass enumeration escape primitives |
-| `subclass-gadget-broad` | Broad introspection access to subclasses, globals, or MRO |
-| `frame-globals-write` | Writes through frame globals or locals |
-| `obfuscated-dynamic-resolution` | Dynamic code evaluation |
 
-The feature is shipped disabled while its query behavior is reviewed. Its single
-hardcoded switch is `pluginctl.feature_flags.SANDBOX_BYPASS_DETECTION`. When a
-maintainer enables it, all of these rules remain informational. They do not
-create a high or critical CodeQL result and do not fail the required validation
-check.
+The broad frame, introspection, and dynamic-evaluation heuristics from the
+earlier query pack were removed because they do not model Dispatcharr's current
+`ContextVar` and plugin-local builtins design.
 
-An enabled finding applies the `Sandbox Bypass Detected` label and blocks only
-automatic merging. A maintainer must review the finding before manually merging
-the PR. Removing the detected code removes the label on the next validation run.
+Both query families are informational to required validation. A contract finding,
+bypass finding, or CodeQL suppression applies `Manual Review Required`, which
+blocks automatic merging until a maintainer reviews the PR. Removing the detected
+code clears the label on the next validation run.
 
 ## Suppressions
 
 Use an inline `codeql[rule-id]` suppression only for a justified exception. A
-suppressed sandbox result still applies `Sandbox Bypass Detected`, and the
-existing `CodeQL Suppression Used` label also blocks automatic merge. Both labels
-require maintainer review.
+suppressed result still applies `Manual Review Required` and blocks automatic
+merge.

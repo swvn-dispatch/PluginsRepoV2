@@ -1,5 +1,5 @@
 name: dispatcharr/plugin-sandbox-bypass-query-tests
 dependencies:
-  dispatcharr/plugin-sandbox-bypass-queries: "*"
+  dispatcharr/plugin-capability-security-queries: "*"
 extractor: python
 tests: .

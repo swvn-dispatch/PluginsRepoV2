@@ -1,3 +1,4 @@
+import json
 import os
 
 from pluginctl.validate import sarif
@@ -22,17 +23,17 @@ def test_classify_buckets():
     counts = sarif.classify(_load())
     assert counts.blocking == 1
     assert counts.medium == 1
-    assert counts.low == 2
-    assert counts.suppressed == 1
-    assert counts.total == 5
-    assert counts.warnings == 4
+    assert counts.low == 3
+    assert counts.suppressed == 2
+    assert counts.total == 7
+    assert counts.warnings == 6
 
 
-def test_sandbox_bypass_is_dormant_by_default():
+def test_sandbox_bypass_is_review_gated_by_default():
     counts = sarif.classify(_load())
-    assert counts.sandbox_bypass == 0
-    assert counts.sandbox_bypass_detected == 0
-    assert counts.total == 5
+    assert counts.sandbox_bypass == 1
+    assert counts.sandbox_bypass_detected == 2
+    assert counts.total == 7
 
 
 def test_sandbox_bypass_is_informational_when_enabled(monkeypatch):
@@ -50,7 +51,7 @@ def test_sandbox_bypass_is_informational_when_enabled(monkeypatch):
 def test_missing_severity_defaults_to_low():
     counts = sarif.classify(_load())
     # py/unused-import has no security-severity -> 0 -> low bucket
-    assert counts.low == 2
+    assert counts.low == 3
 
 
 def test_process_message_strips_markdown_link_and_brackets():
@@ -120,6 +121,77 @@ def test_generic_low_table_excludes_enabled_sandbox_findings(monkeypatch):
     table = sarif.findings_table(_load(), sarif.is_low, "org/repo", "abc123", [],
                                  exclude_sandbox_bypass=True)
     assert "plugin/sandbox-bypass" not in table
+
+
+def test_capability_contract_requires_an_enforcing_manifest(tmp_path, monkeypatch):
+    plugin_dir = tmp_path / "plugins" / "demo"
+    plugin_dir.mkdir(parents=True)
+    (plugin_dir / "plugin.json").write_text(json.dumps({
+        "manifest_version": 2,
+        "capabilities": [],
+    }), encoding="utf-8")
+    monkeypatch.chdir(tmp_path)
+    result = {
+        "ruleId": "plugin/capability-contract/subprocess",
+        "locations": [{"physicalLocation": {"artifactLocation": {"uri": "plugins/demo/plugin.py"},
+                                               "region": {"startLine": 1}}}],
+    }
+    assert sarif.contract_result_requires_review(result)
+    assert sarif.classify([{"runs": [{"results": [result]}]}]).capability_contract == 1
+
+
+def test_capability_contract_accepts_declared_or_legacy_manifests(tmp_path, monkeypatch):
+    plugin_dir = tmp_path / "plugins" / "demo"
+    plugin_dir.mkdir(parents=True)
+    result = {
+        "ruleId": "plugin/capability-contract/subprocess",
+        "locations": [{"physicalLocation": {"artifactLocation": {"uri": "plugins/demo/plugin.py"},
+                                               "region": {"startLine": 1}}}],
+    }
+    monkeypatch.chdir(tmp_path)
+    (plugin_dir / "plugin.json").write_text(json.dumps({
+        "manifest_version": 2,
+        "capabilities": ["subprocess"],
+    }), encoding="utf-8")
+    assert not sarif.contract_result_requires_review(result)
+    (plugin_dir / "plugin.json").write_text(json.dumps({"manifest_version": 1}), encoding="utf-8")
+    assert not sarif.contract_result_requires_review(result)
+
+
+def test_local_plugin_cannot_override_its_manifest_with_an_external_sidecar(tmp_path, monkeypatch):
+    plugin_dir = tmp_path / "plugins" / "demo"
+    plugin_dir.mkdir(parents=True)
+    result = {
+        "ruleId": "plugin/capability-contract/subprocess",
+        "locations": [{"physicalLocation": {"artifactLocation": {"uri": "plugins/demo/plugin.py"},
+                                               "region": {"startLine": 1}}}],
+    }
+    (plugin_dir / "plugin.json").write_text(json.dumps({
+        "manifest_version": 2,
+        "capabilities": [],
+    }), encoding="utf-8")
+    (plugin_dir / ".dispatcharr-runtime-manifest.json").write_text(
+        json.dumps({"manifest_version": 1}), encoding="utf-8"
+    )
+    monkeypatch.chdir(tmp_path)
+    assert sarif.contract_result_requires_review(result)
+
+
+def test_external_plugin_uses_the_release_manifest_sidecar(tmp_path, monkeypatch):
+    plugin_dir = tmp_path / "plugins" / "demo"
+    plugin_dir.mkdir(parents=True)
+    result = {
+        "ruleId": "plugin/capability-contract/subprocess",
+        "locations": [{"physicalLocation": {"artifactLocation": {"uri": "plugins/demo/plugin.py"},
+                                               "region": {"startLine": 1}}}],
+    }
+    (plugin_dir / "plugin.json").write_text(json.dumps({"source_type": "external"}), encoding="utf-8")
+    (plugin_dir / ".dispatcharr-runtime-manifest.json").write_text(json.dumps({
+        "manifest_version": 2,
+        "capabilities": [],
+    }), encoding="utf-8")
+    monkeypatch.chdir(tmp_path)
+    assert sarif.contract_result_requires_review(result)
 
 
 def test_compute_status():

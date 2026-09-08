@@ -1,6 +1,6 @@
 /**
  * @name Plugin use of ctypes
- * @description Native ctypes access can bypass Python-level plugin sandboxing.
+ * @description Native ctypes access can execute outside Dispatcharr's plugin-local wrappers.
  * @kind problem
  * @problem.severity warning
  * @precision high
@@ -12,4 +12,4 @@ import python
 
 from Import imp
 where imp.getAnImportedModuleName() = "ctypes"
-select imp, "ctypes can load native code outside the plugin sandbox."
+select imp, "ctypes can load native code outside Dispatcharr's plugin capability wrappers."

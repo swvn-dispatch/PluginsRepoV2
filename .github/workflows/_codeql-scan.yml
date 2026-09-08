@@ -36,6 +36,10 @@ on:
         value: ${{ jobs.analyze.outputs.codeql_sandbox_bypass }}
       codeql_sandbox_bypass_detected:
         value: ${{ jobs.analyze.outputs.codeql_sandbox_bypass_detected }}
+      codeql_capability_contract:
+        value: ${{ jobs.analyze.outputs.codeql_capability_contract }}
+      codeql_capability_contract_detected:
+        value: ${{ jobs.analyze.outputs.codeql_capability_contract_detected }}
 
 permissions:
   contents: read
@@ -60,6 +64,8 @@ jobs:
       codeql_suppressed: ${{ steps.status.outputs.codeql_suppressed }}
       codeql_sandbox_bypass: ${{ steps.status.outputs.codeql_sandbox_bypass }}
       codeql_sandbox_bypass_detected: ${{ steps.status.outputs.codeql_sandbox_bypass_detected }}
+      codeql_capability_contract: ${{ steps.status.outputs.codeql_capability_contract }}
+      codeql_capability_contract_detected: ${{ steps.status.outputs.codeql_capability_contract_detected }}
     steps:
       - name: Checkout PR merge commit for analysis
         uses: actions/checkout@v6
@@ -100,6 +106,11 @@ jobs:
             curl -fsSL "$source_url" -o "/tmp/${plugin_name}-release.zip"
             mkdir -p "/tmp/${plugin_name}-src"
             python3 -c "import zipfile,os; z=zipfile.ZipFile('/tmp/${plugin_name}-release.zip'); d='/tmp/${plugin_name}-src'; [z.extract((setattr(m,'filename',m.filename.replace(chr(92),'/')) or m),d) for m in z.infolist()]"
+            # Keep the release's runtime manifest separate from this repository's
+            # catalog plugin.json, which must not be used as capability policy.
+            if [[ -f "/tmp/${plugin_name}-src/plugin.json" ]]; then
+              cp "/tmp/${plugin_name}-src/plugin.json" "plugins/$plugin_name/.dispatcharr-runtime-manifest.json"
+            fi
             cp -rn "/tmp/${plugin_name}-src/." "plugins/$plugin_name/"
             rm -rf "/tmp/${plugin_name}-release.zip" "/tmp/${plugin_name}-src"
           done < <(echo '${{ inputs.matrix }}' | jq -r '.[]')
@@ -186,7 +197,15 @@ jobs:
           path: codeql-sandbox-findings.md
           if-no-files-found: ignore
 
-      - name: Apply/clear CodeQL suppression label
+      - name: Upload capability-contract findings detail for PR comment
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: codeql-capability-contract-findings
+          path: codeql-capability-contract-findings.md
+          if-no-files-found: ignore
+
+      - name: Apply/clear manual review label
         # Purely informational for auto-merge gating (see automerge.py's
         # BLOCKING_LABELS) - never fails the job, so a maintainer can still
         # merge by hand after reviewing.
@@ -195,43 +214,27 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           GITHUB_REPOSITORY: ${{ github.repository }}
           SUPPRESSED_COUNT: ${{ steps.status.outputs.codeql_suppressed }}
-          PR_NUMBER: ${{ inputs.pr_number }}
-        run: |
-          gh label create "CodeQL Suppression Used" \
-            --color "FBCA04" \
-            --description "PR relies on an inline CodeQL suppression comment - requires maintainer review" \
-            --repo "$GITHUB_REPOSITORY" 2>/dev/null || true
-          if [[ "${SUPPRESSED_COUNT:-0}" -gt 0 ]]; then
-            gh pr edit "$PR_NUMBER" \
-              --add-label "CodeQL Suppression Used" \
-              --repo "$GITHUB_REPOSITORY"
-          else
-            gh pr edit "$PR_NUMBER" \
-              --remove-label "CodeQL Suppression Used" \
-              --repo "$GITHUB_REPOSITORY" 2>/dev/null || true
-          fi
-
-      - name: Apply/clear sandbox bypass label
-        if: always()
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GITHUB_REPOSITORY: ${{ github.repository }}
           SANDBOX_BYPASS_COUNT: ${{ steps.status.outputs.codeql_sandbox_bypass_detected }}
+          CAPABILITY_CONTRACT_COUNT: ${{ steps.status.outputs.codeql_capability_contract_detected }}
           PR_NUMBER: ${{ inputs.pr_number }}
         run: |
-          gh label create "Sandbox Bypass Detected" \
+          gh label create "Manual Review Required" \
             --color "FBCA04" \
-            --description "Plugin sandbox-bypass finding requires maintainer review" \
+            --description "CodeQL security findings or suppressions require maintainer review" \
             --repo "$GITHUB_REPOSITORY" 2>/dev/null || true
-          if [[ "${SANDBOX_BYPASS_COUNT:-0}" -gt 0 ]]; then
+          review_count=$(( ${SUPPRESSED_COUNT:-0} + ${SANDBOX_BYPASS_COUNT:-0} + ${CAPABILITY_CONTRACT_COUNT:-0} ))
+          if [[ "$review_count" -gt 0 ]]; then
             gh pr edit "$PR_NUMBER" \
-              --add-label "Sandbox Bypass Detected" \
+              --add-label "Manual Review Required" \
               --repo "$GITHUB_REPOSITORY"
           else
             gh pr edit "$PR_NUMBER" \
-              --remove-label "Sandbox Bypass Detected" \
+              --remove-label "Manual Review Required" \
               --repo "$GITHUB_REPOSITORY" 2>/dev/null || true
           fi
+          for label in "CodeQL Suppression Used" "Sandbox Bypass Detected" "Capability Contract Review Required"; do
+            gh pr edit "$PR_NUMBER" --remove-label "$label" --repo "$GITHUB_REPOSITORY" 2>/dev/null || true
+          done
 
       - name: Fail job if CodeQL found high/error/critical issues
         if: always() && steps.status.outputs.codeql_status == 'failure'
