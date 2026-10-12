@@ -1,12 +1,11 @@
 {
-  "generated_at": "2026-08-22T23:41:43Z",
+  "generated_at": "2026-10-12T23:49:14Z",
   "manifest": {
     "slug": "youtubearr",
     "name": "YouTubearr",
     "description": "Zero-dependency YouTube livestream plugin with automatic monitoring and configurable numbering",
     "author": "jeff-gooch",
     "license": "Unlicense",
-    "ai_assisted": true,
     "repo_url": "https://github.com/jeff-gooch/youtubearr",
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",

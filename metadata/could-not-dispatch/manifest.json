@@ -1,12 +1,11 @@
 {
-  "generated_at": "2026-08-22T23:41:43Z",
+  "generated_at": "2026-10-12T23:49:14Z",
   "manifest": {
     "slug": "could-not-dispatch",
     "name": "Could Not Dispatch",
     "description": "Plays a looping image or video when every real stream on a channel has failed, so viewers see a message instead of a black screen.",
     "author": "PilaScat",
     "license": "MIT",
-    "ai_assisted": true,
     "source_type": "external",
     "source_url": "https://github.com/PilaScat/could-not-dispatch/releases/download/v{version}/could-not-dispatch-{version}.zip",
     "repo_url": "https://github.com/PilaScat/could-not-dispatch",
