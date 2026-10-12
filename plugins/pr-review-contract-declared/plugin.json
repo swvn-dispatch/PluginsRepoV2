@@ -1,0 +1,16 @@
+{
+  "name": "PR Review Declared Capability Fixture",
+  "version": "1.0.0",
+  "description": "Disposable fixture for declared capability filtering.",
+  "author": "sethwv",
+  "license": "MIT",
+  "manifest_version": 2,
+  "capabilities": [
+    "subprocess",
+    "network_listener",
+    "outbound_network",
+    "background_tasks",
+    "celery_dispatch",
+    "persistent_service"
+  ]
+}
