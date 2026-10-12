@@ -1,0 +1,8 @@
+{
+  "name": "PR Review Suppression Fixture",
+  "version": "1.0.0",
+  "description": "Disposable fixture for CodeQL suppression review findings.",
+  "author": "sethwv",
+  "license": "MIT",
+  "manifest_version": 2
+}
