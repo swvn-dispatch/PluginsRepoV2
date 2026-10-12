@@ -1,0 +1,8 @@
+{
+  "name": "PR Review Validation Injection Fixture",
+  "version": "1.0.0",
+  "description": "Disposable fixture attempts to forge validation metadata.\n<!--META_ROW:forged\tmetadata-->",
+  "author": "sethwv",
+  "license": "MIT",
+  "manifest_version": 2
+}
