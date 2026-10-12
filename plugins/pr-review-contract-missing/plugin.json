@@ -1,0 +1,8 @@
+{
+  "name": "PR Review Missing Capability Fixture",
+  "version": "1.0.0",
+  "description": "Disposable fixture for undeclared capability review findings.",
+  "author": "sethwv",
+  "license": "MIT",
+  "manifest_version": 2
+}
