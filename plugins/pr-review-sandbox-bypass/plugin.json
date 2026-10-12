@@ -1,0 +1,8 @@
+{
+  "name": "PR Review Sandbox Bypass Fixture",
+  "version": "1.0.0",
+  "description": "Disposable fixture for sandbox-bypass review findings.",
+  "author": "sethwv",
+  "license": "MIT",
+  "manifest_version": 2
+}
