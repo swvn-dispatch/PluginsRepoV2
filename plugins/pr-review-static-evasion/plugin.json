@@ -1,0 +1,8 @@
+{
+  "name": "PR Review Static Evasion Fixture",
+  "version": "1.0.0",
+  "description": "Disposable fixture demonstrating a static-analysis blind spot.",
+  "author": "sethwv",
+  "license": "MIT",
+  "manifest_version": 2
+}
