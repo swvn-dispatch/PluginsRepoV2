@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T23:49:14Z",
+  "generated_at": "2026-10-15T17:17:19Z",
   "manifest": {
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
@@ -56,11 +56,11 @@
         "manifest_url": "https://raw.githubusercontent.com/swvn-dispatch/PluginsRepoV2/releases/metadata/dispatcharr-exporter/manifest.json",
         "author": "sethwv",
         "license": "MIT",
-        "last_updated": "2026-07-18T13:29:39-04:00",
-        "latest_version": "3.1.0",
-        "latest_md5": "161cbd3b64276d748fc77c344da1be33",
-        "latest_sha256": "fde6c9d7196717c2efd13ba99545179aa4276cea152c201a24ee50a35d1e3db5",
-        "latest_url": "dispatcharr-exporter-3.1.0/dispatcharr-exporter-3.1.0.zip",
+        "last_updated": "2026-10-14T15:51:35-04:00",
+        "latest_version": "3.1.1",
+        "latest_md5": "612c99923f0a980396166ae92b58191a",
+        "latest_sha256": "ad554e863f7b776f4acf07f619375661bdd493728a673eb4902e51d917db79d8",
+        "latest_url": "dispatcharr-exporter-3.1.1/dispatcharr-exporter-3.1.1.zip",
         "latest_size": 143,
         "min_dispatcharr_version": "v0.22.0"
       },

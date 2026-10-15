@@ -14,7 +14,7 @@ This branch contains all published plugin releases.
 | [`Channel Mapparr`](#channel-mapparr) | `1.26.2291823` | PiratesIRC | MIT | Standardizes broadcast (OTA) and premium/cable channel names using network data and channel lists. Supports M3U stream import, category organization, and fuzzy matching across 42K+ channels in 11 countries. |
 | [`Clapparr`](#clapparr) | `1.3.0` | v8eta | MIT | The metadata slate for your DVR: writes Kodi/Plex NFO sidecars, posters and episode thumbnails so recordings present with real titles, summaries and artwork instead of 'Episode 08-18'. |
 | [`Could Not Dispatch`](#could-not-dispatch) | `0.1.0` | PilaScat | MIT | Plays a looping image or video when every real stream on a channel has failed, so viewers see a message instead of a black screen. |
-| [`Dispatcharr Exporter`](#dispatcharr-exporter) | `3.1.0` | sethwv | MIT | Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitoring |
+| [`Dispatcharr Exporter`](#dispatcharr-exporter) | `3.1.1` | sethwv | MIT | Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitoring |
 | [`Ranked Matchups (Top Games)`](#ranked-matchups-top-games-) | `1.20.0` | Jacob-Lasky | MIT | Never miss a good game. Scores every upcoming game across 37 leagues, tours and competitions (20 of them soccer, plus NFL, NBA, MLB, NHL, NCAA, UFC, boxing, tennis, golf and motorsport), then builds a Top Matchups group holding only the ones worth watching and shows why each game ranked where it did in its EPG description. |
 | [`Dispatchwrapparr`](#dispatchwrapparr) | `1.7.6` | jordandalley | MIT | An intelligent DRM/Clearkey capable stream profile for Dispatcharr |
 | [`EPG Janitor`](#epg-janitor) | `1.26.2281111` | PiratesIRC | MIT | Scans for channels with EPG assignments but no program data. Auto-matches EPG to channels using intelligent fuzzy matching with aliases, removes EPG from hidden channels, and manages EPG assignments. |
@@ -95,7 +95,7 @@ Plays a looping image or video when every real stream on a channel has failed, s
 
 ### [Dispatcharr Exporter](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/dispatcharr-exporter/README.md)
 
-**Version:** `3.1.0` | **Author:** sethwv | **Last Updated:** Jul 18 2026, 17:29 UTC
+**Version:** `3.1.1` | **Author:** sethwv | **Last Updated:** Oct 14 2026, 19:51 UTC
 
 Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitoring
 
@@ -104,10 +104,10 @@ Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitori
 ![Dispatcharr min](https://img.shields.io/badge/Dispatcharr_min-v0.22.0-brightgreen?style=flat-square)
 
 **Downloads:**
-- [Latest Release (`3.1.0`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/dispatcharr-exporter-3.1.0/dispatcharr-exporter-3.1.0.zip)
-- [All Versions (1 available)](./metadata/dispatcharr-exporter)
+- [Latest Release (`3.1.1`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/dispatcharr-exporter-3.1.1/dispatcharr-exporter-3.1.1.zip)
+- [All Versions (2 available)](./metadata/dispatcharr-exporter)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/dispatcharr-exporter) | **Last Change:** [`ddffa49`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/ddffa49420c5dd513a9a7876998a72ce295e2242)
+**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/dispatcharr-exporter) | **Last Change:** [`77dc40f`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/77dc40fed4e07ec43cb92127fe55ff2e6059cd29)
 
 ---
 
@@ -493,4 +493,4 @@ curl https://raw.githubusercontent.com/swvn-dispatch/PluginsRepoV2/releases/mani
 
 ---
 
-*Last updated: Oct 12 2026, 23:49 UTC*
+*Last updated: Oct 15 2026, 17:17 UTC*
