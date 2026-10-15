@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T17:23:09Z",
+  "generated_at": "2026-10-15T17:28:54Z",
   "manifest": {
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
@@ -188,11 +188,11 @@
         "manifest_url": "https://raw.githubusercontent.com/swvn-dispatch/PluginsRepoV2/releases/metadata/multiview/manifest.json",
         "author": "sethwv",
         "license": "MIT",
-        "last_updated": "2026-10-15T13:22:43-04:00",
-        "latest_version": "0.4.3",
-        "latest_md5": "8fa62bc968834113a79d99a380319ad3",
-        "latest_sha256": "8a3f49ee75feeda02c389159f5c74155560d9426a33bb0701f0833cd5206cdfc",
-        "latest_url": "multiview-0.4.3/multiview-0.4.3.zip",
+        "last_updated": "2026-10-15T13:28:27-04:00",
+        "latest_version": "0.4.4",
+        "latest_md5": "eccf3379066c00d91560f0dc30679ce6",
+        "latest_sha256": "5f58e2b1350021c3b9b027b9e27f4d3e37dedc7356de911472f3f490dc2c2358",
+        "latest_url": "multiview-0.4.4/multiview-0.4.4.zip",
         "latest_size": 360,
         "min_dispatcharr_version": "v0.27.0"
       },
