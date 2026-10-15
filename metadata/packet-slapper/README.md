@@ -2,7 +2,7 @@
 
 # Packet Slapper
 
-**Version:** `1.0.3` | **Author:** write-erase | **Last Updated:** Oct 06 2026, 22:16 UTC
+**Version:** `1.0.4` | **Author:** write-erase | **Last Updated:** Oct 15 2026, 21:43 UTC
 
 Runs scheduled or on-demand Ookla Speedtests through Dispatcharr to measure speed and latency.
 
@@ -12,20 +12,21 @@ Runs scheduled or on-demand Ookla Speedtests through Dispatcharr to measure spee
 
 ### Latest Release
 
-- **Download:** [`packet-slapper-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/packet-slapper-1.0.3/packet-slapper-1.0.3.zip)
-- **Built:** Oct 15 2026, 20:24 UTC
-- **Source Commit:** [`c2d4441`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/c2d44413106619a95d620c87d0067b29109872da)
+- **Download:** [`packet-slapper-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/packet-slapper-1.0.4/packet-slapper-1.0.4.zip)
+- **Built:** Oct 15 2026, 21:56 UTC
+- **Source Commit:** [`172f4b4`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/172f4b44d3b7063dca5a8fc1ccb005be67ab2611)
 
 **Checksums:**
 ```
-MD5:    b5fdaa795b88e3d30ea2c22321925a27
-SHA256: de7c7a3a00b951bc5055974a5b002946d5f8e4a8569441cfd1c324f65360679b
+MD5:    2be84dbd3f27df76bf6a281d423891ac
+SHA256: dae9f339c9b4ef100e8e1996921a8d89fe9de5078ad05cca466a2254f9b25c9a
 ```
 
 ### All Versions
 
 | Version | Download | Built | Commit | MD5 | SHA256 |
 |---------|----------|-------|--------|-----|--------|
+| `1.0.4` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/packet-slapper-1.0.4/packet-slapper-1.0.4.zip) | Oct 15 2026, 21:56 UTC | [`172f4b4`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/172f4b44d3b7063dca5a8fc1ccb005be67ab2611) | 2be84dbd3f27df76bf6a281d423891ac | dae9f339c9b4ef100e8e1996921a8d89fe9de5078ad05cca466a2254f9b25c9a |
 | `1.0.3` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/packet-slapper-1.0.3/packet-slapper-1.0.3.zip) | Oct 15 2026, 20:24 UTC | [`c2d4441`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/c2d44413106619a95d620c87d0067b29109872da) | b5fdaa795b88e3d30ea2c22321925a27 | de7c7a3a00b951bc5055974a5b002946d5f8e4a8569441cfd1c324f65360679b |
 
 ---
