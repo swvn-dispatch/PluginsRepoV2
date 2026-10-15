@@ -2,7 +2,7 @@
 
 # Multiview
 
-**Version:** `0.4.2` | **Author:** sethwv | **Last Updated:** Jul 21 2026, 17:30 UTC
+**Version:** `0.4.3` | **Author:** sethwv | **Last Updated:** Oct 15 2026, 17:22 UTC
 
 Tile multiple Dispatcharr channel streams into multi-view outputs using FFmpeg
 
@@ -14,20 +14,21 @@ Tile multiple Dispatcharr channel streams into multi-view outputs using FFmpeg
 
 ### Latest Release
 
-- **Download:** [`multiview-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/multiview-0.4.2/multiview-0.4.2.zip)
-- **Built:** Jul 21 2026, 17:42 UTC
-- **Source Commit:** [`38f5f73`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/38f5f73656df833e60dd9759c230cd957c6b1157)
+- **Download:** [`multiview-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/multiview-0.4.3/multiview-0.4.3.zip)
+- **Built:** Oct 15 2026, 17:23 UTC
+- **Source Commit:** [`66b9189`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/66b91893d91d53631d32dd4ce1bcbeb5a39c365f)
 
 **Checksums:**
 ```
-MD5:    ddd5fe5d819f73b325e0703d53753b01
-SHA256: b3e966171daaae2f87d1c2aa035694369389328e2a80434ed1477e1257e7cd9d
+MD5:    8fa62bc968834113a79d99a380319ad3
+SHA256: 8a3f49ee75feeda02c389159f5c74155560d9426a33bb0701f0833cd5206cdfc
 ```
 
 ### All Versions
 
 | Version | Download | Built | Commit | MD5 | SHA256 |
 |---------|----------|-------|--------|-----|--------|
+| `0.4.3` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/multiview-0.4.3/multiview-0.4.3.zip) | Oct 15 2026, 17:23 UTC | [`66b9189`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/66b91893d91d53631d32dd4ce1bcbeb5a39c365f) | 8fa62bc968834113a79d99a380319ad3 | 8a3f49ee75feeda02c389159f5c74155560d9426a33bb0701f0833cd5206cdfc |
 | `0.4.2` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/multiview-0.4.2/multiview-0.4.2.zip) | Jul 21 2026, 17:42 UTC | [`38f5f73`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/38f5f73656df833e60dd9759c230cd957c6b1157) | ddd5fe5d819f73b325e0703d53753b01 | b3e966171daaae2f87d1c2aa035694369389328e2a80434ed1477e1257e7cd9d |
 
 ---
