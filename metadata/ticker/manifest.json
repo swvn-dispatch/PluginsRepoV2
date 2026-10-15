@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-10-15T20:25:17Z",
+  "manifest": {
+    "slug": "ticker",
+    "name": "Ticker",
+    "description": "Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports Ticker, Custom Text, EAS/JAS Weather Alerts",
+    "author": "jstevenscl",
+    "license": "MIT",
+    "source_type": "external",
+    "source_url": "https://github.com/jstevenscl/ticker/releases/download/v{version}/ticker-{version}.zip",
+    "repo_url": "https://github.com/jstevenscl/ticker",
+    "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
+    "registry_name": "swvn-dispatch/PluginsRepoV2",
+    "last_updated": "2026-10-13T03:29:41Z",
+    "latest": {
+      "version": "0.5.04",
+      "commit_sha": "12e6ac1b921157e685777e5816a77a4959088aac",
+      "commit_sha_short": "12e6ac1",
+      "build_timestamp": "2026-10-15T20:24:35Z",
+      "last_updated": "2026-10-13T03:29:41Z",
+      "checksum_md5": "1eee1c0cec68a26ac8ea5d4605641706",
+      "checksum_sha256": "e005dfb1192b50bdb3839e155bba068617c96ab9ba2f5d8e90abdd245e69826e",
+      "source_url": "https://github.com/jstevenscl/ticker/releases/download/v0.5.04/ticker-0.5.04.zip",
+      "latest_url": "ticker-0.5.04/ticker-0.5.04.zip",
+      "url": "ticker-0.5.04/ticker-0.5.04.zip",
+      "size": 2142
+    },
+    "versions": [
+      {
+        "version": "0.5.04",
+        "commit_sha": "12e6ac1b921157e685777e5816a77a4959088aac",
+        "commit_sha_short": "12e6ac1",
+        "build_timestamp": "2026-10-15T20:24:35Z",
+        "last_updated": "2026-10-13T03:29:41Z",
+        "checksum_md5": "1eee1c0cec68a26ac8ea5d4605641706",
+        "checksum_sha256": "e005dfb1192b50bdb3839e155bba068617c96ab9ba2f5d8e90abdd245e69826e",
+        "source_url": "https://github.com/jstevenscl/ticker/releases/download/v0.5.04/ticker-0.5.04.zip",
+        "url": "ticker-0.5.04/ticker-0.5.04.zip",
+        "size": 2142
+      }
+    ]
+  }
+}

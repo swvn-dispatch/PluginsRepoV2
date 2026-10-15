@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-10-15T20:25:17Z",
+  "manifest": {
+    "slug": "underfed",
+    "name": "Underfed",
+    "description": "Moves a channel off a source that is starving it, drifting its sound or refusing it: to the next source when the stream arrives at a fraction of its bitrate or with its timestamps apart, to the back of the chain when the provider answers 403.",
+    "author": "PilaScat",
+    "license": "MIT",
+    "source_type": "external",
+    "source_url": "https://github.com/PilaScat/underfed/releases/download/v{version}/underfed-{version}.zip",
+    "repo_url": "https://github.com/PilaScat/underfed",
+    "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
+    "registry_name": "swvn-dispatch/PluginsRepoV2",
+    "last_updated": "2026-10-12T14:28:08Z",
+    "latest": {
+      "version": "0.8.0",
+      "commit_sha": "7caef90467b4318d946777387b150999cc4f35f5",
+      "commit_sha_short": "7caef90",
+      "build_timestamp": "2026-10-15T20:24:40Z",
+      "last_updated": "2026-10-12T14:28:08Z",
+      "checksum_md5": "d5732d4b73981a1acb5732432c92816e",
+      "checksum_sha256": "d77ddf45dd5b3a5a8659e771c034f02e11fcd4ba17a8b5a5ac50d46de25af912",
+      "source_url": "https://github.com/PilaScat/underfed/releases/download/v0.8.0/underfed-0.8.0.zip",
+      "latest_url": "underfed-0.8.0/underfed-0.8.0.zip",
+      "url": "underfed-0.8.0/underfed-0.8.0.zip",
+      "size": 53
+    },
+    "versions": [
+      {
+        "version": "0.8.0",
+        "commit_sha": "7caef90467b4318d946777387b150999cc4f35f5",
+        "commit_sha_short": "7caef90",
+        "build_timestamp": "2026-10-15T20:24:40Z",
+        "last_updated": "2026-10-12T14:28:08Z",
+        "checksum_md5": "d5732d4b73981a1acb5732432c92816e",
+        "checksum_sha256": "d77ddf45dd5b3a5a8659e771c034f02e11fcd4ba17a8b5a5ac50d46de25af912",
+        "source_url": "https://github.com/PilaScat/underfed/releases/download/v0.8.0/underfed-0.8.0.zip",
+        "url": "underfed-0.8.0/underfed-0.8.0.zip",
+        "size": 53
+      }
+    ]
+  }
+}

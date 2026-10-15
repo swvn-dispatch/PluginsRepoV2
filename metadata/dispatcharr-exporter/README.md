@@ -2,7 +2,7 @@
 
 # Dispatcharr Exporter
 
-**Version:** `3.1.1` | **Author:** sethwv | **Last Updated:** Oct 14 2026, 19:51 UTC
+**Version:** `3.1.0` | **Author:** sethwv | **Last Updated:** Jul 18 2026, 17:29 UTC
 
 Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitoring
 

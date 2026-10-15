@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T17:28:54Z",
+  "generated_at": "2026-10-15T20:25:17Z",
   "manifest": {
     "slug": "multiview",
     "name": "Multiview",
@@ -10,21 +10,33 @@
     "discord_thread": "https://discord.com/channels/1340492560220684331/1509200002407465001",
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
-    "last_updated": "2026-10-15T13:28:27-04:00",
+    "last_updated": "2026-10-15T19:58:49Z",
     "latest": {
-      "version": "0.4.4",
-      "commit_sha": "a8c727ef573d1e90bc05bbaf73d1b127e9fc792b",
-      "commit_sha_short": "a8c727e",
-      "build_timestamp": "2026-10-15T17:28:46Z",
-      "last_updated": "2026-10-15T13:28:27-04:00",
-      "checksum_md5": "eccf3379066c00d91560f0dc30679ce6",
-      "checksum_sha256": "5f58e2b1350021c3b9b027b9e27f4d3e37dedc7356de911472f3f490dc2c2358",
+      "version": "0.5.0",
+      "commit_sha": "db79a9f0d2accf70c4fc923bbdf5a6ef734427bb",
+      "commit_sha_short": "db79a9f",
+      "build_timestamp": "2026-10-15T20:23:56Z",
+      "last_updated": "2026-10-15T19:58:49Z",
+      "checksum_md5": "ef163638cafe9ccb59a89ec061112bb4",
+      "checksum_sha256": "287fc1126426c908d79406d69f969a3579ad3281de366d655051aed20c7ed5aa",
       "min_dispatcharr_version": "v0.27.0",
-      "latest_url": "multiview-0.4.4/multiview-0.4.4.zip",
-      "url": "multiview-0.4.4/multiview-0.4.4.zip",
-      "size": 360
+      "latest_url": "multiview-0.5.0/multiview-0.5.0.zip",
+      "url": "multiview-0.5.0/multiview-0.5.0.zip",
+      "size": 377
     },
     "versions": [
+      {
+        "version": "0.5.0",
+        "commit_sha": "db79a9f0d2accf70c4fc923bbdf5a6ef734427bb",
+        "commit_sha_short": "db79a9f",
+        "build_timestamp": "2026-10-15T20:23:56Z",
+        "last_updated": "2026-10-15T19:58:49Z",
+        "checksum_md5": "ef163638cafe9ccb59a89ec061112bb4",
+        "checksum_sha256": "287fc1126426c908d79406d69f969a3579ad3281de366d655051aed20c7ed5aa",
+        "min_dispatcharr_version": "v0.27.0",
+        "url": "multiview-0.5.0/multiview-0.5.0.zip",
+        "size": 377
+      },
       {
         "version": "0.4.4",
         "commit_sha": "a8c727ef573d1e90bc05bbaf73d1b127e9fc792b",

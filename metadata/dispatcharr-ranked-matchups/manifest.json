@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-10-12T23:49:14Z",
+  "generated_at": "2026-10-15T20:25:17Z",
   "manifest": {
     "slug": "dispatcharr-ranked-matchups",
     "name": "Ranked Matchups (Top Games)",
-    "description": "Never miss a good game. Scores every upcoming game across 37 leagues, tours and competitions (20 of them soccer, plus NFL, NBA, MLB, NHL, NCAA, UFC, boxing, tennis, golf and motorsport), then builds a Top Matchups group holding only the ones worth watching and shows why each game ranked where it did in its EPG description.",
+    "description": "Never miss a good game. Scores every upcoming game across 39 leagues, tours and competitions (22 of them soccer, plus NFL, NBA, MLB, NHL, NCAA D1 football and basketball, UFC, boxing, tennis, golf and motorsport), then builds a Top Matchups group holding only the ones worth watching and shows why each game ranked where it did in its EPG description. Finished games can clear themselves out and be replaced from a bench of the next-best fixtures.",
     "author": "Jacob-Lasky",
     "license": "MIT",
     "source_type": "external",
@@ -12,21 +12,33 @@
     "discord_thread": "https://discord.com/channels/1340492560220684331/1508938899865604167",
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
-    "last_updated": "2026-08-22T22:53:59Z",
+    "last_updated": "2026-10-15T17:08:59Z",
     "latest": {
-      "version": "1.20.0",
-      "commit_sha": "57e5b93763f0a5f48121f596bb05b45c057c6716",
-      "commit_sha_short": "57e5b93",
-      "build_timestamp": "2026-08-22T23:06:33Z",
-      "last_updated": "2026-08-22T22:53:59Z",
-      "checksum_md5": "fb47fe4c51c6c9b9209185eb7962c74a",
-      "checksum_sha256": "cc62033105fcba3a74dcb08558beed22d4171b5b56683c6497e3537eead3e264",
-      "source_url": "https://github.com/Jacob-Lasky/dispatcharr_ranked_matchups/releases/download/v1.20.0/plugin.zip",
-      "latest_url": "dispatcharr-ranked-matchups-1.20.0/dispatcharr-ranked-matchups-1.20.0.zip",
-      "url": "dispatcharr-ranked-matchups-1.20.0/dispatcharr-ranked-matchups-1.20.0.zip",
-      "size": 430
+      "version": "1.35.0",
+      "commit_sha": "cd25137b98fb22f49124d5604341dbd2a7a5c3ca",
+      "commit_sha_short": "cd25137",
+      "build_timestamp": "2026-10-15T20:23:17Z",
+      "last_updated": "2026-10-15T17:08:59Z",
+      "checksum_md5": "b3614d3934c2ecadc09bf756a349659e",
+      "checksum_sha256": "f1d1d5980fcdeff90c93834c1b7e8ff2c71808a2f3aae30346041568ead92deb",
+      "source_url": "https://github.com/Jacob-Lasky/dispatcharr_ranked_matchups/releases/download/v1.35.0/plugin.zip",
+      "latest_url": "dispatcharr-ranked-matchups-1.35.0/dispatcharr-ranked-matchups-1.35.0.zip",
+      "url": "dispatcharr-ranked-matchups-1.35.0/dispatcharr-ranked-matchups-1.35.0.zip",
+      "size": 776
     },
     "versions": [
+      {
+        "version": "1.35.0",
+        "commit_sha": "cd25137b98fb22f49124d5604341dbd2a7a5c3ca",
+        "commit_sha_short": "cd25137",
+        "build_timestamp": "2026-10-15T20:23:17Z",
+        "last_updated": "2026-10-15T17:08:59Z",
+        "checksum_md5": "b3614d3934c2ecadc09bf756a349659e",
+        "checksum_sha256": "f1d1d5980fcdeff90c93834c1b7e8ff2c71808a2f3aae30346041568ead92deb",
+        "source_url": "https://github.com/Jacob-Lasky/dispatcharr_ranked_matchups/releases/download/v1.35.0/plugin.zip",
+        "url": "dispatcharr-ranked-matchups-1.35.0/dispatcharr-ranked-matchups-1.35.0.zip",
+        "size": 776
+      },
       {
         "version": "1.20.0",
         "commit_sha": "57e5b93763f0a5f48121f596bb05b45c057c6716",

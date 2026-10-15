@@ -2,32 +2,33 @@
 
 # Dispatchwrapparr
 
-**Version:** `1.7.6` | **Author:** jordandalley | **Last Updated:** Jul 08 2026, 01:38 UTC
+**Version:** `1.7.8` | **Author:** jordandalley | **Last Updated:** Sep 16 2026, 09:25 UTC
 
 An intelligent DRM/Clearkey capable stream profile for Dispatcharr
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](https://spdx.org/licenses/MIT.html) [![Discord](https://img.shields.io/badge/Discord-Discussion-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/channels/1340492560220684331/1422776847703212132) [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/jordandalley/dispatchwrapparr)
 
-![Dispatcharr min](https://img.shields.io/badge/Dispatcharr_min-v0.25.0-brightgreen?style=flat-square)
+![Dispatcharr min](https://img.shields.io/badge/Dispatcharr_min-v0.31.0-brightgreen?style=flat-square)
 
 ## Downloads
 
 ### Latest Release
 
-- **Download:** [`dispatchwrapparr-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/dispatchwrapparr-1.7.6/dispatchwrapparr-1.7.6.zip)
-- **Built:** Jul 21 2026, 17:41 UTC
-- **Source Commit:** [`9fc5ffc`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/9fc5ffc13904e456ba251ceecc747d3b2d837221)
+- **Download:** [`dispatchwrapparr-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/dispatchwrapparr-1.7.8/dispatchwrapparr-1.7.8.zip)
+- **Built:** Oct 15 2026, 20:23 UTC
+- **Source Commit:** [`0543ea1`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/0543ea1f4086b0da4e80e400422b2d0b72c70da9)
 
 **Checksums:**
 ```
-MD5:    8a70ae2fdb467625666bd8b107a86fb5
-SHA256: b87128071c23187be65304f97132afb9cf74f23ecb3923dca3382b976cfeb0c6
+MD5:    9a831dc348ae06e0db2e3008d696b3fb
+SHA256: da30265649581008f87c38aff394dd3c021c7a18b646c89ca1b806212b02663e
 ```
 
 ### All Versions
 
 | Version | Download | Built | Commit | MD5 | SHA256 |
 |---------|----------|-------|--------|-----|--------|
+| `1.7.8` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/dispatchwrapparr-1.7.8/dispatchwrapparr-1.7.8.zip) | Oct 15 2026, 20:23 UTC | [`0543ea1`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/0543ea1f4086b0da4e80e400422b2d0b72c70da9) | 9a831dc348ae06e0db2e3008d696b3fb | da30265649581008f87c38aff394dd3c021c7a18b646c89ca1b806212b02663e |
 | `1.7.6` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/dispatchwrapparr-1.7.6/dispatchwrapparr-1.7.6.zip) | Jul 21 2026, 17:41 UTC | [`9fc5ffc`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/9fc5ffc13904e456ba251ceecc747d3b2d837221) | 8a70ae2fdb467625666bd8b107a86fb5 | b87128071c23187be65304f97132afb9cf74f23ecb3923dca3382b976cfeb0c6 |
 
 ---
@@ -57,7 +58,6 @@ SHA256: b87128071c23187be65304f97132afb9cf74f23ecb3923dca3382b976cfeb0c6
 ✅ **Extended Stream Type Detection** — Fallback option that checks MIME type of stream URL for streamlink plugin selection\
 ✅ **Streaming Radio Support with Song Information** — Play streaming radio to your TV with song information displayed on your screen for ICY and HLS stream types\
 ✅ **Automated Stream Variant Detection** — Detects streams with no video or no audio and muxes in the missing components for compatibility with most players\
-✅ **Packed audio support for HLS streams** — Automatically extracts timestamp data from Apple ID3 metadata in muxed HLS streams to ensure correct playback\
 ✅ **Support for SSAI/DAI** — Supports streams using SCTE-35 type discontinuities for Server-Side or Dynamic Ad Injection
 
 ---

@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-10-15T20:25:17Z",
+  "manifest": {
+    "slug": "packet-slapper",
+    "name": "Packet Slapper",
+    "description": "Runs scheduled or on-demand Ookla Speedtests through Dispatcharr to measure speed and latency.",
+    "author": "write-erase",
+    "license": "MIT",
+    "source_type": "external",
+    "source_url": "https://github.com/write-erase/packet-slapper/releases/download/v{version}/packet-slapper.zip",
+    "repo_url": "https://github.com/write-erase/packet-slapper",
+    "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
+    "registry_name": "swvn-dispatch/PluginsRepoV2",
+    "last_updated": "2026-10-06T22:16:12Z",
+    "latest": {
+      "version": "1.0.3",
+      "commit_sha": "c2d44413106619a95d620c87d0067b29109872da",
+      "commit_sha_short": "c2d4441",
+      "build_timestamp": "2026-10-15T20:24:04Z",
+      "last_updated": "2026-10-06T22:16:12Z",
+      "checksum_md5": "b5fdaa795b88e3d30ea2c22321925a27",
+      "checksum_sha256": "de7c7a3a00b951bc5055974a5b002946d5f8e4a8569441cfd1c324f65360679b",
+      "source_url": "https://github.com/write-erase/packet-slapper/releases/download/v1.0.3/packet-slapper.zip",
+      "latest_url": "packet-slapper-1.0.3/packet-slapper-1.0.3.zip",
+      "url": "packet-slapper-1.0.3/packet-slapper-1.0.3.zip",
+      "size": 39
+    },
+    "versions": [
+      {
+        "version": "1.0.3",
+        "commit_sha": "c2d44413106619a95d620c87d0067b29109872da",
+        "commit_sha_short": "c2d4441",
+        "build_timestamp": "2026-10-15T20:24:04Z",
+        "last_updated": "2026-10-06T22:16:12Z",
+        "checksum_md5": "b5fdaa795b88e3d30ea2c22321925a27",
+        "checksum_sha256": "de7c7a3a00b951bc5055974a5b002946d5f8e4a8569441cfd1c324f65360679b",
+        "source_url": "https://github.com/write-erase/packet-slapper/releases/download/v1.0.3/packet-slapper.zip",
+        "url": "packet-slapper-1.0.3/packet-slapper-1.0.3.zip",
+        "size": 39
+      }
+    ]
+  }
+}

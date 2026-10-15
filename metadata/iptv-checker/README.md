@@ -2,7 +2,7 @@
 
 # IPTV Checker
 
-**Version:** `1.26.2201040` | **Author:** PiratesIRC | **Last Updated:** Aug 08 2026, 10:47 UTC
+**Version:** `1.26.2831712` | **Author:** PiratesIRC | **Last Updated:** Oct 10 2026, 17:16 UTC
 
 Check IPTV stream status and quality with ffprobe, then rename, move, restore or delete channels based on the result. Judges a channel by all of its streams, so a working backup never marks it dead.
 
@@ -14,20 +14,21 @@ Check IPTV stream status and quality with ffprobe, then rename, move, restore or
 
 ### Latest Release
 
-- **Download:** [`iptv-checker-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/iptv-checker-1.26.2201040/iptv-checker-1.26.2201040.zip)
-- **Built:** Aug 12 2026, 13:14 UTC
-- **Source Commit:** [`d663a41`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/d663a410b27880e3df043156712d3c79652e89f3)
+- **Download:** [`iptv-checker-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/iptv-checker-1.26.2831712/iptv-checker-1.26.2831712.zip)
+- **Built:** Oct 15 2026, 20:23 UTC
+- **Source Commit:** [`25958e3`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/25958e37e0513376fd3fc7e6a4655c924006c8da)
 
 **Checksums:**
 ```
-MD5:    2170f8d07b055a17b97bf88e63586915
-SHA256: 0594cf87701f448c5a92c7b2a6ea60e8dda86a70c17f0752493d832c88d56a92
+MD5:    005f5b57f1a352323c2aa74a3e4ed33a
+SHA256: 6c1ded69ed4cbb6c536261682a55e0088a19099ec4a83cb799d2ed94bf2ca377
 ```
 
 ### All Versions
 
 | Version | Download | Built | Commit | MD5 | SHA256 |
 |---------|----------|-------|--------|-----|--------|
+| `1.26.2831712` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/iptv-checker-1.26.2831712/iptv-checker-1.26.2831712.zip) | Oct 15 2026, 20:23 UTC | [`25958e3`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/25958e37e0513376fd3fc7e6a4655c924006c8da) | 005f5b57f1a352323c2aa74a3e4ed33a | 6c1ded69ed4cbb6c536261682a55e0088a19099ec4a83cb799d2ed94bf2ca377 |
 | `1.26.2201040` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/iptv-checker-1.26.2201040/iptv-checker-1.26.2201040.zip) | Aug 12 2026, 13:14 UTC | [`d663a41`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/d663a410b27880e3df043156712d3c79652e89f3) | 2170f8d07b055a17b97bf88e63586915 | 0594cf87701f448c5a92c7b2a6ea60e8dda86a70c17f0752493d832c88d56a92 |
 | `1.26.1741204` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/iptv-checker-1.26.1741204/iptv-checker-1.26.1741204.zip) | Jul 21 2026, 17:42 UTC | [`4de0ece`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/4de0eceafadffce2377d5de075af6dfa94ebead9) | a62ea30cf861df0fb6b40a47874b2abb | 6fae538c926f8811c762467937356640e924ccfa7d60fa8daae04ffd2d7fa663 |
 
@@ -41,22 +42,7 @@ SHA256: 0594cf87701f448c5a92c7b2a6ea60e8dda86a70c17f0752493d832c88d56a92
 
 ## Plugin README
 
-# Dispatcharr IPTV Checker Plugin
-
 ## Check IPTV stream status, analyze stream quality, and manage channels based on results
-
-[![Dispatcharr plugin](https://img.shields.io/badge/Dispatcharr-plugin-8A2BE2)](https://github.com/Dispatcharr/Dispatcharr)
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/PiratesIRC/Dispatcharr-IPTV-Checker-Plugin)
-[![Workflow Guide](https://img.shields.io/badge/%F0%9F%93%96-Workflow_Guide-1F6FEB?style=flat)](https://piratesirc.github.io/Dispatcharr-Plugin-Workflow/workflow/01-iptv-checker/)
-[![Discord](https://img.shields.io/badge/Discord-Discussion-5865F2?logo=discord&logoColor=white)](https://discord.gg/Sp45V5BcxU)
-
-[![GitHub Release](https://img.shields.io/github/v/release/PiratesIRC/Dispatcharr-IPTV-Checker-Plugin?include_prereleases&logo=github)](https://github.com/PiratesIRC/Dispatcharr-IPTV-Checker-Plugin/releases)
-[![Downloads](https://img.shields.io/github/downloads/PiratesIRC/Dispatcharr-IPTV-Checker-Plugin/total?color=success&label=Downloads&logo=github)](https://github.com/PiratesIRC/Dispatcharr-IPTV-Checker-Plugin/releases)
-
-![Top Language](https://img.shields.io/github/languages/top/PiratesIRC/Dispatcharr-IPTV-Checker-Plugin)
-![Repo Size](https://img.shields.io/github/repo-size/PiratesIRC/Dispatcharr-IPTV-Checker-Plugin)
-![Last Commit](https://img.shields.io/github/last-commit/PiratesIRC/Dispatcharr-IPTV-Checker-Plugin)
-![License](https://img.shields.io/github/license/PiratesIRC/Dispatcharr-IPTV-Checker-Plugin)
 
 ## Warning: back up your database first
 
@@ -68,14 +54,14 @@ This plugin renames, moves and can permanently delete channels. Before using it,
 Probes every stream behind your channels with `ffprobe`, records what it finds, and lets you act on
 the result.
 
-**It answers three questions per stream**, and keeps them apart because acting on the wrong one
+It answers three questions per stream, and keeps them apart because acting on the wrong one
 deletes channels that work:
 
-- **Alive.** The stream plays. Resolution, framerate, codecs and bitrate are recorded and synced
+- Alive. The stream plays. Resolution, framerate, codecs and bitrate are recorded and synced
   back into Dispatcharr so the channel menu can show them.
-- **Dead.** The stream does not play, or it plays but shows nothing worth watching: a blank picture,
+- Dead. The stream does not play, or it plays but shows nothing worth watching: a blank picture,
   a frozen picture, silence, or a fixed-duration placeholder file. Those last four are opt-in.
-- **Skipped.** The checker could not judge it. That covers a provider rate-limit response, a
+- Skipped. The checker could not judge it. That covers a provider rate-limit response, a
   radio station with no video track, and hosts `ffprobe` cannot read at all. **Skipped is never
   treated as dead**, so nothing destructive touches a stream that was merely throttled.
 
@@ -85,20 +71,25 @@ when **every** stream failed, so one dead backup never marks a working channel f
 
 Other things it does:
 
-- **Scheduled checks**, including overnight windows that pause at a set time and resume where they
+- Scheduled checks, including overnight windows that pause at a set time and resume where they
   left off on the next window.
-- **An HTML report** written to `/config/iptv_checker/report.html`, grouped by what you should do
+- An HTML report written to `/config/iptv_checker/report.html`, grouped by what you should do
   about each finding, and optionally emailed through the
-  [Newsflasharr](https://github.com/PiratesIRC) plugin.
-- **CSV export** with a full settings preamble, so every run leaves an audit record.
-- **Rename, move, restore and delete** actions, each with its own confirmation.
-- **Self-healing**: a channel that comes back to life is renamed back and moved to its original
+  [Newsflasharr](https://github.com/PiratesIRC) plugin. It is one self-contained file that fetches
+  nothing from the internet, so it reads the same in a mail client and on a television browser, and
+  it follows a light or dark theme on its own.
+- CSV export with a preamble that says what the run did before it says how it was configured, so
+  every run leaves a record. Old exports can be deleted automatically after a number of days you
+  choose.
+- Rename, move, restore and delete actions. Only deleting is irreversible, and only that button is
+  red.
+- Self-healing: a channel that comes back to life is renamed back and moved to its original
   group automatically.
 
 ## Requirements
 
 - Dispatcharr v0.20.0 or newer, with channels and groups already configured.
-- **`ffprobe`** in the container. **`ffmpeg`** as well if you enable blank-screen, frozen-video or
+- `ffprobe` in the container, and `ffmpeg` as well if you enable blank-screen, frozen-video or
   silent-audio detection.
 - `pytz` for the scheduler, which is normally already present.
 
@@ -153,6 +144,25 @@ Contribution steps, the CI gates, and how updates reach the Dispatcharr plugin m
 This plugin makes bulk changes to your channel database, including permanent deletion when you
 enable it. Test on a small group first, keep a database backup, and read what an action says it will
 do before confirming it.
+
+## Anonymous usage counts
+
+The Streams Checked and Active Installs badges count every install that leaves
+the "Share anonymous usage counts" setting (on by default) ticked and runs at
+least one action or check. When an action or check finishes, at most once an
+hour, or ten minutes after the last report when a check has just checked
+streams, the plugin sends this plugin's Streams Checked total and a random id
+for this plugin on this install to the plugin author's counter at
+plugin-stats.dpas.workers.dev. The server stores that id with the total and the
+date of the last report. The connection shows the server your public IP
+address; the server uses it only to limit abuse and does not store it in its
+database, though when an install first registers it keeps a salted one-way hash
+of it (of its /64 block for IPv6) for up to three days. Cloudflare, which hosts
+the server, keeps its own request logs. No names, channels, streams, URLs,
+providers or settings are sent. The figures are self-reported by installs and
+capped by the server, not verified. Untick the setting to stop sending; this
+install's figures are deleted from the server the next time an action or check
+finishes after you untick. Details: [User Guide](https://github.com/PiratesIRC/Dispatcharr-IPTV-Checker-Plugin/blob/main/docs/USER-GUIDE.md#anonymous-usage-counts).
 
 ## License
 

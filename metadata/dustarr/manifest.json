@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-10-15T20:25:17Z",
+  "manifest": {
+    "slug": "dustarr",
+    "name": "Dustarr",
+    "description": "Records which channels are actually watched and reports the ones that are not, so you can turn off the dead weight in your lineup. Read only: it never changes a channel and never contacts your provider.",
+    "author": "PiratesIRC",
+    "maintainers": [
+      "PiratesIRC"
+    ],
+    "license": "MIT",
+    "source_type": "external",
+    "source_url": "https://github.com/PiratesIRC/Dispatcharr-Dustarr-Plugin/releases/download/{version}/Dustarr-{version}.zip",
+    "repo_url": "https://github.com/PiratesIRC/Dispatcharr-Dustarr-Plugin",
+    "discord_thread": "https://discord.com/channels/1340492560220684331/1542141054080524310",
+    "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
+    "registry_name": "swvn-dispatch/PluginsRepoV2",
+    "last_updated": "2026-10-10T20:24:37Z",
+    "latest": {
+      "version": "1.26.2832018",
+      "commit_sha": "8b49bab36a73fbd7bfd560647175d59e2c68958a",
+      "commit_sha_short": "8b49bab",
+      "build_timestamp": "2026-10-15T20:23:26Z",
+      "last_updated": "2026-10-10T20:24:37Z",
+      "checksum_md5": "1f947cd7fd07a12805b031f4f57649f5",
+      "checksum_sha256": "a03ea8c72e507e8022e3ac7d2f0c44ffdbc2a5c8cbb9be9b238695b7bd80cddc",
+      "min_dispatcharr_version": "v0.20.0",
+      "source_url": "https://github.com/PiratesIRC/Dispatcharr-Dustarr-Plugin/releases/download/1.26.2832018/Dustarr-1.26.2832018.zip",
+      "latest_url": "dustarr-1.26.2832018/dustarr-1.26.2832018.zip",
+      "url": "dustarr-1.26.2832018/dustarr-1.26.2832018.zip",
+      "size": 132
+    },
+    "versions": [
+      {
+        "version": "1.26.2832018",
+        "commit_sha": "8b49bab36a73fbd7bfd560647175d59e2c68958a",
+        "commit_sha_short": "8b49bab",
+        "build_timestamp": "2026-10-15T20:23:26Z",
+        "last_updated": "2026-10-10T20:24:37Z",
+        "checksum_md5": "1f947cd7fd07a12805b031f4f57649f5",
+        "checksum_sha256": "a03ea8c72e507e8022e3ac7d2f0c44ffdbc2a5c8cbb9be9b238695b7bd80cddc",
+        "min_dispatcharr_version": "v0.20.0",
+        "source_url": "https://github.com/PiratesIRC/Dispatcharr-Dustarr-Plugin/releases/download/1.26.2832018/Dustarr-1.26.2832018.zip",
+        "url": "dustarr-1.26.2832018/dustarr-1.26.2832018.zip",
+        "size": 132
+      }
+    ]
+  }
+}
