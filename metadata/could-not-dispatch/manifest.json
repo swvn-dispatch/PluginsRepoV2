@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:25:17Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "could-not-dispatch",
     "name": "Could Not Dispatch",
@@ -12,6 +12,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-10-06T23:20:38Z",
+    "download_count": 0,
     "latest": {
       "version": "0.5.0",
       "commit_sha": "8e2b381c3088d1899c334452f36bcb201678c319",
@@ -23,7 +24,8 @@
       "source_url": "https://github.com/PilaScat/could-not-dispatch/releases/download/v0.5.0/could-not-dispatch-0.5.0.zip",
       "latest_url": "could-not-dispatch-0.5.0/could-not-dispatch-0.5.0.zip",
       "url": "could-not-dispatch-0.5.0/could-not-dispatch-0.5.0.zip",
-      "size": 63
+      "size": 63,
+      "download_count": 0
     },
     "versions": [
       {
@@ -36,7 +38,8 @@
         "checksum_sha256": "59995d4a526216d2000b2dbe36a8dbb64aa0fb8b702685ad4c1844388e1b0ec4",
         "source_url": "https://github.com/PilaScat/could-not-dispatch/releases/download/v0.5.0/could-not-dispatch-0.5.0.zip",
         "url": "could-not-dispatch-0.5.0/could-not-dispatch-0.5.0.zip",
-        "size": 63
+        "size": 63,
+        "download_count": 0
       },
       {
         "version": "0.1.0",
@@ -48,7 +51,8 @@
         "checksum_sha256": "3defff05b9233a1b1159bf0b00c8733327314ed01dc288f5ea241f9024c10886",
         "source_url": "https://github.com/PilaScat/could-not-dispatch/releases/download/v0.1.0/could-not-dispatch-0.1.0.zip",
         "url": "could-not-dispatch-0.1.0/could-not-dispatch-0.1.0.zip",
-        "size": 57
+        "size": 57,
+        "download_count": 0
       }
     ]
   }

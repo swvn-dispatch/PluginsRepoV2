@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:25:17Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "profilarr",
     "name": "Profilarr",
@@ -15,6 +15,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-09-24T04:31:02Z",
+    "download_count": 0,
     "latest": {
       "version": "2.1.6",
       "commit_sha": "f5a6a0bd3da24796156d458289cd813bf713e9d6",
@@ -26,7 +27,8 @@
       "source_url": "https://github.com/Tw1zT3d2four7/Profilarr/releases/download/v2.1.6/Profilarr.zip",
       "latest_url": "profilarr-2.1.6/profilarr-2.1.6.zip",
       "url": "profilarr-2.1.6/profilarr-2.1.6.zip",
-      "size": 471
+      "size": 471,
+      "download_count": 0
     },
     "versions": [
       {
@@ -39,7 +41,8 @@
         "checksum_sha256": "c9ee48397f689b11d6b8fe0a01f31418ddcb0dc20c575f42c8e4feb25282ca2f",
         "source_url": "https://github.com/Tw1zT3d2four7/Profilarr/releases/download/v2.1.6/Profilarr.zip",
         "url": "profilarr-2.1.6/profilarr-2.1.6.zip",
-        "size": 471
+        "size": 471,
+        "download_count": 0
       }
     ]
   }

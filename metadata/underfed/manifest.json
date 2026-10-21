@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:25:17Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "underfed",
     "name": "Underfed",
@@ -12,6 +12,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-10-12T14:28:08Z",
+    "download_count": 0,
     "latest": {
       "version": "0.8.0",
       "commit_sha": "7caef90467b4318d946777387b150999cc4f35f5",
@@ -23,7 +24,8 @@
       "source_url": "https://github.com/PilaScat/underfed/releases/download/v0.8.0/underfed-0.8.0.zip",
       "latest_url": "underfed-0.8.0/underfed-0.8.0.zip",
       "url": "underfed-0.8.0/underfed-0.8.0.zip",
-      "size": 53
+      "size": 53,
+      "download_count": 0
     },
     "versions": [
       {
@@ -36,7 +38,8 @@
         "checksum_sha256": "d77ddf45dd5b3a5a8659e771c034f02e11fcd4ba17a8b5a5ac50d46de25af912",
         "source_url": "https://github.com/PilaScat/underfed/releases/download/v0.8.0/underfed-0.8.0.zip",
         "url": "underfed-0.8.0/underfed-0.8.0.zip",
-        "size": 53
+        "size": 53,
+        "download_count": 0
       }
     ]
   }

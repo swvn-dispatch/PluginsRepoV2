@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:25:18Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "epg-janitor",
     "name": "EPG Janitor",
@@ -16,6 +16,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-10-17T18:25:31Z",
+    "download_count": 0,
     "latest": {
       "version": "1.26.2901817",
       "commit_sha": "b55013ef45a1ce624f6e27a3eb8bc254db92f285",
@@ -28,7 +29,8 @@
       "source_url": "https://github.com/PiratesIRC/Dispatcharr-EPG-Janitor-Plugin/releases/download/1.26.2901817/EPG-Janitor.zip",
       "latest_url": "epg-janitor-1.26.2901817/epg-janitor-1.26.2901817.zip",
       "url": "epg-janitor-1.26.2901817/epg-janitor-1.26.2901817.zip",
-      "size": 476
+      "size": 476,
+      "download_count": 0
     },
     "versions": [
       {
@@ -42,7 +44,8 @@
         "min_dispatcharr_version": "v0.20.0",
         "source_url": "https://github.com/PiratesIRC/Dispatcharr-EPG-Janitor-Plugin/releases/download/1.26.2901817/EPG-Janitor.zip",
         "url": "epg-janitor-1.26.2901817/epg-janitor-1.26.2901817.zip",
-        "size": 476
+        "size": 476,
+        "download_count": 0
       },
       {
         "version": "1.26.2832018",
@@ -55,7 +58,8 @@
         "min_dispatcharr_version": "v0.20.0",
         "source_url": "https://github.com/PiratesIRC/Dispatcharr-EPG-Janitor-Plugin/releases/download/1.26.2832018/EPG-Janitor.zip",
         "url": "epg-janitor-1.26.2832018/epg-janitor-1.26.2832018.zip",
-        "size": 476
+        "size": 476,
+        "download_count": 0
       },
       {
         "version": "1.26.2281111",
@@ -68,7 +72,8 @@
         "min_dispatcharr_version": "v0.20.0",
         "source_url": "https://github.com/PiratesIRC/Dispatcharr-EPG-Janitor-Plugin/releases/download/1.26.2281111/EPG-Janitor.zip",
         "url": "epg-janitor-1.26.2281111/epg-janitor-1.26.2281111.zip",
-        "size": 462
+        "size": 462,
+        "download_count": 0
       },
       {
         "version": "1.26.1791309",
@@ -80,7 +85,8 @@
         "checksum_sha256": "952d486589fb1b68f518166bc91ed7353361a4c668a2ba9325e40d6c13f73899",
         "min_dispatcharr_version": "v0.20.0",
         "url": "epg-janitor-1.26.1791309/epg-janitor-1.26.1791309.zip",
-        "size": 449
+        "size": 449,
+        "download_count": 0
       }
     ]
   }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:25:17Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "dispatchwrapparr",
     "name": "Dispatchwrapparr",
@@ -14,6 +14,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-09-16T09:25:12Z",
+    "download_count": 0,
     "latest": {
       "version": "1.7.8",
       "commit_sha": "0543ea1f4086b0da4e80e400422b2d0b72c70da9",
@@ -25,7 +26,8 @@
       "min_dispatcharr_version": "v0.31.0",
       "latest_url": "dispatchwrapparr-1.7.8/dispatchwrapparr-1.7.8.zip",
       "url": "dispatchwrapparr-1.7.8/dispatchwrapparr-1.7.8.zip",
-      "size": 47
+      "size": 47,
+      "download_count": 0
     },
     "versions": [
       {
@@ -38,7 +40,8 @@
         "checksum_sha256": "da30265649581008f87c38aff394dd3c021c7a18b646c89ca1b806212b02663e",
         "min_dispatcharr_version": "v0.31.0",
         "url": "dispatchwrapparr-1.7.8/dispatchwrapparr-1.7.8.zip",
-        "size": 47
+        "size": 47,
+        "download_count": 0
       },
       {
         "version": "1.7.6",
@@ -50,7 +53,8 @@
         "checksum_sha256": "b87128071c23187be65304f97132afb9cf74f23ecb3923dca3382b976cfeb0c6",
         "min_dispatcharr_version": "v0.25.0",
         "url": "dispatchwrapparr-1.7.6/dispatchwrapparr-1.7.6.zip",
-        "size": 47
+        "size": 47,
+        "download_count": 0
       }
     ]
   }

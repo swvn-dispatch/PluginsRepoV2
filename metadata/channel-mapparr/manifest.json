@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:25:18Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "channel-mapparr",
     "name": "Channel Mapparr",
@@ -16,6 +16,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-10-18T10:29:38-04:00",
+    "download_count": 0,
     "latest": {
       "version": "1.26.2911354",
       "commit_sha": "1025b6f7adb4475fc509f97f9b4725de9711aec4",
@@ -28,7 +29,8 @@
       "source_url": "https://github.com/PiratesIRC/Dispatcharr-Channel-Maparr-Plugin/releases/download/1.26.2911354/Channel-Maparr.zip",
       "latest_url": "channel-mapparr-1.26.2911354/channel-mapparr-1.26.2911354.zip",
       "url": "channel-mapparr-1.26.2911354/channel-mapparr-1.26.2911354.zip",
-      "size": 766
+      "size": 766,
+      "download_count": 0
     },
     "versions": [
       {
@@ -42,7 +44,8 @@
         "min_dispatcharr_version": "v0.20.0",
         "source_url": "https://github.com/PiratesIRC/Dispatcharr-Channel-Maparr-Plugin/releases/download/1.26.2911354/Channel-Maparr.zip",
         "url": "channel-mapparr-1.26.2911354/channel-mapparr-1.26.2911354.zip",
-        "size": 766
+        "size": 766,
+        "download_count": 0
       },
       {
         "version": "1.26.2881225",
@@ -55,7 +58,8 @@
         "min_dispatcharr_version": "v0.20.0",
         "source_url": "https://github.com/PiratesIRC/Dispatcharr-Channel-Maparr-Plugin/releases/download/1.26.2881225/Channel-Maparr.zip",
         "url": "channel-mapparr-1.26.2881225/channel-mapparr-1.26.2881225.zip",
-        "size": 766
+        "size": 766,
+        "download_count": 0
       },
       {
         "version": "1.26.2291823",
@@ -68,7 +72,8 @@
         "min_dispatcharr_version": "v0.20.0",
         "source_url": "https://github.com/PiratesIRC/Dispatcharr-Channel-Maparr-Plugin/releases/download/1.26.2291823/Channel-Maparr.zip",
         "url": "channel-mapparr-1.26.2291823/channel-mapparr-1.26.2291823.zip",
-        "size": 738
+        "size": 738,
+        "download_count": 0
       },
       {
         "version": "1.26.2170831",
@@ -80,7 +85,8 @@
         "checksum_sha256": "3ec3f819882bd277e19b90a43a29369a7b75cfa7f82b3e04c659523c175a4d7c",
         "min_dispatcharr_version": "v0.20.0",
         "url": "channel-mapparr-1.26.2170831/channel-mapparr-1.26.2170831.zip",
-        "size": 640
+        "size": 640,
+        "download_count": 0
       },
       {
         "version": "1.26.1791324",
@@ -92,7 +98,8 @@
         "checksum_sha256": "5787a7b6b5f17caf91dc4caf39997ab638590199520ee06fcdad5db4b6b71e4f",
         "min_dispatcharr_version": "v0.20.0",
         "url": "channel-mapparr-1.26.1791324/channel-mapparr-1.26.1791324.zip",
-        "size": 588
+        "size": 588,
+        "download_count": 0
       }
     ]
   }

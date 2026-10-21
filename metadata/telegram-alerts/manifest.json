@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T17:42:52Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "telegram-alerts",
     "name": "Telegram Alerts",
@@ -12,6 +12,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-06-01T16:07:29-04:00",
+    "download_count": 0,
     "latest": {
       "version": "0.4.5",
       "commit_sha": "04aa4f43926c2ca7cefc5c802166a02fe43b3500",
@@ -24,7 +25,8 @@
       "source_url": "https://github.com/R3XCHRIS/telegram-alerts/releases/download/v0.4.5/plugin-telegram-alerts-v0.4.5.zip",
       "latest_url": "telegram-alerts-0.4.5/telegram-alerts-0.4.5.zip",
       "url": "telegram-alerts-0.4.5/telegram-alerts-0.4.5.zip",
-      "size": 510
+      "size": 510,
+      "download_count": 0
     },
     "versions": [
       {
@@ -38,7 +40,8 @@
         "min_dispatcharr_version": "v0.20.0",
         "source_url": "https://github.com/R3XCHRIS/telegram-alerts/releases/download/v0.4.5/plugin-telegram-alerts-v0.4.5.zip",
         "url": "telegram-alerts-0.4.5/telegram-alerts-0.4.5.zip",
-        "size": 510
+        "size": 510,
+        "download_count": 0
       }
     ]
   }

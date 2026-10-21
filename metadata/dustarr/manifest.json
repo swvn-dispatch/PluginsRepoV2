@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:25:18Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "dustarr",
     "name": "Dustarr",
@@ -16,6 +16,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-10-17T17:57:40-04:00",
+    "download_count": 0,
     "latest": {
       "version": "1.26.2901903",
       "commit_sha": "1b882f233078ff663758cc1ecdf82ff16afea84a",
@@ -28,7 +29,8 @@
       "source_url": "https://github.com/PiratesIRC/Dispatcharr-Dustarr-Plugin/releases/download/1.26.2901903/Dustarr-1.26.2901903.zip",
       "latest_url": "dustarr-1.26.2901903/dustarr-1.26.2901903.zip",
       "url": "dustarr-1.26.2901903/dustarr-1.26.2901903.zip",
-      "size": 132
+      "size": 132,
+      "download_count": 0
     },
     "versions": [
       {
@@ -42,7 +44,8 @@
         "min_dispatcharr_version": "v0.20.0",
         "source_url": "https://github.com/PiratesIRC/Dispatcharr-Dustarr-Plugin/releases/download/1.26.2901903/Dustarr-1.26.2901903.zip",
         "url": "dustarr-1.26.2901903/dustarr-1.26.2901903.zip",
-        "size": 132
+        "size": 132,
+        "download_count": 0
       },
       {
         "version": "1.26.2832018",
@@ -55,7 +58,8 @@
         "min_dispatcharr_version": "v0.20.0",
         "source_url": "https://github.com/PiratesIRC/Dispatcharr-Dustarr-Plugin/releases/download/1.26.2832018/Dustarr-1.26.2832018.zip",
         "url": "dustarr-1.26.2832018/dustarr-1.26.2832018.zip",
-        "size": 132
+        "size": 132,
+        "download_count": 0
       }
     ]
   }

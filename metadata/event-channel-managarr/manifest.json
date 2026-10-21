@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:25:17Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "event-channel-managarr",
     "name": "Event Channel Managarr",
@@ -15,6 +15,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-10-10T20:25:46Z",
+    "download_count": 0,
     "latest": {
       "version": "1.26.2832019",
       "commit_sha": "39cf0ba01aa2120e0ad1d42bfe5ac11813a8d4ad",
@@ -27,7 +28,8 @@
       "source_url": "https://github.com/PiratesIRC/Dispatcharr-Event-Channel-Managarr-Plugin/releases/download/v1.26.2832019/Event-Channel-Managarr.zip",
       "latest_url": "event-channel-managarr-1.26.2832019/event-channel-managarr-1.26.2832019.zip",
       "url": "event-channel-managarr-1.26.2832019/event-channel-managarr-1.26.2832019.zip",
-      "size": 258
+      "size": 258,
+      "download_count": 0
     },
     "versions": [
       {
@@ -41,7 +43,8 @@
         "min_dispatcharr_version": "v0.20.0",
         "source_url": "https://github.com/PiratesIRC/Dispatcharr-Event-Channel-Managarr-Plugin/releases/download/v1.26.2832019/Event-Channel-Managarr.zip",
         "url": "event-channel-managarr-1.26.2832019/event-channel-managarr-1.26.2832019.zip",
-        "size": 258
+        "size": 258,
+        "download_count": 0
       },
       {
         "version": "1.26.2341504",
@@ -54,7 +57,8 @@
         "min_dispatcharr_version": "v0.20.0",
         "source_url": "https://github.com/PiratesIRC/Dispatcharr-Event-Channel-Managarr-Plugin/releases/download/v1.26.2341504/Event-Channel-Managarr.zip",
         "url": "event-channel-managarr-1.26.2341504/event-channel-managarr-1.26.2341504.zip",
-        "size": 212
+        "size": 212,
+        "download_count": 0
       },
       {
         "version": "1.26.1711720",
@@ -66,7 +70,8 @@
         "checksum_sha256": "1e2df41c088e2b9cead1c618ecd64ec3c5b186e433e81be89ed93031281b66fd",
         "min_dispatcharr_version": "v0.20.0",
         "url": "event-channel-managarr-1.26.1711720/event-channel-managarr-1.26.1711720.zip",
-        "size": 198
+        "size": 198,
+        "download_count": 0
       }
     ]
   }

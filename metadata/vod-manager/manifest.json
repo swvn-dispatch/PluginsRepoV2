@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:25:17Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "vod-manager",
     "name": "VOD Manager",
@@ -12,6 +12,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-10-10T10:00:22Z",
+    "download_count": 0,
     "latest": {
       "version": "2.6.4",
       "commit_sha": "767c1346ef1c84136d45f08db69349b480fa8163",
@@ -23,7 +24,8 @@
       "source_url": "https://github.com/oxios0x00/dispatcharr-vod-manager/releases/download/v2.6.4/vod_manager.zip",
       "latest_url": "vod-manager-2.6.4/vod-manager-2.6.4.zip",
       "url": "vod-manager-2.6.4/vod-manager-2.6.4.zip",
-      "size": 570
+      "size": 570,
+      "download_count": 0
     },
     "versions": [
       {
@@ -36,7 +38,8 @@
         "checksum_sha256": "1390087e8a6d382f542670395c2b6297f6f72d0c3b65c744bbfcac76cf5395ce",
         "source_url": "https://github.com/oxios0x00/dispatcharr-vod-manager/releases/download/v2.6.4/vod_manager.zip",
         "url": "vod-manager-2.6.4/vod-manager-2.6.4.zip",
-        "size": 570
+        "size": 570,
+        "download_count": 0
       }
     ]
   }

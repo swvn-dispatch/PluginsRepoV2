@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:25:18Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "lineuparr",
     "name": "Lineuparr",
@@ -10,6 +10,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-10-17T17:57:57-04:00",
+    "download_count": 0,
     "latest": {
       "version": "1.26.2901915",
       "commit_sha": "0d24250ed3d41c58f7901674909f2b88042e892e",
@@ -21,7 +22,8 @@
       "min_dispatcharr_version": "v0.20.0",
       "latest_url": "lineuparr-1.26.2901915/lineuparr-1.26.2901915.zip",
       "url": "lineuparr-1.26.2901915/lineuparr-1.26.2901915.zip",
-      "size": 457
+      "size": 457,
+      "download_count": 0
     },
     "versions": [
       {
@@ -34,7 +36,8 @@
         "checksum_sha256": "983692888a7144563cf3d0eb244068452378fbd82e247b63a70048393897e85a",
         "min_dispatcharr_version": "v0.20.0",
         "url": "lineuparr-1.26.2901915/lineuparr-1.26.2901915.zip",
-        "size": 457
+        "size": 457,
+        "download_count": 0
       },
       {
         "version": "1.26.2881058",
@@ -46,7 +49,8 @@
         "checksum_sha256": "31c453bd54e77c0d826395f39d7dcc41bf187d840d779b47f183e3ee0b7e5629",
         "min_dispatcharr_version": "v0.20.0",
         "url": "lineuparr-1.26.2881058/lineuparr-1.26.2881058.zip",
-        "size": 441
+        "size": 441,
+        "download_count": 0
       },
       {
         "version": "1.26.2291211",
@@ -58,7 +62,8 @@
         "checksum_sha256": "1ee2a72b3466d8965b3756aaf570746553c1c620146d64c24415f2cd3ec354ad",
         "min_dispatcharr_version": "v0.20.0",
         "url": "lineuparr-1.26.2291211/lineuparr-1.26.2291211.zip",
-        "size": 377
+        "size": 377,
+        "download_count": 0
       },
       {
         "version": "1.26.2171315",
@@ -70,7 +75,8 @@
         "checksum_sha256": "a8ef1be89f8c6834b3e63fcc858ef3305b86e58456ad1b472c42b64b1068cb8d",
         "min_dispatcharr_version": "v0.20.0",
         "url": "lineuparr-1.26.2171315/lineuparr-1.26.2171315.zip",
-        "size": 329
+        "size": 329,
+        "download_count": 0
       },
       {
         "version": "1.26.1791747",
@@ -82,7 +88,8 @@
         "checksum_sha256": "ce446ba58fe77b164f7bfe748bf6b3102f7226d84deee27166668beb8c4d6213",
         "min_dispatcharr_version": "v0.20.0",
         "url": "lineuparr-1.26.1791747/lineuparr-1.26.1791747.zip",
-        "size": 297
+        "size": 297,
+        "download_count": 0
       }
     ]
   }

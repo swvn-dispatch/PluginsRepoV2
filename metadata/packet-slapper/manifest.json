@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T21:56:15Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "packet-slapper",
     "name": "Packet Slapper",
@@ -12,6 +12,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-10-15T21:43:06Z",
+    "download_count": 0,
     "latest": {
       "version": "1.0.4",
       "commit_sha": "172f4b44d3b7063dca5a8fc1ccb005be67ab2611",
@@ -23,7 +24,8 @@
       "source_url": "https://github.com/write-erase/packet-slapper/releases/download/v1.0.4/packet-slapper.zip",
       "latest_url": "packet-slapper-1.0.4/packet-slapper-1.0.4.zip",
       "url": "packet-slapper-1.0.4/packet-slapper-1.0.4.zip",
-      "size": 42
+      "size": 42,
+      "download_count": 0
     },
     "versions": [
       {
@@ -36,7 +38,8 @@
         "checksum_sha256": "dae9f339c9b4ef100e8e1996921a8d89fe9de5078ad05cca466a2254f9b25c9a",
         "source_url": "https://github.com/write-erase/packet-slapper/releases/download/v1.0.4/packet-slapper.zip",
         "url": "packet-slapper-1.0.4/packet-slapper-1.0.4.zip",
-        "size": 42
+        "size": 42,
+        "download_count": 0
       },
       {
         "version": "1.0.3",
@@ -48,7 +51,8 @@
         "checksum_sha256": "de7c7a3a00b951bc5055974a5b002946d5f8e4a8569441cfd1c324f65360679b",
         "source_url": "https://github.com/write-erase/packet-slapper/releases/download/v1.0.3/packet-slapper.zip",
         "url": "packet-slapper-1.0.3/packet-slapper-1.0.3.zip",
-        "size": 39
+        "size": 39,
+        "download_count": 0
       }
     ]
   }

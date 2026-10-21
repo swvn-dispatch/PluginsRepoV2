@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:25:17Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "audio-buffer-tuner",
     "name": "Audio Buffer Tuner",
@@ -16,6 +16,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-09-16T13:11:15-04:00",
+    "download_count": 0,
     "latest": {
       "version": "0.3.5",
       "commit_sha": "3ceeddd53b4d49d5d14584768f69121e8094d6df",
@@ -28,7 +29,8 @@
       "source_url": "https://github.com/CtznSniiips/audio-buffer-tuner/releases/download/v0.3.5/audio-buffer-tuner.zip",
       "latest_url": "audio-buffer-tuner-0.3.5/audio-buffer-tuner-0.3.5.zip",
       "url": "audio-buffer-tuner-0.3.5/audio-buffer-tuner-0.3.5.zip",
-      "size": 95
+      "size": 95,
+      "download_count": 0
     },
     "versions": [
       {
@@ -42,7 +44,8 @@
         "min_dispatcharr_version": "v0.31.0",
         "source_url": "https://github.com/CtznSniiips/audio-buffer-tuner/releases/download/v0.3.5/audio-buffer-tuner.zip",
         "url": "audio-buffer-tuner-0.3.5/audio-buffer-tuner-0.3.5.zip",
-        "size": 95
+        "size": 95,
+        "download_count": 0
       }
     ]
   }

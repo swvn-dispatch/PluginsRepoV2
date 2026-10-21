@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:25:17Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "reservoarr",
     "name": "reservoarr",
@@ -15,6 +15,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-10-14T14:48:27Z",
+    "download_count": 0,
     "latest": {
       "version": "6.4.0",
       "commit_sha": "c5aa56b2c0aa5634c1a9e84e335f9bd9adfd3ad6",
@@ -27,7 +28,8 @@
       "source_url": "https://github.com/brko7/reservoarr/releases/download/v6.4.0/reservoarr-6.4.0.zip",
       "latest_url": "reservoarr-6.4.0/reservoarr-6.4.0.zip",
       "url": "reservoarr-6.4.0/reservoarr-6.4.0.zip",
-      "size": 46
+      "size": 46,
+      "download_count": 0
     },
     "versions": [
       {
@@ -41,7 +43,8 @@
         "min_dispatcharr_version": "v0.25.0",
         "source_url": "https://github.com/brko7/reservoarr/releases/download/v6.4.0/reservoarr-6.4.0.zip",
         "url": "reservoarr-6.4.0/reservoarr-6.4.0.zip",
-        "size": 46
+        "size": 46,
+        "download_count": 0
       },
       {
         "version": "6.3.1",
@@ -54,7 +57,8 @@
         "min_dispatcharr_version": "v0.25.0",
         "source_url": "https://github.com/brko7/reservoarr/releases/download/v6.3.1/reservoarr-6.3.1.zip",
         "url": "reservoarr-6.3.1/reservoarr-6.3.1.zip",
-        "size": 36
+        "size": 36,
+        "download_count": 0
       }
     ]
   }

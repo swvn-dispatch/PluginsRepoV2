@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:25:17Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "multiview",
     "name": "Multiview",
@@ -11,6 +11,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-10-15T19:58:49Z",
+    "download_count": 0,
     "latest": {
       "version": "0.5.0",
       "commit_sha": "db79a9f0d2accf70c4fc923bbdf5a6ef734427bb",
@@ -22,7 +23,8 @@
       "min_dispatcharr_version": "v0.27.0",
       "latest_url": "multiview-0.5.0/multiview-0.5.0.zip",
       "url": "multiview-0.5.0/multiview-0.5.0.zip",
-      "size": 377
+      "size": 377,
+      "download_count": 0
     },
     "versions": [
       {
@@ -35,7 +37,8 @@
         "checksum_sha256": "287fc1126426c908d79406d69f969a3579ad3281de366d655051aed20c7ed5aa",
         "min_dispatcharr_version": "v0.27.0",
         "url": "multiview-0.5.0/multiview-0.5.0.zip",
-        "size": 377
+        "size": 377,
+        "download_count": 0
       },
       {
         "version": "0.4.4",
@@ -47,7 +50,8 @@
         "checksum_sha256": "5f58e2b1350021c3b9b027b9e27f4d3e37dedc7356de911472f3f490dc2c2358",
         "min_dispatcharr_version": "v0.27.0",
         "url": "multiview-0.4.4/multiview-0.4.4.zip",
-        "size": 360
+        "size": 360,
+        "download_count": 0
       },
       {
         "version": "0.4.3",
@@ -59,7 +63,8 @@
         "checksum_sha256": "8a3f49ee75feeda02c389159f5c74155560d9426a33bb0701f0833cd5206cdfc",
         "min_dispatcharr_version": "v0.27.0",
         "url": "multiview-0.4.3/multiview-0.4.3.zip",
-        "size": 360
+        "size": 360,
+        "download_count": 0
       },
       {
         "version": "0.4.2",
@@ -71,7 +76,8 @@
         "checksum_sha256": "b3e966171daaae2f87d1c2aa035694369389328e2a80434ed1477e1257e7cd9d",
         "min_dispatcharr_version": "v0.27.0",
         "url": "multiview-0.4.2/multiview-0.4.2.zip",
-        "size": 360
+        "size": 360,
+        "download_count": 0
       }
     ]
   }

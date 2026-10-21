@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:25:17Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "decypharr-vod",
     "name": "Decypharr VOD",
@@ -15,6 +15,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-10-02T18:22:22Z",
+    "download_count": 0,
     "latest": {
       "version": "1.0.7",
       "commit_sha": "2055cc80f96ee26d0ebf3d5adfa2dd73c6bdf0d7",
@@ -26,7 +27,8 @@
       "source_url": "https://github.com/Tw1zT3d2four7/Decypharr_vod/releases/download/v1.0.7/decypharr_vod.zip",
       "latest_url": "decypharr-vod-1.0.7/decypharr-vod-1.0.7.zip",
       "url": "decypharr-vod-1.0.7/decypharr-vod-1.0.7.zip",
-      "size": 1459
+      "size": 1459,
+      "download_count": 0
     },
     "versions": [
       {
@@ -39,7 +41,8 @@
         "checksum_sha256": "047c512f22ed42af08c7950cf91fc4c2a8143afeb58664f4fb2c68c6bdfc7d56",
         "source_url": "https://github.com/Tw1zT3d2four7/Decypharr_vod/releases/download/v1.0.7/decypharr_vod.zip",
         "url": "decypharr-vod-1.0.7/decypharr-vod-1.0.7.zip",
-        "size": 1459
+        "size": 1459,
+        "download_count": 0
       }
     ]
   }

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T20:25:17Z",
+  "generated_at": "2026-10-21T12:39:49Z",
   "manifest": {
     "slug": "stream-dripper",
     "name": "Stream Dripper",
@@ -10,6 +10,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-09-15T16:02:35-04:00",
+    "download_count": 0,
     "latest": {
       "version": "2.0.0",
       "commit_sha": "846d0fea839c1e3c2ebad8e8744c3cb4a0927eaf",
@@ -21,7 +22,8 @@
       "min_dispatcharr_version": "0.25.0",
       "latest_url": "stream-dripper-2.0.0/stream-dripper-2.0.0.zip",
       "url": "stream-dripper-2.0.0/stream-dripper-2.0.0.zip",
-      "size": 31
+      "size": 31,
+      "download_count": 0
     },
     "versions": [
       {
@@ -34,7 +36,8 @@
         "checksum_sha256": "fecb75a2b0915ca0ea290c2b015618e48031f7d09f29fa5fe0aa5c72dcb265df",
         "min_dispatcharr_version": "0.25.0",
         "url": "stream-dripper-2.0.0/stream-dripper-2.0.0.zip",
-        "size": 31
+        "size": 31,
+        "download_count": 0
       },
       {
         "version": "1.0.0",
@@ -45,7 +48,8 @@
         "checksum_md5": "2f111ea5bf69151e9454d14fd9765278",
         "checksum_sha256": "10af29c8d1c06b8c59ee94f33772dbdd6990000126e072a097d990abe1e8fe82",
         "url": "stream-dripper-1.0.0/stream-dripper-1.0.0.zip",
-        "size": 30
+        "size": 30,
+        "download_count": 0
       }
     ]
   }
