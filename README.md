@@ -12,20 +12,20 @@ This branch contains all published plugin releases.
 | Plugin | Version | Author | License | Description |
 |--------|---------|-------|---------|-------------|
 | [`Audio Buffer Tuner`](#audio-buffer-tuner) | `0.3.5` | CtznSniiips | MIT | Speeds up channel startup for low-bitrate (usually audio only) streams by lowering the TS-proxy prebuffer for chosen Channel Groups. |
-| [`Channel Mapparr`](#channel-mapparr) | `1.26.2881225` | PiratesIRC | MIT | Standardizes broadcast (OTA) and premium/cable channel names using network data and channel lists. Supports M3U stream import, category organization, and fuzzy matching across about 42,600 channels in 13 countries. |
+| [`Channel Mapparr`](#channel-mapparr) | `1.26.2911354` | PiratesIRC | MIT | Standardizes broadcast (OTA) and premium/cable channel names using network data and channel lists. Supports M3U stream import, category organization, and fuzzy matching across about 42,600 channels in 13 countries. |
 | [`Clapparr`](#clapparr) | `1.3.0` | v8eta | MIT | The metadata slate for your DVR: writes Kodi/Plex NFO sidecars, posters and episode thumbnails so recordings present with real titles, summaries and artwork instead of 'Episode 08-18'. |
 | [`Could Not Dispatch`](#could-not-dispatch) | `0.5.0` | PilaScat | MIT | Plays a looping image or video when every real stream on a channel has failed, so viewers see a message instead of a black screen. With an API key, it later sends the channel back to its first stream. |
 | [`Decypharr VOD`](#decypharr-vod) | `1.0.7` | Tw1zT3d2four7 | MIT | Native Dispatcharr VOD integration for Decypharr media, providing automatic scanning and organization of movies, series, seasons, and episodes. |
 | [`Dispatcharr Exporter`](#dispatcharr-exporter) | `3.1.0` | sethwv | MIT | Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitoring |
-| [`Ranked Matchups (Top Games)`](#ranked-matchups-top-games-) | `1.35.0` | Jacob-Lasky | MIT | Never miss a good game. Scores every upcoming game across 39 leagues, tours and competitions (22 of them soccer, plus NFL, NBA, MLB, NHL, NCAA D1 football and basketball, UFC, boxing, tennis, golf and motorsport), then builds a Top Matchups group holding only the ones worth watching and shows why each game ranked where it did in its EPG description. Finished games can clear themselves out and be replaced from a bench of the next-best fixtures. |
+| [`Ranked Matchups (Top Games)`](#ranked-matchups-top-games-) | `1.36.0` | Jacob-Lasky | MIT | Never miss a good game. Scores every upcoming game across 39 leagues, tours and competitions (22 of them soccer, plus NFL, NBA, MLB, NHL, NCAA D1 football and basketball, UFC, boxing, tennis, golf and motorsport), then builds a Top Matchups group holding only the ones worth watching and shows why each game ranked where it did in its EPG description. Finished games can clear themselves out and be replaced from a bench of the next-best fixtures. |
 | [`Dispatchwrapparr`](#dispatchwrapparr) | `1.7.8` | jordandalley | MIT | An intelligent DRM/Clearkey capable stream profile for Dispatcharr |
-| [`Dustarr`](#dustarr) | `1.26.2832018` | PiratesIRC | MIT | Records which channels are actually watched and reports the ones that are not, so you can turn off the dead weight in your lineup. Read only: it never changes a channel and never contacts your provider. |
+| [`Dustarr`](#dustarr) | `1.26.2901903` | PiratesIRC | MIT | Records which channels are actually watched and reports the ones that are not, so you can turn off the dead weight in your lineup. Read only: it never changes a channel and never contacts your provider. |
 | [`EPG & Sports Editor`](#epg-sports-editor) | `0.5.08` | jstevenscl | MIT | Transform and clean your EPG data using regex and find/replace rules. Creates virtual copies of your sources — originals are never touched. Fills placeholder schedules for channels with no EPG, and includes a Sports Editor: automatically renames Auto Channel Sync-created sports channels, assigns matchup logos, and generates real Pregame/Live/Postgame EPG data by matching against a live public schedule (93 leagues — every major US team sport, 30+ soccer competitions, tennis, golf, NASCAR, F1, UFC/MMA/boxing/darts, and more). Renamed from EPGeditARR; existing installs carry their settings forward automatically. |
-| [`EPG Janitor`](#epg-janitor) | `1.26.2832018` | PiratesIRC | MIT | Scans for channels with EPG assignments but no program data. Auto-matches EPG to channels using intelligent fuzzy matching with aliases, removes EPG from hidden channels, and manages EPG assignments. |
+| [`EPG Janitor`](#epg-janitor) | `1.26.2901817` | PiratesIRC | MIT | Scans for channels with EPG assignments but no program data. Auto-matches EPG to channels using intelligent fuzzy matching with aliases, removes EPG from hidden channels, and manages EPG assignments. |
 | [`Event Channel Managarr`](#event-channel-managarr) | `1.26.2832019` | PiratesIRC | MIT | Automates channel visibility by hiding channels without events and showing those with events, based on EPG data and channel names. Optionally manages dummy EPG for channels without real EPG. |
 | [`Gluetun Rotate`](#gluetun-rotate) | `0.4.0` | PilaScat | MIT | Moves Gluetun to another VPN server when the IPTV provider refuses the current exit address. |
-| [`IPTV Checker`](#iptv-checker) | `1.26.2831712` | PiratesIRC | MIT | Check IPTV stream status and quality with ffprobe, then rename, move, restore or delete channels based on the result. Judges a channel by all of its streams, so a working backup never marks it dead. |
-| [`Lineuparr`](#lineuparr) | `1.26.2881058` | PiratesIRC | MIT | Mirror real-world provider channel lineups by creating channel groups, channels, and fuzzy-matching IPTV streams to them. |
+| [`IPTV Checker`](#iptv-checker) | `1.26.2901902` | PiratesIRC | MIT | Check IPTV stream status and quality with ffprobe, then rename, move, restore or delete channels based on the result. Judges a channel by all of its streams, so a working backup never marks it dead. |
+| [`Lineuparr`](#lineuparr) | `1.26.2901915` | PiratesIRC | MIT | Mirror real-world provider channel lineups by creating channel groups, channels, and fuzzy-matching IPTV streams to them. |
 | [`M3U Expiration Notifier`](#m3u-expiration-notifier) | `1.0.0` | barryanderson | MIT | Checks your M3U account expiration dates on a schedule and emails you before (and when) they expire. |
 | [`Multiview`](#multiview) | `0.5.0` | sethwv | MIT | Tile multiple Dispatcharr channel streams into multi-view outputs using FFmpeg |
 | [`Newsflasharr`](#newsflasharr) | `1.26.2832058` | PiratesIRC | MIT | Central notification service: other plugins drop events, Newsflasharr routes them to Discord, a webhook, ntfy, Apprise, email, a Dispatcharr Connect Integration, or an on-screen banner over live TV, with deduplication, storm throttling, quiet hours and per-channel retry. |
@@ -35,7 +35,7 @@ This branch contains all published plugin releases.
 | [`reservoarr`](#reservoarr) | `6.4.0` | brko7 | MIT | Delay-buffer stream profile that absorbs IPTV CDN gaps so Plex Live TV stops dying |
 | [`Segmentarr`](#segmentarr) | `1.5.7` | Tw1zT3d2four7 | MIT | HLS-segmenting stream profile for Dispatcharr: splits XC/URL provider streams into segments, repairs timestamp breaks, and delivers clean MPEG-TS through cvlc to a matching Output Profile. |
 | [`Stream Dripper`](#stream-dripper) | `2.0.0` | Megamannen | Artistic-2.0 | Automatically drops all active streams once per day at a configured time, with a manual drop-now button. |
-| [`Stream-Mapparr`](#stream-mapparr) | `1.26.2841900` | PiratesIRC | MIT | Automatically add matching streams to channels based on name similarity and quality precedence. Supports unlimited stream matching, channel visibility management, and CSV export cleanup. |
+| [`Stream-Mapparr`](#stream-mapparr) | `1.26.2911937` | PiratesIRC | MIT | Automatically add matching streams to channels based on name similarity and quality precedence. Supports unlimited stream matching, channel visibility management, and CSV export cleanup. |
 | [`Telegram Alerts`](#telegram-alerts) | `0.4.5` | R3XCHRIS | MIT | Push Dispatcharr channel/stream/VOD events to a Telegram chat via a bot. Includes a manual test action, per-event toggles, and an optional cron-driven daily report (public IP + geo + speedtest + activity + source health). |
 | [`Ticker`](#ticker) | `0.5.04` | jstevenscl | MIT | Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports Ticker, Custom Text, EAS/JAS Weather Alerts |
 | [`Twitcharr`](#twitcharr) | `1.3.2` | eliasbruno124-dev | MIT | Twitch live-TV plugin for Dispatcharr with automatic channels, streams, XMLTV guide data and Streamlink playback. |
@@ -69,7 +69,7 @@ Speeds up channel startup for low-bitrate (usually audio only) streams by loweri
 
 ### [Channel Mapparr](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/channel-mapparr/README.md)
 
-**Version:** `1.26.2881225` | **Author:** PiratesIRC | **Last Updated:** Oct 15 2026, 12:43 UTC
+**Version:** `1.26.2911354` | **Author:** PiratesIRC | **Last Updated:** Oct 18 2026, 14:29 UTC
 
 Standardizes broadcast (OTA) and premium/cable channel names using network data and channel lists. Supports M3U stream import, category organization, and fuzzy matching across about 42,600 channels in 13 countries.
 
@@ -78,10 +78,10 @@ Standardizes broadcast (OTA) and premium/cable channel names using network data 
 ![Dispatcharr min](https://img.shields.io/badge/Dispatcharr_min-v0.20.0-brightgreen?style=flat-square)
 
 **Downloads:**
-- [Latest Release (`1.26.2881225`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/channel-mapparr-1.26.2881225/channel-mapparr-1.26.2881225.zip)
-- [All Versions (4 available)](./metadata/channel-mapparr)
+- [Latest Release (`1.26.2911354`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/channel-mapparr-1.26.2911354/channel-mapparr-1.26.2911354.zip)
+- [All Versions (5 available)](./metadata/channel-mapparr)
 
-**Maintainers:** PiratesIRC | **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/channel-mapparr) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/channel-mapparr/README.md) | **Last Change:** [`2e4d8a9`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/2e4d8a9d05aa01b4f6c4f0cea38f34cbe5ecc8fa)
+**Maintainers:** PiratesIRC | **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/channel-mapparr) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/channel-mapparr/README.md) | **Last Change:** [`1025b6f`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/1025b6f7adb4475fc509f97f9b4725de9711aec4)
 
 ---
 
@@ -160,17 +160,17 @@ Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitori
 
 ### [Ranked Matchups (Top Games)](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/dispatcharr-ranked-matchups/README.md)
 
-**Version:** `1.35.0` | **Author:** Jacob-Lasky | **Last Updated:** Oct 15 2026, 17:08 UTC
+**Version:** `1.36.0` | **Author:** Jacob-Lasky | **Last Updated:** Oct 16 2026, 14:29 UTC
 
 Never miss a good game. Scores every upcoming game across 39 leagues, tours and competitions (22 of them soccer, plus NFL, NBA, MLB, NHL, NCAA D1 football and basketball, UFC, boxing, tennis, golf and motorsport), then builds a Top Matchups group holding only the ones worth watching and shows why each game ranked where it did in its EPG description. Finished games can clear themselves out and be replaced from a bench of the next-best fixtures.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](https://spdx.org/licenses/MIT.html) [![Discord](https://img.shields.io/badge/Discord-Discussion-5865F2?style=flat-square&logo=discord&logoColor=white)](https://discord.com/channels/1340492560220684331/1508938899865604167) [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Jacob-Lasky/dispatcharr_ranked_matchups)
 
 **Downloads:**
-- [Latest Release (`1.35.0`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/dispatcharr-ranked-matchups-1.35.0/dispatcharr-ranked-matchups-1.35.0.zip)
-- [All Versions (4 available)](./metadata/dispatcharr-ranked-matchups)
+- [Latest Release (`1.36.0`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/dispatcharr-ranked-matchups-1.36.0/dispatcharr-ranked-matchups-1.36.0.zip)
+- [All Versions (5 available)](./metadata/dispatcharr-ranked-matchups)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/dispatcharr-ranked-matchups) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/dispatcharr-ranked-matchups/README.md) | **Last Change:** [`cd25137`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/cd25137b98fb22f49124d5604341dbd2a7a5c3ca)
+**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/dispatcharr-ranked-matchups) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/dispatcharr-ranked-matchups/README.md) | **Last Change:** [`aaac7b4`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/aaac7b46076be8379e4bc9a0adc97e51807401c5)
 
 ---
 
@@ -196,7 +196,7 @@ An intelligent DRM/Clearkey capable stream profile for Dispatcharr
 
 ### [Dustarr](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/dustarr/README.md)
 
-**Version:** `1.26.2832018` | **Author:** PiratesIRC | **Last Updated:** Oct 10 2026, 20:24 UTC
+**Version:** `1.26.2901903` | **Author:** PiratesIRC | **Last Updated:** Oct 17 2026, 21:57 UTC
 
 Records which channels are actually watched and reports the ones that are not, so you can turn off the dead weight in your lineup. Read only: it never changes a channel and never contacts your provider.
 
@@ -205,10 +205,10 @@ Records which channels are actually watched and reports the ones that are not, s
 ![Dispatcharr min](https://img.shields.io/badge/Dispatcharr_min-v0.20.0-brightgreen?style=flat-square)
 
 **Downloads:**
-- [Latest Release (`1.26.2832018`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/dustarr-1.26.2832018/dustarr-1.26.2832018.zip)
-- [All Versions (1 available)](./metadata/dustarr)
+- [Latest Release (`1.26.2901903`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/dustarr-1.26.2901903/dustarr-1.26.2901903.zip)
+- [All Versions (2 available)](./metadata/dustarr)
 
-**Maintainers:** PiratesIRC | **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/dustarr) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/dustarr/README.md) | **Last Change:** [`8b49bab`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/8b49bab36a73fbd7bfd560647175d59e2c68958a)
+**Maintainers:** PiratesIRC | **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/dustarr) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/dustarr/README.md) | **Last Change:** [`1b882f2`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/1b882f233078ff663758cc1ecdf82ff16afea84a)
 
 ---
 
@@ -232,7 +232,7 @@ Transform and clean your EPG data using regex and find/replace rules. Creates vi
 
 ### [EPG Janitor](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/epg-janitor/README.md)
 
-**Version:** `1.26.2832018` | **Author:** PiratesIRC | **Last Updated:** Oct 10 2026, 20:24 UTC
+**Version:** `1.26.2901817` | **Author:** PiratesIRC | **Last Updated:** Oct 17 2026, 18:25 UTC
 
 Scans for channels with EPG assignments but no program data. Auto-matches EPG to channels using intelligent fuzzy matching with aliases, removes EPG from hidden channels, and manages EPG assignments.
 
@@ -241,10 +241,10 @@ Scans for channels with EPG assignments but no program data. Auto-matches EPG to
 ![Dispatcharr min](https://img.shields.io/badge/Dispatcharr_min-v0.20.0-brightgreen?style=flat-square)
 
 **Downloads:**
-- [Latest Release (`1.26.2832018`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/epg-janitor-1.26.2832018/epg-janitor-1.26.2832018.zip)
-- [All Versions (3 available)](./metadata/epg-janitor)
+- [Latest Release (`1.26.2901817`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/epg-janitor-1.26.2901817/epg-janitor-1.26.2901817.zip)
+- [All Versions (4 available)](./metadata/epg-janitor)
 
-**Maintainers:** PiratesIRC | **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/epg-janitor) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/epg-janitor/README.md) | **Last Change:** [`81947ce`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/81947cefec13629f9e5579e772b879103ccfeb98)
+**Maintainers:** PiratesIRC | **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/epg-janitor) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/epg-janitor/README.md) | **Last Change:** [`b55013e`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/b55013ef45a1ce624f6e27a3eb8bc254db92f285)
 
 ---
 
@@ -287,7 +287,7 @@ Moves Gluetun to another VPN server when the IPTV provider refuses the current e
 
 ### [IPTV Checker](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/iptv-checker/README.md)
 
-**Version:** `1.26.2831712` | **Author:** PiratesIRC | **Last Updated:** Oct 10 2026, 17:16 UTC
+**Version:** `1.26.2901902` | **Author:** PiratesIRC | **Last Updated:** Oct 17 2026, 21:57 UTC
 
 Check IPTV stream status and quality with ffprobe, then rename, move, restore or delete channels based on the result. Judges a channel by all of its streams, so a working backup never marks it dead.
 
@@ -296,17 +296,17 @@ Check IPTV stream status and quality with ffprobe, then rename, move, restore or
 ![Dispatcharr min](https://img.shields.io/badge/Dispatcharr_min-v0.20.0-brightgreen?style=flat-square)
 
 **Downloads:**
-- [Latest Release (`1.26.2831712`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/iptv-checker-1.26.2831712/iptv-checker-1.26.2831712.zip)
-- [All Versions (3 available)](./metadata/iptv-checker)
+- [Latest Release (`1.26.2901902`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/iptv-checker-1.26.2901902/iptv-checker-1.26.2901902.zip)
+- [All Versions (4 available)](./metadata/iptv-checker)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/iptv-checker) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/iptv-checker/README.md) | **Last Change:** [`25958e3`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/25958e37e0513376fd3fc7e6a4655c924006c8da)
+**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/iptv-checker) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/iptv-checker/README.md) | **Last Change:** [`06c0d38`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/06c0d380e674e99b7fa98e5e0cf7b4914dd78eee)
 
 ---
 
 
 ### [Lineuparr](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/lineuparr/README.md)
 
-**Version:** `1.26.2881058` | **Author:** PiratesIRC | **Last Updated:** Oct 15 2026, 11:03 UTC
+**Version:** `1.26.2901915` | **Author:** PiratesIRC | **Last Updated:** Oct 17 2026, 21:57 UTC
 
 Mirror real-world provider channel lineups by creating channel groups, channels, and fuzzy-matching IPTV streams to them.
 
@@ -315,10 +315,10 @@ Mirror real-world provider channel lineups by creating channel groups, channels,
 ![Dispatcharr min](https://img.shields.io/badge/Dispatcharr_min-v0.20.0-brightgreen?style=flat-square)
 
 **Downloads:**
-- [Latest Release (`1.26.2881058`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/lineuparr-1.26.2881058/lineuparr-1.26.2881058.zip)
-- [All Versions (4 available)](./metadata/lineuparr)
+- [Latest Release (`1.26.2901915`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/lineuparr-1.26.2901915/lineuparr-1.26.2901915.zip)
+- [All Versions (5 available)](./metadata/lineuparr)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/lineuparr) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/lineuparr/README.md) | **Last Change:** [`b119e7e`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/b119e7ea6cb2726098fa4da7adfd94b9d1fc0543)
+**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/lineuparr) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/lineuparr/README.md) | **Last Change:** [`0d24250`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/0d24250ed3d41c58f7901674909f2b88042e892e)
 
 ---
 
@@ -486,7 +486,7 @@ Automatically drops all active streams once per day at a configured time, with a
 
 ### [Stream-Mapparr](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/stream-mapparr/README.md)
 
-**Version:** `1.26.2841900` | **Author:** PiratesIRC | **Last Updated:** Oct 11 2026, 19:06 UTC
+**Version:** `1.26.2911937` | **Author:** PiratesIRC | **Last Updated:** Oct 18 2026, 19:54 UTC
 
 Automatically add matching streams to channels based on name similarity and quality precedence. Supports unlimited stream matching, channel visibility management, and CSV export cleanup.
 
@@ -495,10 +495,10 @@ Automatically add matching streams to channels based on name similarity and qual
 ![Dispatcharr min](https://img.shields.io/badge/Dispatcharr_min-v0.20.0-brightgreen?style=flat-square)
 
 **Downloads:**
-- [Latest Release (`1.26.2841900`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/stream-mapparr-1.26.2841900/stream-mapparr-1.26.2841900.zip)
-- [All Versions (5 available)](./metadata/stream-mapparr)
+- [Latest Release (`1.26.2911937`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/stream-mapparr-1.26.2911937/stream-mapparr-1.26.2911937.zip)
+- [All Versions (6 available)](./metadata/stream-mapparr)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/stream-mapparr) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/stream-mapparr/README.md) | **Last Change:** [`0bccc7e`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/0bccc7eebc3dc3a39baf16702b5d59abf8a86db9)
+**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/stream-mapparr) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/stream-mapparr/README.md) | **Last Change:** [`79767cd`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/79767cd3ca436d0a626727af77fa4fe3ce3829b5)
 
 ---
 
@@ -679,4 +679,4 @@ curl https://raw.githubusercontent.com/swvn-dispatch/PluginsRepoV2/releases/mani
 
 ---
 
-*Last updated: Oct 15 2026, 21:56 UTC*
+*Last updated: Oct 21 2026, 12:25 UTC*

@@ -2,7 +2,7 @@
 
 # Ranked Matchups (Top Games)
 
-**Version:** `1.35.0` | **Author:** Jacob-Lasky | **Last Updated:** Oct 15 2026, 17:08 UTC
+**Version:** `1.36.0` | **Author:** Jacob-Lasky | **Last Updated:** Oct 16 2026, 14:29 UTC
 
 Never miss a good game. Scores every upcoming game across 39 leagues, tours and competitions (22 of them soccer, plus NFL, NBA, MLB, NHL, NCAA D1 football and basketball, UFC, boxing, tennis, golf and motorsport), then builds a Top Matchups group holding only the ones worth watching and shows why each game ranked where it did in its EPG description. Finished games can clear themselves out and be replaced from a bench of the next-best fixtures.
 
@@ -12,20 +12,21 @@ Never miss a good game. Scores every upcoming game across 39 leagues, tours and 
 
 ### Latest Release
 
-- **Download:** [`dispatcharr-ranked-matchups-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/dispatcharr-ranked-matchups-1.35.0/dispatcharr-ranked-matchups-1.35.0.zip)
-- **Built:** Oct 15 2026, 20:23 UTC
-- **Source Commit:** [`cd25137`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/cd25137b98fb22f49124d5604341dbd2a7a5c3ca)
+- **Download:** [`dispatcharr-ranked-matchups-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/dispatcharr-ranked-matchups-1.36.0/dispatcharr-ranked-matchups-1.36.0.zip)
+- **Built:** Oct 21 2026, 12:24 UTC
+- **Source Commit:** [`aaac7b4`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/aaac7b46076be8379e4bc9a0adc97e51807401c5)
 
 **Checksums:**
 ```
-MD5:    b3614d3934c2ecadc09bf756a349659e
-SHA256: f1d1d5980fcdeff90c93834c1b7e8ff2c71808a2f3aae30346041568ead92deb
+MD5:    10f714d203c969838e1e0b4fa5fae8bd
+SHA256: 4d3aa5843174a8cc708d8b3846af52e3f1c1dda968af71138ad21ee6e3f0a61a
 ```
 
 ### All Versions
 
 | Version | Download | Built | Commit | MD5 | SHA256 |
 |---------|----------|-------|--------|-----|--------|
+| `1.36.0` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/dispatcharr-ranked-matchups-1.36.0/dispatcharr-ranked-matchups-1.36.0.zip) | Oct 21 2026, 12:24 UTC | [`aaac7b4`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/aaac7b46076be8379e4bc9a0adc97e51807401c5) | 10f714d203c969838e1e0b4fa5fae8bd | 4d3aa5843174a8cc708d8b3846af52e3f1c1dda968af71138ad21ee6e3f0a61a |
 | `1.35.0` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/dispatcharr-ranked-matchups-1.35.0/dispatcharr-ranked-matchups-1.35.0.zip) | Oct 15 2026, 20:23 UTC | [`cd25137`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/cd25137b98fb22f49124d5604341dbd2a7a5c3ca) | b3614d3934c2ecadc09bf756a349659e | f1d1d5980fcdeff90c93834c1b7e8ff2c71808a2f3aae30346041568ead92deb |
 | `1.20.0` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/dispatcharr-ranked-matchups-1.20.0/dispatcharr-ranked-matchups-1.20.0.zip) | Aug 22 2026, 23:06 UTC | [`57e5b93`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/57e5b93763f0a5f48121f596bb05b45c057c6716) | fb47fe4c51c6c9b9209185eb7962c74a | cc62033105fcba3a74dcb08558beed22d4171b5b56683c6497e3537eead3e264 |
 | `1.16.0` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/dispatcharr-ranked-matchups-1.16.0/dispatcharr-ranked-matchups-1.16.0.zip) | Aug 02 2026, 13:39 UTC | [`856181f`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/856181f8b47992b56029ba8c9d7b06d9303028e2) | 7653c347c816d877d9282cfea5b41ceb | b9bab4aa2262ed94c9892e03d5a75644f7ab45779ec2695a10da1741e1d48bbb |

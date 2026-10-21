@@ -2,7 +2,7 @@
 
 # Lineuparr
 
-**Version:** `1.26.2881058` | **Author:** PiratesIRC | **Last Updated:** Oct 15 2026, 11:03 UTC
+**Version:** `1.26.2901915` | **Author:** PiratesIRC | **Last Updated:** Oct 17 2026, 21:57 UTC
 
 Mirror real-world provider channel lineups by creating channel groups, channels, and fuzzy-matching IPTV streams to them.
 
@@ -14,20 +14,21 @@ Mirror real-world provider channel lineups by creating channel groups, channels,
 
 ### Latest Release
 
-- **Download:** [`lineuparr-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/lineuparr-1.26.2881058/lineuparr-1.26.2881058.zip)
-- **Built:** Oct 15 2026, 20:23 UTC
-- **Source Commit:** [`b119e7e`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/b119e7ea6cb2726098fa4da7adfd94b9d1fc0543)
+- **Download:** [`lineuparr-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/lineuparr-1.26.2901915/lineuparr-1.26.2901915.zip)
+- **Built:** Oct 21 2026, 12:25 UTC
+- **Source Commit:** [`0d24250`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/0d24250ed3d41c58f7901674909f2b88042e892e)
 
 **Checksums:**
 ```
-MD5:    269c4c719c34e1a5d94f172f1124c5a3
-SHA256: 31c453bd54e77c0d826395f39d7dcc41bf187d840d779b47f183e3ee0b7e5629
+MD5:    4e56968bcf4759940a86ecce23202a9b
+SHA256: 983692888a7144563cf3d0eb244068452378fbd82e247b63a70048393897e85a
 ```
 
 ### All Versions
 
 | Version | Download | Built | Commit | MD5 | SHA256 |
 |---------|----------|-------|--------|-----|--------|
+| `1.26.2901915` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/lineuparr-1.26.2901915/lineuparr-1.26.2901915.zip) | Oct 21 2026, 12:25 UTC | [`0d24250`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/0d24250ed3d41c58f7901674909f2b88042e892e) | 4e56968bcf4759940a86ecce23202a9b | 983692888a7144563cf3d0eb244068452378fbd82e247b63a70048393897e85a |
 | `1.26.2881058` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/lineuparr-1.26.2881058/lineuparr-1.26.2881058.zip) | Oct 15 2026, 20:23 UTC | [`b119e7e`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/b119e7ea6cb2726098fa4da7adfd94b9d1fc0543) | 269c4c719c34e1a5d94f172f1124c5a3 | 31c453bd54e77c0d826395f39d7dcc41bf187d840d779b47f183e3ee0b7e5629 |
 | `1.26.2291211` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/lineuparr-1.26.2291211/lineuparr-1.26.2291211.zip) | Aug 22 2026, 23:06 UTC | [`d8d31a9`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/d8d31a97780e2875831a22b78bf52263baa0485a) | de225cc8f064bc336e240161aa3c53ea | 1ee2a72b3466d8965b3756aaf570746553c1c620146d64c24415f2cd3ec354ad |
 | `1.26.2171315` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/lineuparr-1.26.2171315/lineuparr-1.26.2171315.zip) | Aug 12 2026, 13:14 UTC | [`ec73378`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/ec73378d08dfa6275c691e26d7f1264d0ac24255) | f876253e94e9d87185b26fc58c9dd793 | a8ef1be89f8c6834b3e63fcc858ef3305b86e58456ad1b472c42b64b1068cb8d |
@@ -104,6 +105,10 @@ Over 200 built-in channel aliases, plus your own in JSON. Every setting and acti
 | `TZ_Azam-TV_lineup.json` | Azam TV | TZ | ~146 |
 | `TZ_DStv-Premium_lineup.json` | DStv Premium | TZ | ~192 |
 | `TZ_Combined_lineup.json` | TZ Combined (Azam TV + DStv Premium) | TZ | ~310 |
+| `DO_Altice_lineup.json` | Altice | DO | ~224 |
+| `DO_Claro_lineup.json` | Claro | DO | ~261 |
+| `DO_Combined_lineup.json` | DO Combined (Altice + Claro) | DO | ~309 |
+| `PE_Claro_lineup.json` | Claro Peru | PE | ~201 |
 
 The beIN MENA lineup is regional rather than single country, so its country filtering is partial. Its filename country code is QA, which rejects streams tagged for a country outside the region: an Australian, Belgian or French beIN feed will not attach to one of its channels. Streams tagged for another Middle East or North Africa country, and streams tagged AR for Arabic, are treated as untagged and are kept, which is deliberate because those are the tags the region's own feeds carry.
 

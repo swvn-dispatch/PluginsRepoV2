@@ -2,7 +2,7 @@
 
 # Channel Mapparr
 
-**Version:** `1.26.2881225` | **Author:** PiratesIRC | **Last Updated:** Oct 15 2026, 12:43 UTC
+**Version:** `1.26.2911354` | **Author:** PiratesIRC | **Last Updated:** Oct 18 2026, 14:29 UTC
 
 Standardizes broadcast (OTA) and premium/cable channel names using network data and channel lists. Supports M3U stream import, category organization, and fuzzy matching across about 42,600 channels in 13 countries.
 
@@ -14,20 +14,21 @@ Standardizes broadcast (OTA) and premium/cable channel names using network data 
 
 ### Latest Release
 
-- **Download:** [`channel-mapparr-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/channel-mapparr-1.26.2881225/channel-mapparr-1.26.2881225.zip)
-- **Built:** Oct 15 2026, 20:23 UTC
-- **Source Commit:** [`2e4d8a9`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/2e4d8a9d05aa01b4f6c4f0cea38f34cbe5ecc8fa)
+- **Download:** [`channel-mapparr-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/channel-mapparr-1.26.2911354/channel-mapparr-1.26.2911354.zip)
+- **Built:** Oct 21 2026, 12:24 UTC
+- **Source Commit:** [`1025b6f`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/1025b6f7adb4475fc509f97f9b4725de9711aec4)
 
 **Checksums:**
 ```
-MD5:    df503d0bca03c1cf4b3f5aea6f1d4ec2
-SHA256: 5014961f5d8c6834b00a276e1422be4674eb45916e11fcfcd3397df0e9e0884e
+MD5:    05e2e51c8519fd4cee0abd3e1191d34a
+SHA256: 9fc5b90b11ee4f1dd77b62796ec19d107aabd63ff57ae1008b5ec691f3f715cb
 ```
 
 ### All Versions
 
 | Version | Download | Built | Commit | MD5 | SHA256 |
 |---------|----------|-------|--------|-----|--------|
+| `1.26.2911354` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/channel-mapparr-1.26.2911354/channel-mapparr-1.26.2911354.zip) | Oct 21 2026, 12:24 UTC | [`1025b6f`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/1025b6f7adb4475fc509f97f9b4725de9711aec4) | 05e2e51c8519fd4cee0abd3e1191d34a | 9fc5b90b11ee4f1dd77b62796ec19d107aabd63ff57ae1008b5ec691f3f715cb |
 | `1.26.2881225` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/channel-mapparr-1.26.2881225/channel-mapparr-1.26.2881225.zip) | Oct 15 2026, 20:23 UTC | [`2e4d8a9`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/2e4d8a9d05aa01b4f6c4f0cea38f34cbe5ecc8fa) | df503d0bca03c1cf4b3f5aea6f1d4ec2 | 5014961f5d8c6834b00a276e1422be4674eb45916e11fcfcd3397df0e9e0884e |
 | `1.26.2291823` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/channel-mapparr-1.26.2291823/channel-mapparr-1.26.2291823.zip) | Aug 22 2026, 23:06 UTC | [`f12b615`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/f12b61552da0f0cb899d87fffde316cf2223f351) | e73db45b7c6a29be4a5fb1407fa56312 | e51b802391b0f3f8e2e3f0fbbc9360f265970c3fdc1279cc0af297be86126ac1 |
 | `1.26.2170831` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/channel-mapparr-1.26.2170831/channel-mapparr-1.26.2170831.zip) | Aug 12 2026, 13:14 UTC | [`3826bb2`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/3826bb24bfc5de22f36bad3cbaa7ea8cdba50432) | 82721953287056af1940d63d161c266f | 3ec3f819882bd277e19b90a43a29369a7b75cfa7f82b3e04c659523c175a4d7c |

@@ -2,7 +2,7 @@
 
 # Stream-Mapparr
 
-**Version:** `1.26.2841900` | **Author:** PiratesIRC | **Last Updated:** Oct 11 2026, 19:06 UTC
+**Version:** `1.26.2911937` | **Author:** PiratesIRC | **Last Updated:** Oct 18 2026, 19:54 UTC
 
 Automatically add matching streams to channels based on name similarity and quality precedence. Supports unlimited stream matching, channel visibility management, and CSV export cleanup.
 
@@ -14,20 +14,21 @@ Automatically add matching streams to channels based on name similarity and qual
 
 ### Latest Release
 
-- **Download:** [`stream-mapparr-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/stream-mapparr-1.26.2841900/stream-mapparr-1.26.2841900.zip)
-- **Built:** Oct 15 2026, 20:24 UTC
-- **Source Commit:** [`0bccc7e`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/0bccc7eebc3dc3a39baf16702b5d59abf8a86db9)
+- **Download:** [`stream-mapparr-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/stream-mapparr-1.26.2911937/stream-mapparr-1.26.2911937.zip)
+- **Built:** Oct 21 2026, 12:25 UTC
+- **Source Commit:** [`79767cd`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/79767cd3ca436d0a626727af77fa4fe3ce3829b5)
 
 **Checksums:**
 ```
-MD5:    4fe6ec6c7461b599338a5bf4f46d3e17
-SHA256: 8ad89a5a0b56ece1625966256a66ee7f3e9b9fd2f34233e39fbe7973cba8a450
+MD5:    b424c81027fd9bb5052c788b8c8c14df
+SHA256: 7cbe5837dbf7b300b86bae06871d8cb4cc2fd31aa9de2708351d4800b4022cc6
 ```
 
 ### All Versions
 
 | Version | Download | Built | Commit | MD5 | SHA256 |
 |---------|----------|-------|--------|-----|--------|
+| `1.26.2911937` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/stream-mapparr-1.26.2911937/stream-mapparr-1.26.2911937.zip) | Oct 21 2026, 12:25 UTC | [`79767cd`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/79767cd3ca436d0a626727af77fa4fe3ce3829b5) | b424c81027fd9bb5052c788b8c8c14df | 7cbe5837dbf7b300b86bae06871d8cb4cc2fd31aa9de2708351d4800b4022cc6 |
 | `1.26.2841900` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/stream-mapparr-1.26.2841900/stream-mapparr-1.26.2841900.zip) | Oct 15 2026, 20:24 UTC | [`0bccc7e`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/0bccc7eebc3dc3a39baf16702b5d59abf8a86db9) | 4fe6ec6c7461b599338a5bf4f46d3e17 | 8ad89a5a0b56ece1625966256a66ee7f3e9b9fd2f34233e39fbe7973cba8a450 |
 | `1.26.2241602` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/stream-mapparr-1.26.2241602/stream-mapparr-1.26.2241602.zip) | Aug 22 2026, 23:06 UTC | [`dc86bdd`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/dc86bdd35a3992c6a744465854e1c402a9bcc15c) | abd5c4f4cfba1fa9fa38a9c561c0a978 | 06c8ccf427d144ee55be1b47213ea60512903e3ffd1d9956aea9351f3585ba0f |
 | `1.26.2141957` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/stream-mapparr-1.26.2141957/stream-mapparr-1.26.2141957.zip) | Aug 12 2026, 13:14 UTC | [`8f17d38`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/8f17d382613bd3c93784eed05fa1bd500bbdf60f) | f6f6e3cdf3df10b0e4311c7ee87c89d7 | 6a8b1a5f7d4b5882a20d7bd377a67dd19368ba96127ca098bef7e728933e8b2d |
@@ -218,7 +219,7 @@ the operation lock prevents concurrent runs and auto-expires after 10 minutes.
 | **Custom Ignore Tags** | string | (none) | Tags to strip before matching, for example `[Dead], (Backup)` |
 | **Wait for IPTV Checker Completion** | boolean | False | Hold a scheduled run until IPTV Checker has finished, so matching sees fresh stats |
 | **IPTV Checker Max Wait (hours)** | number | 6 | How long to wait before running anyway |
-| **Run After IPTV Checker Scan** | boolean | False | When IPTV Checker finishes a scheduled scan, run the scheduled steps (Sort Alternate Streams and Match and Assign, whichever are ticked). IPTV Checker needs its own `Trigger Stream-Mapparr` setting on |
+| **Run After IPTV Checker Scan** | boolean | False | When IPTV Checker finishes a scheduled scan, run the scheduled steps (Fill Mirror Backups, Sort Alternate Streams and Match and Assign, whichever are ticked). IPTV Checker needs its own `Trigger Stream-Mapparr` setting on |
 | **Enable CSV Export** | boolean | True | Write a CSV on a scheduled Match and Assign run. A dry run always writes one |
 | **Delete CSV Exports Older Than (Days)** | number | 0 | Remove this plugin's older reports after each new one is written. 0, the default, keeps everything. Only files this plugin wrote are ever considered, because that directory is shared with other plugins. The newest report and the one just written always survive |
 | **Tag Handling** | select | Strip All | Strip All, Keep Regional, or Keep All |
@@ -266,6 +267,7 @@ the operation lock prevents concurrent runs and auto-expires after 10 minutes.
 | **Match US OTA Only** | Match US broadcast channels by callsign |
 | **Sort Alternate Streams** | Re-sort existing streams by quality, and by throughput tier where probe data exists |
 | **Probe Stream Throughput** | Measure sustained throughput for assigned streams. Run this before Sort Alternate Streams |
+| **Fill Mirror Backups** | For M3U accounts placed in one Dispatcharr server group that carry the same streams from different provider hosts, add to each channel the matching stream, found by provider stream id, from every other active account whose host the channel has no stream from yet. Two accounts on the same host count as one, and inactive accounts are skipped. New streams go after the existing provider streams and before any custom stream. Adds only and never removes. In live mode it first saves each changed channel's previous stream order to `/data/stream_mapparr_snapshots/`, and changes nothing if that save fails. Writes every addition to `/config/stream-mapparr/fill-mirror-backups.txt` |
 | **Manage Channel Visibility** | Enable or disable channels based on stream count |
 | **View Check Progress** | Show the running operation's percentage and estimated time |
 | **View Last Results** | Show a summary of the last completed operation |
@@ -278,8 +280,10 @@ the operation lock prevents concurrent runs and auto-expires after 10 minutes.
 1. Set **Scheduled Run Times** in 24-hour format, for example `0400,1600`. Times
    use Dispatcharr's global timezone; there is no plugin timezone setting
 2. Choose which steps run: **Schedule: Match & Assign Streams**, on by default,
-   and **Schedule: Sort Streams**, off by default. They are independent, so a
-   schedule can sort only, match only, or both
+   **Schedule: Sort Streams**, off by default, and **Schedule: Fill Mirror
+   Backups**, off by default. They are independent, so a schedule can run any
+   of them alone or together. Fill Mirror Backups runs before Sort Streams, so
+   the mirrors it adds are sorted in the same run
 3. Enable **CSV Export** if you want one
 4. Click **Update Schedule**
 
@@ -295,8 +299,8 @@ finishes mid-match. A multi-account refresh therefore produces one effective
 match rather than one per account.
 
 **After an IPTV Checker scan**: **Run After IPTV Checker Scan** runs the same
-steps the fixed times run (Sort Alternate Streams and Match and Assign,
-whichever are ticked) when the IPTV Checker plugin finishes a scheduled scan
+steps the fixed times run (Fill Mirror Backups, Sort Alternate Streams and
+Match and Assign, whichever are ticked) when the IPTV Checker plugin finishes a scheduled scan
 that reached the end of its channel list. IPTV Checker calls this plugin
 directly, so its own **Trigger Stream-Mapparr After Scheduled Check** setting
 must be on as well. A run already in progress is left alone and the next scan
