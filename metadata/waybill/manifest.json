@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "waybill",
     "name": "Waybill",
@@ -17,6 +17,7 @@
       "version": "1.3.0",
       "commit_sha": "cdd18dd7f396035b9cd486d3e45375eed3bcc744",
       "commit_sha_short": "cdd18dd",
+      "changelog": "66",
       "build_timestamp": "2026-07-21T17:42:43Z",
       "last_updated": "2026-05-12T15:36:00-04:00",
       "checksum_md5": "87beb9950ded642b504fc24a88c506da",
@@ -34,6 +35,7 @@
         "version": "1.3.0",
         "commit_sha": "cdd18dd7f396035b9cd486d3e45375eed3bcc744",
         "commit_sha_short": "cdd18dd",
+        "changelog": "66",
         "build_timestamp": "2026-07-21T17:42:43Z",
         "last_updated": "2026-05-12T15:36:00-04:00",
         "checksum_md5": "87beb9950ded642b504fc24a88c506da",

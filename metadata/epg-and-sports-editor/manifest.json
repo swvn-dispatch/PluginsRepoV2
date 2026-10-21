@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "epg-and-sports-editor",
     "name": "EPG & Sports Editor",
@@ -17,6 +17,7 @@
       "version": "0.5.08",
       "commit_sha": "d929e64c0ea5aca533ef4b538fea6a5143761e66",
       "commit_sha_short": "d929e64",
+      "changelog": "384",
       "build_timestamp": "2026-10-15T20:23:30Z",
       "last_updated": "2026-10-03T21:37:04Z",
       "checksum_md5": "1cd36d9eeddc2055ddb481802ad9f9d2",
@@ -32,6 +33,7 @@
         "version": "0.5.08",
         "commit_sha": "d929e64c0ea5aca533ef4b538fea6a5143761e66",
         "commit_sha_short": "d929e64",
+        "changelog": "384",
         "build_timestamp": "2026-10-15T20:23:30Z",
         "last_updated": "2026-10-03T21:37:04Z",
         "checksum_md5": "1cd36d9eeddc2055ddb481802ad9f9d2",

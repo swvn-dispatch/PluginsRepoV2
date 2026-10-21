@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "packet-slapper",
     "name": "Packet Slapper",
@@ -17,6 +17,7 @@
       "version": "1.0.4",
       "commit_sha": "172f4b44d3b7063dca5a8fc1ccb005be67ab2611",
       "commit_sha_short": "172f4b4",
+      "changelog": "445",
       "build_timestamp": "2026-10-15T21:56:03Z",
       "last_updated": "2026-10-15T21:43:06Z",
       "checksum_md5": "2be84dbd3f27df76bf6a281d423891ac",
@@ -32,6 +33,7 @@
         "version": "1.0.4",
         "commit_sha": "172f4b44d3b7063dca5a8fc1ccb005be67ab2611",
         "commit_sha_short": "172f4b4",
+        "changelog": "445",
         "build_timestamp": "2026-10-15T21:56:03Z",
         "last_updated": "2026-10-15T21:43:06Z",
         "checksum_md5": "2be84dbd3f27df76bf6a281d423891ac",
@@ -45,6 +47,7 @@
         "version": "1.0.3",
         "commit_sha": "c2d44413106619a95d620c87d0067b29109872da",
         "commit_sha_short": "c2d4441",
+        "changelog": "392",
         "build_timestamp": "2026-10-15T20:24:04Z",
         "last_updated": "2026-10-06T22:16:12Z",
         "checksum_md5": "b5fdaa795b88e3d30ea2c22321925a27",

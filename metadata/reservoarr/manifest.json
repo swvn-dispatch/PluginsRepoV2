@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "reservoarr",
     "name": "reservoarr",
@@ -20,6 +20,7 @@
       "version": "6.4.0",
       "commit_sha": "c5aa56b2c0aa5634c1a9e84e335f9bd9adfd3ad6",
       "commit_sha_short": "c5aa56b",
+      "changelog": "435",
       "build_timestamp": "2026-10-15T20:24:18Z",
       "last_updated": "2026-10-14T14:48:27Z",
       "checksum_md5": "46d46419b3dc05bb88646de5e4bb1b0c",
@@ -36,6 +37,7 @@
         "version": "6.4.0",
         "commit_sha": "c5aa56b2c0aa5634c1a9e84e335f9bd9adfd3ad6",
         "commit_sha_short": "c5aa56b",
+        "changelog": "435",
         "build_timestamp": "2026-10-15T20:24:18Z",
         "last_updated": "2026-10-14T14:48:27Z",
         "checksum_md5": "46d46419b3dc05bb88646de5e4bb1b0c",
@@ -50,6 +52,7 @@
         "version": "6.3.1",
         "commit_sha": "87eb4462b4d69c9c7fed119696b027be4b6ed2c2",
         "commit_sha_short": "87eb446",
+        "changelog": "168",
         "build_timestamp": "2026-07-21T17:42:15Z",
         "last_updated": "2026-07-03T12:10:20-04:00",
         "checksum_md5": "8a7ad55909de876961f97c680544f5a8",

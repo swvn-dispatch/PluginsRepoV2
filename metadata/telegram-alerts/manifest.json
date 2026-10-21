@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "telegram-alerts",
     "name": "Telegram Alerts",
@@ -17,6 +17,7 @@
       "version": "0.4.5",
       "commit_sha": "04aa4f43926c2ca7cefc5c802166a02fe43b3500",
       "commit_sha_short": "04aa4f4",
+      "changelog": "103",
       "build_timestamp": "2026-07-21T17:42:27Z",
       "last_updated": "2026-06-01T16:07:29-04:00",
       "checksum_md5": "f736e0293e45efc22246727f4faf9e98",
@@ -33,6 +34,7 @@
         "version": "0.4.5",
         "commit_sha": "04aa4f43926c2ca7cefc5c802166a02fe43b3500",
         "commit_sha_short": "04aa4f4",
+        "changelog": "103",
         "build_timestamp": "2026-07-21T17:42:27Z",
         "last_updated": "2026-06-01T16:07:29-04:00",
         "checksum_md5": "f736e0293e45efc22246727f4faf9e98",

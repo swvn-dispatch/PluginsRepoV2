@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "lineuparr",
     "name": "Lineuparr",
@@ -43,6 +43,7 @@
         "version": "1.26.2881058",
         "commit_sha": "b119e7ea6cb2726098fa4da7adfd94b9d1fc0543",
         "commit_sha_short": "b119e7e",
+        "changelog": "437",
         "build_timestamp": "2026-10-15T20:23:50Z",
         "last_updated": "2026-10-15T11:03:26Z",
         "checksum_md5": "269c4c719c34e1a5d94f172f1124c5a3",
@@ -56,6 +57,7 @@
         "version": "1.26.2291211",
         "commit_sha": "d8d31a97780e2875831a22b78bf52263baa0485a",
         "commit_sha_short": "d8d31a9",
+        "changelog": "245",
         "build_timestamp": "2026-08-22T23:06:42Z",
         "last_updated": "2026-08-17T12:18:18Z",
         "checksum_md5": "de225cc8f064bc336e240161aa3c53ea",
@@ -69,6 +71,7 @@
         "version": "1.26.2171315",
         "commit_sha": "ec73378d08dfa6275c691e26d7f1264d0ac24255",
         "commit_sha_short": "ec73378",
+        "changelog": "215",
         "build_timestamp": "2026-08-12T13:14:53Z",
         "last_updated": "2026-08-05T14:25:49Z",
         "checksum_md5": "f876253e94e9d87185b26fc58c9dd793",
@@ -82,6 +85,7 @@
         "version": "1.26.1791747",
         "commit_sha": "ed8ee868bb90d6f2db8c20e4e67ee0014fdf8fa7",
         "commit_sha_short": "ed8ee86",
+        "changelog": "162",
         "build_timestamp": "2026-07-21T17:42:04Z",
         "last_updated": "2026-06-29T07:27:58-04:00",
         "checksum_md5": "5e20e00c3cadff07d41fc3fcb68bba2a",

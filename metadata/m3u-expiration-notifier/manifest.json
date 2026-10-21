@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "m3u-expiration-notifier",
     "name": "M3U Expiration Notifier",
@@ -17,6 +17,7 @@
       "version": "1.0.0",
       "commit_sha": "af83e5054bf456bbe78b841eabc3a3373abbbae1",
       "commit_sha_short": "af83e50",
+      "changelog": "178",
       "build_timestamp": "2026-07-21T17:42:08Z",
       "last_updated": "2026-07-16T20:26:29-04:00",
       "checksum_md5": "3bc650df39ff169f519c1586af1a2bc1",
@@ -32,6 +33,7 @@
         "version": "1.0.0",
         "commit_sha": "af83e5054bf456bbe78b841eabc3a3373abbbae1",
         "commit_sha_short": "af83e50",
+        "changelog": "178",
         "build_timestamp": "2026-07-21T17:42:08Z",
         "last_updated": "2026-07-16T20:26:29-04:00",
         "checksum_md5": "3bc650df39ff169f519c1586af1a2bc1",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "twitcharr",
     "name": "Twitcharr",
@@ -20,6 +20,7 @@
       "version": "1.3.2",
       "commit_sha": "2d65eb13b1ad72210ca517520c9d0608d2dc342b",
       "commit_sha_short": "2d65eb1",
+      "changelog": "175",
       "build_timestamp": "2026-07-21T17:42:35Z",
       "last_updated": "2026-07-12T22:54:15-04:00",
       "checksum_md5": "17f1938563ab3f718ce3248fe1d6f98e",
@@ -35,6 +36,7 @@
         "version": "1.3.2",
         "commit_sha": "2d65eb13b1ad72210ca517520c9d0608d2dc342b",
         "commit_sha_short": "2d65eb1",
+        "changelog": "175",
         "build_timestamp": "2026-07-21T17:42:35Z",
         "last_updated": "2026-07-12T22:54:15-04:00",
         "checksum_md5": "17f1938563ab3f718ce3248fe1d6f98e",

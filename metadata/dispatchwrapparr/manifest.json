@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "dispatchwrapparr",
     "name": "Dispatchwrapparr",
@@ -19,6 +19,7 @@
       "version": "1.7.8",
       "commit_sha": "0543ea1f4086b0da4e80e400422b2d0b72c70da9",
       "commit_sha_short": "0543ea1",
+      "changelog": "306",
       "build_timestamp": "2026-10-15T20:23:22Z",
       "last_updated": "2026-09-16T09:25:12Z",
       "checksum_md5": "9a831dc348ae06e0db2e3008d696b3fb",
@@ -34,6 +35,7 @@
         "version": "1.7.8",
         "commit_sha": "0543ea1f4086b0da4e80e400422b2d0b72c70da9",
         "commit_sha_short": "0543ea1",
+        "changelog": "306",
         "build_timestamp": "2026-10-15T20:23:22Z",
         "last_updated": "2026-09-16T09:25:12Z",
         "checksum_md5": "9a831dc348ae06e0db2e3008d696b3fb",
@@ -47,6 +49,7 @@
         "version": "1.7.6",
         "commit_sha": "9fc5ffc13904e456ba251ceecc747d3b2d837221",
         "commit_sha_short": "9fc5ffc",
+        "changelog": "171",
         "build_timestamp": "2026-07-21T17:41:44Z",
         "last_updated": "2026-07-07T21:38:30-04:00",
         "checksum_md5": "8a70ae2fdb467625666bd8b107a86fb5",

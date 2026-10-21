@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "clapparr",
     "name": "Clapparr",
@@ -17,6 +17,7 @@
       "version": "1.3.0",
       "commit_sha": "41752afd9a5678d2f7a9a49f2209331a620e119f",
       "commit_sha_short": "41752af",
+      "changelog": "252",
       "build_timestamp": "2026-08-22T23:06:31Z",
       "last_updated": "2026-08-22T18:50:11-04:00",
       "checksum_md5": "9a1952028dc26dcf136dfdfb00e450cf",
@@ -33,6 +34,7 @@
         "version": "1.3.0",
         "commit_sha": "41752afd9a5678d2f7a9a49f2209331a620e119f",
         "commit_sha_short": "41752af",
+        "changelog": "252",
         "build_timestamp": "2026-08-22T23:06:31Z",
         "last_updated": "2026-08-22T18:50:11-04:00",
         "checksum_md5": "9a1952028dc26dcf136dfdfb00e450cf",

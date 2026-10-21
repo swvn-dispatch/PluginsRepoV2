@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "dustarr",
     "name": "Dustarr",
@@ -21,6 +21,7 @@
       "version": "1.26.2901903",
       "commit_sha": "1b882f233078ff663758cc1ecdf82ff16afea84a",
       "commit_sha_short": "1b882f2",
+      "changelog": "455",
       "build_timestamp": "2026-10-21T12:24:49Z",
       "last_updated": "2026-10-17T17:57:40-04:00",
       "checksum_md5": "5d457ca12c31346cda8a080abbb0390a",
@@ -37,6 +38,7 @@
         "version": "1.26.2901903",
         "commit_sha": "1b882f233078ff663758cc1ecdf82ff16afea84a",
         "commit_sha_short": "1b882f2",
+        "changelog": "455",
         "build_timestamp": "2026-10-21T12:24:49Z",
         "last_updated": "2026-10-17T17:57:40-04:00",
         "checksum_md5": "5d457ca12c31346cda8a080abbb0390a",
@@ -51,6 +53,7 @@
         "version": "1.26.2832018",
         "commit_sha": "8b49bab36a73fbd7bfd560647175d59e2c68958a",
         "commit_sha_short": "8b49bab",
+        "changelog": "418",
         "build_timestamp": "2026-10-15T20:23:26Z",
         "last_updated": "2026-10-10T20:24:37Z",
         "checksum_md5": "1f947cd7fd07a12805b031f4f57649f5",

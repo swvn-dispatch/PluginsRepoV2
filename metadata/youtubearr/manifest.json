@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "youtubearr",
     "name": "YouTubearr",
@@ -15,6 +15,7 @@
       "version": "1.40.1",
       "commit_sha": "e14ea92d80763c52784047f843aa76069b45c7c1",
       "commit_sha_short": "e14ea92",
+      "changelog": "307",
       "build_timestamp": "2026-10-15T20:24:56Z",
       "last_updated": "2026-09-16T12:55:53Z",
       "checksum_md5": "cbab6543250500d2eaca2d424aa97f18",
@@ -30,6 +31,7 @@
         "version": "1.40.1",
         "commit_sha": "e14ea92d80763c52784047f843aa76069b45c7c1",
         "commit_sha_short": "e14ea92",
+        "changelog": "307",
         "build_timestamp": "2026-10-15T20:24:56Z",
         "last_updated": "2026-09-16T12:55:53Z",
         "checksum_md5": "cbab6543250500d2eaca2d424aa97f18",
@@ -43,6 +45,7 @@
         "version": "1.30.1",
         "commit_sha": "1e79c55fd33ce921c6c938990945e0ab23a7ef07",
         "commit_sha_short": "1e79c55",
+        "changelog": "204",
         "build_timestamp": "2026-08-02T13:39:15Z",
         "last_updated": "2026-07-31T23:07:43Z",
         "checksum_md5": "aade92b916078c40bdf2600314220ae1",
@@ -56,6 +59,7 @@
         "version": "1.30.0",
         "commit_sha": "5f3a8d5c3febd0f564298152b52a42fbf6ea3df5",
         "commit_sha_short": "5f3a8d5",
+        "changelog": "157",
         "build_timestamp": "2026-07-21T17:42:47Z",
         "last_updated": "2026-06-27T19:18:09-05:00",
         "checksum_md5": "5f151828e136c21664bc74dbd005068e",

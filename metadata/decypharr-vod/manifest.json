@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "decypharr-vod",
     "name": "Decypharr VOD",
@@ -20,6 +20,7 @@
       "version": "1.0.7",
       "commit_sha": "2055cc80f96ee26d0ebf3d5adfa2dd73c6bdf0d7",
       "commit_sha_short": "2055cc8",
+      "changelog": "382",
       "build_timestamp": "2026-10-15T20:23:13Z",
       "last_updated": "2026-10-02T18:22:22Z",
       "checksum_md5": "50271e6c0f437f8f0c1d3202e261bb79",
@@ -35,6 +36,7 @@
         "version": "1.0.7",
         "commit_sha": "2055cc80f96ee26d0ebf3d5adfa2dd73c6bdf0d7",
         "commit_sha_short": "2055cc8",
+        "changelog": "382",
         "build_timestamp": "2026-10-15T20:23:13Z",
         "last_updated": "2026-10-02T18:22:22Z",
         "checksum_md5": "50271e6c0f437f8f0c1d3202e261bb79",

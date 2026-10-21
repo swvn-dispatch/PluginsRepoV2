@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "event-channel-managarr",
     "name": "Event Channel Managarr",
@@ -20,6 +20,7 @@
       "version": "1.26.2832019",
       "commit_sha": "39cf0ba01aa2120e0ad1d42bfe5ac11813a8d4ad",
       "commit_sha_short": "39cf0ba",
+      "changelog": "419",
       "build_timestamp": "2026-10-15T20:23:38Z",
       "last_updated": "2026-10-10T20:25:46Z",
       "checksum_md5": "b4db356095d5cf3a106502dc029bf478",
@@ -36,6 +37,7 @@
         "version": "1.26.2832019",
         "commit_sha": "39cf0ba01aa2120e0ad1d42bfe5ac11813a8d4ad",
         "commit_sha_short": "39cf0ba",
+        "changelog": "419",
         "build_timestamp": "2026-10-15T20:23:38Z",
         "last_updated": "2026-10-10T20:25:46Z",
         "checksum_md5": "b4db356095d5cf3a106502dc029bf478",
@@ -50,6 +52,7 @@
         "version": "1.26.2341504",
         "commit_sha": "59fc293d1d236ef1fc73068b7ca8eb76f62724f0",
         "commit_sha_short": "59fc293",
+        "changelog": "254",
         "build_timestamp": "2026-08-22T23:06:40Z",
         "last_updated": "2026-08-22T15:48:54Z",
         "checksum_md5": "708b7ca9b3b61155074785085d3d238d",
@@ -64,6 +67,7 @@
         "version": "1.26.1711720",
         "commit_sha": "786eefb3f2ef4df2ee30d52b3bcd16c9af58593f",
         "commit_sha_short": "786eefb",
+        "changelog": "136",
         "build_timestamp": "2026-07-21T17:41:58Z",
         "last_updated": "2026-06-20T14:14:55-04:00",
         "checksum_md5": "161fced9ae41a6269272c2c9768e4e55",

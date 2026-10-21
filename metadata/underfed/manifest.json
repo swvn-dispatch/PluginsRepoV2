@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "underfed",
     "name": "Underfed",
@@ -17,6 +17,7 @@
       "version": "0.8.0",
       "commit_sha": "7caef90467b4318d946777387b150999cc4f35f5",
       "commit_sha_short": "7caef90",
+      "changelog": "429",
       "build_timestamp": "2026-10-15T20:24:40Z",
       "last_updated": "2026-10-12T14:28:08Z",
       "checksum_md5": "d5732d4b73981a1acb5732432c92816e",
@@ -32,6 +33,7 @@
         "version": "0.8.0",
         "commit_sha": "7caef90467b4318d946777387b150999cc4f35f5",
         "commit_sha_short": "7caef90",
+        "changelog": "429",
         "build_timestamp": "2026-10-15T20:24:40Z",
         "last_updated": "2026-10-12T14:28:08Z",
         "checksum_md5": "d5732d4b73981a1acb5732432c92816e",

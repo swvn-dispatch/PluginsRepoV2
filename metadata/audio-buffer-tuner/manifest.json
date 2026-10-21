@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "audio-buffer-tuner",
     "name": "Audio Buffer Tuner",
@@ -21,6 +21,7 @@
       "version": "0.3.5",
       "commit_sha": "3ceeddd53b4d49d5d14584768f69121e8094d6df",
       "commit_sha_short": "3ceeddd",
+      "changelog": "308",
       "build_timestamp": "2026-10-15T20:22:59Z",
       "last_updated": "2026-09-16T13:11:15-04:00",
       "checksum_md5": "5cf6208253d8f12c5f0d473211e21728",
@@ -37,6 +38,7 @@
         "version": "0.3.5",
         "commit_sha": "3ceeddd53b4d49d5d14584768f69121e8094d6df",
         "commit_sha_short": "3ceeddd",
+        "changelog": "308",
         "build_timestamp": "2026-10-15T20:22:59Z",
         "last_updated": "2026-09-16T13:11:15-04:00",
         "checksum_md5": "5cf6208253d8f12c5f0d473211e21728",

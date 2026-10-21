@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "vod2mlib",
     "name": "VOD to Media Library",
@@ -18,6 +18,7 @@
       "version": "1.18.1",
       "commit_sha": "5a85167a421f22ad9e0ec161b31662374deadc07",
       "commit_sha_short": "5a85167",
+      "changelog": "386",
       "build_timestamp": "2026-10-15T20:24:52Z",
       "last_updated": "2026-10-05T21:29:03Z",
       "checksum_md5": "d8cbd43789c5bf36e450516c4f30ec6f",
@@ -34,6 +35,7 @@
         "version": "1.18.1",
         "commit_sha": "5a85167a421f22ad9e0ec161b31662374deadc07",
         "commit_sha_short": "5a85167",
+        "changelog": "386",
         "build_timestamp": "2026-10-15T20:24:52Z",
         "last_updated": "2026-10-05T21:29:03Z",
         "checksum_md5": "d8cbd43789c5bf36e450516c4f30ec6f",
@@ -48,6 +50,7 @@
         "version": "1.18.0",
         "commit_sha": "b7a546ea5c82bd2e2889a0a4258c695e82aea041",
         "commit_sha_short": "b7a546e",
+        "changelog": "251",
         "build_timestamp": "2026-08-22T23:06:54Z",
         "last_updated": "2026-08-19T16:22:25Z",
         "checksum_md5": "f7699d183e538422fdf0d2c7c6ca8e7b",
@@ -62,6 +65,7 @@
         "version": "1.16.0",
         "commit_sha": "3b8487b78899906c8181804749514627eccd2f06",
         "commit_sha_short": "3b8487b",
+        "changelog": "166",
         "build_timestamp": "2026-07-21T17:42:39Z",
         "last_updated": "2026-07-01T17:57:17-04:00",
         "checksum_md5": "26e098d325cfc3197539fe2196cbf3be",

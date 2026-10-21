@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "vod-manager",
     "name": "VOD Manager",
@@ -17,6 +17,7 @@
       "version": "2.6.4",
       "commit_sha": "767c1346ef1c84136d45f08db69349b480fa8163",
       "commit_sha_short": "767c134",
+      "changelog": "407",
       "build_timestamp": "2026-10-15T20:24:44Z",
       "last_updated": "2026-10-10T10:00:22Z",
       "checksum_md5": "e7799ab16be8b6f197f1503f207da991",
@@ -32,6 +33,7 @@
         "version": "2.6.4",
         "commit_sha": "767c1346ef1c84136d45f08db69349b480fa8163",
         "commit_sha_short": "767c134",
+        "changelog": "407",
         "build_timestamp": "2026-10-15T20:24:44Z",
         "last_updated": "2026-10-10T10:00:22Z",
         "checksum_md5": "e7799ab16be8b6f197f1503f207da991",

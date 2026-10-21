@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "segmentarr",
     "name": "Segmentarr",
@@ -20,6 +20,7 @@
       "version": "1.5.7",
       "commit_sha": "56c222040c2a2357c79de3d96d4142cbeeed01b6",
       "commit_sha_short": "56c2220",
+      "changelog": "402",
       "build_timestamp": "2026-10-15T20:24:23Z",
       "last_updated": "2026-10-09T14:25:33Z",
       "checksum_md5": "b80879859cbc0098a1e6088e75a98574",
@@ -35,6 +36,7 @@
         "version": "1.5.7",
         "commit_sha": "56c222040c2a2357c79de3d96d4142cbeeed01b6",
         "commit_sha_short": "56c2220",
+        "changelog": "402",
         "build_timestamp": "2026-10-15T20:24:23Z",
         "last_updated": "2026-10-09T14:25:33Z",
         "checksum_md5": "b80879859cbc0098a1e6088e75a98574",

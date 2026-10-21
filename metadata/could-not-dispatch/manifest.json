@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "could-not-dispatch",
     "name": "Could Not Dispatch",
@@ -17,6 +17,7 @@
       "version": "0.5.0",
       "commit_sha": "8e2b381c3088d1899c334452f36bcb201678c319",
       "commit_sha_short": "8e2b381",
+      "changelog": "393",
       "build_timestamp": "2026-10-15T20:23:09Z",
       "last_updated": "2026-10-06T23:20:38Z",
       "checksum_md5": "82e6b5ae22f415dbf37b5a2204950451",
@@ -32,6 +33,7 @@
         "version": "0.5.0",
         "commit_sha": "8e2b381c3088d1899c334452f36bcb201678c319",
         "commit_sha_short": "8e2b381",
+        "changelog": "393",
         "build_timestamp": "2026-10-15T20:23:09Z",
         "last_updated": "2026-10-06T23:20:38Z",
         "checksum_md5": "82e6b5ae22f415dbf37b5a2204950451",
@@ -45,6 +47,7 @@
         "version": "0.1.0",
         "commit_sha": "67532805aec060ec4ae02d60d874ada54f64c63f",
         "commit_sha_short": "6753280",
+        "changelog": "222",
         "build_timestamp": "2026-08-12T13:14:46Z",
         "last_updated": "2026-08-10T16:11:26-04:00",
         "checksum_md5": "42c9dd34574a5fb1beafa5ab4cd3e56e",

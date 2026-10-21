@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:39:49Z",
+  "generated_at": "2026-10-21T12:57:36Z",
   "manifest": {
     "slug": "newsflasharr",
     "name": "Newsflasharr",
@@ -18,6 +18,7 @@
       "version": "1.26.2832058",
       "commit_sha": "13822829cdf4fed14bf51148eceb56804a0c57b8",
       "commit_sha_short": "1382282",
+      "changelog": "420",
       "build_timestamp": "2026-10-15T20:24:00Z",
       "last_updated": "2026-10-10T21:19:00Z",
       "checksum_md5": "a1c76e77e51c92b684114d2fb6049be9",
@@ -34,6 +35,7 @@
         "version": "1.26.2832058",
         "commit_sha": "13822829cdf4fed14bf51148eceb56804a0c57b8",
         "commit_sha_short": "1382282",
+        "changelog": "420",
         "build_timestamp": "2026-10-15T20:24:00Z",
         "last_updated": "2026-10-10T21:19:00Z",
         "checksum_md5": "a1c76e77e51c92b684114d2fb6049be9",
@@ -48,6 +50,7 @@
         "version": "1.26.2241159",
         "commit_sha": "5c239be35a9e5d5db0cfbf45f36c9217d097631e",
         "commit_sha_short": "5c239be",
+        "changelog": "224",
         "build_timestamp": "2026-08-12T13:14:56Z",
         "last_updated": "2026-08-12T12:05:54Z",
         "checksum_md5": "35077cbb21fe71e46e3e0c7bc8a5ac1c",
