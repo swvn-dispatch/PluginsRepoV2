@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T19:58:32Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "lineuparr",
     "name": "Lineuparr",
@@ -20,6 +20,7 @@
       "checksum_md5": "4e56968bcf4759940a86ecce23202a9b",
       "checksum_sha256": "983692888a7144563cf3d0eb244068452378fbd82e247b63a70048393897e85a",
       "min_dispatcharr_version": "v0.20.0",
+      "max_dispatcharr_version": "",
       "latest_url": "lineuparr-1.26.2901915/lineuparr-1.26.2901915.zip",
       "url": "lineuparr-1.26.2901915/lineuparr-1.26.2901915.zip",
       "size": 457,

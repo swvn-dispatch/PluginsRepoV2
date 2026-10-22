@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T19:58:32Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "dustarr",
     "name": "Dustarr",
@@ -27,6 +27,7 @@
       "checksum_md5": "5d457ca12c31346cda8a080abbb0390a",
       "checksum_sha256": "21b8d14c01e702ad18ac1d78ceb4c3b65ab19db826fb2e2e5cd4595c69ed90c9",
       "min_dispatcharr_version": "v0.20.0",
+      "max_dispatcharr_version": "",
       "source_url": "https://github.com/PiratesIRC/Dispatcharr-Dustarr-Plugin/releases/download/1.26.2901903/Dustarr-1.26.2901903.zip",
       "latest_url": "dustarr-1.26.2901903/dustarr-1.26.2901903.zip",
       "url": "dustarr-1.26.2901903/dustarr-1.26.2901903.zip",

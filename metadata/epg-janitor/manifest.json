@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T19:58:32Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "epg-janitor",
     "name": "EPG Janitor",
@@ -27,6 +27,7 @@
       "checksum_md5": "ec10772f3d36e04454e068eac38b0473",
       "checksum_sha256": "cb87b8968f8132722d9387a40c6f49aa72032b917e87fcb5e580ee3e520892e0",
       "min_dispatcharr_version": "v0.20.0",
+      "max_dispatcharr_version": "",
       "source_url": "https://github.com/PiratesIRC/Dispatcharr-EPG-Janitor-Plugin/releases/download/1.26.2901817/EPG-Janitor.zip",
       "latest_url": "epg-janitor-1.26.2901817/epg-janitor-1.26.2901817.zip",
       "url": "epg-janitor-1.26.2901817/epg-janitor-1.26.2901817.zip",

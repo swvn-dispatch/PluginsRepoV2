@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:57:36Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "audio-buffer-tuner",
     "name": "Audio Buffer Tuner",
@@ -27,6 +27,7 @@
       "checksum_md5": "5cf6208253d8f12c5f0d473211e21728",
       "checksum_sha256": "18b2f649282b8199290a10654868f194c4a3cf1cf02da86ed9b38e7c5115076e",
       "min_dispatcharr_version": "v0.31.0",
+      "max_dispatcharr_version": "",
       "source_url": "https://github.com/CtznSniiips/audio-buffer-tuner/releases/download/v0.3.5/audio-buffer-tuner.zip",
       "latest_url": "audio-buffer-tuner-0.3.5/audio-buffer-tuner-0.3.5.zip",
       "url": "audio-buffer-tuner-0.3.5/audio-buffer-tuner-0.3.5.zip",

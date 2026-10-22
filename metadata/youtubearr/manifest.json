@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:57:36Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "youtubearr",
     "name": "YouTubearr",
@@ -21,6 +21,7 @@
       "checksum_md5": "cbab6543250500d2eaca2d424aa97f18",
       "checksum_sha256": "016aee38ce546464493e2545776040f63afc72d526dedf98d2fd0bd6b1546b48",
       "min_dispatcharr_version": "v0.20.0",
+      "max_dispatcharr_version": "",
       "latest_url": "youtubearr-1.40.1/youtubearr-1.40.1.zip",
       "url": "youtubearr-1.40.1/youtubearr-1.40.1.zip",
       "size": 5017,

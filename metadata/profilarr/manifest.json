@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:57:36Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "profilarr",
     "name": "Profilarr",
@@ -25,6 +25,8 @@
       "last_updated": "2026-09-24T04:31:02Z",
       "checksum_md5": "6c9603f09f266b707cbf92d05b2edb5f",
       "checksum_sha256": "c9ee48397f689b11d6b8fe0a01f31418ddcb0dc20c575f42c8e4feb25282ca2f",
+      "min_dispatcharr_version": "",
+      "max_dispatcharr_version": "",
       "source_url": "https://github.com/Tw1zT3d2four7/Profilarr/releases/download/v2.1.6/Profilarr.zip",
       "latest_url": "profilarr-2.1.6/profilarr-2.1.6.zip",
       "url": "profilarr-2.1.6/profilarr-2.1.6.zip",

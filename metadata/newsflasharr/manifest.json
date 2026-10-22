@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:57:36Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "newsflasharr",
     "name": "Newsflasharr",
@@ -24,6 +24,7 @@
       "checksum_md5": "a1c76e77e51c92b684114d2fb6049be9",
       "checksum_sha256": "e96cf9c084f9f8c1c8d09dcbaaa59e9b46ff11253a118673acbc345317d1aa57",
       "min_dispatcharr_version": "v0.20.0",
+      "max_dispatcharr_version": "",
       "source_url": "https://github.com/PiratesIRC/Dispatcharr-Newsflasharr-Plugin/releases/download/1.26.2832058/Newsflasharr.zip",
       "latest_url": "newsflasharr-1.26.2832058/newsflasharr-1.26.2832058.zip",
       "url": "newsflasharr-1.26.2832058/newsflasharr-1.26.2832058.zip",

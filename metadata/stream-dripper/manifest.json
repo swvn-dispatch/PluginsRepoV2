@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:57:36Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "stream-dripper",
     "name": "Stream Dripper",
@@ -21,6 +21,7 @@
       "checksum_md5": "d600921a5a33f04e9b2aa7a9b2c9e85c",
       "checksum_sha256": "fecb75a2b0915ca0ea290c2b015618e48031f7d09f29fa5fe0aa5c72dcb265df",
       "min_dispatcharr_version": "0.25.0",
+      "max_dispatcharr_version": "",
       "latest_url": "stream-dripper-2.0.0/stream-dripper-2.0.0.zip",
       "url": "stream-dripper-2.0.0/stream-dripper-2.0.0.zip",
       "size": 31,

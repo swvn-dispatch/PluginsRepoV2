@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:57:36Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "could-not-dispatch",
     "name": "Could Not Dispatch",
@@ -22,6 +22,8 @@
       "last_updated": "2026-10-06T23:20:38Z",
       "checksum_md5": "82e6b5ae22f415dbf37b5a2204950451",
       "checksum_sha256": "59995d4a526216d2000b2dbe36a8dbb64aa0fb8b702685ad4c1844388e1b0ec4",
+      "min_dispatcharr_version": "",
+      "max_dispatcharr_version": "",
       "source_url": "https://github.com/PilaScat/could-not-dispatch/releases/download/v0.5.0/could-not-dispatch-0.5.0.zip",
       "latest_url": "could-not-dispatch-0.5.0/could-not-dispatch-0.5.0.zip",
       "url": "could-not-dispatch-0.5.0/could-not-dispatch-0.5.0.zip",

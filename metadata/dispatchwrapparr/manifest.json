@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:57:36Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "dispatchwrapparr",
     "name": "Dispatchwrapparr",
@@ -25,6 +25,7 @@
       "checksum_md5": "9a831dc348ae06e0db2e3008d696b3fb",
       "checksum_sha256": "da30265649581008f87c38aff394dd3c021c7a18b646c89ca1b806212b02663e",
       "min_dispatcharr_version": "v0.31.0",
+      "max_dispatcharr_version": "",
       "latest_url": "dispatchwrapparr-1.7.8/dispatchwrapparr-1.7.8.zip",
       "url": "dispatchwrapparr-1.7.8/dispatchwrapparr-1.7.8.zip",
       "size": 47,

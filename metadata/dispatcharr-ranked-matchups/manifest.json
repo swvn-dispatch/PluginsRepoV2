@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T19:58:32Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "dispatcharr-ranked-matchups",
     "name": "Ranked Matchups (Top Games)",
@@ -23,6 +23,8 @@
       "last_updated": "2026-10-16T14:29:09Z",
       "checksum_md5": "10f714d203c969838e1e0b4fa5fae8bd",
       "checksum_sha256": "4d3aa5843174a8cc708d8b3846af52e3f1c1dda968af71138ad21ee6e3f0a61a",
+      "min_dispatcharr_version": "",
+      "max_dispatcharr_version": "",
       "source_url": "https://github.com/Jacob-Lasky/dispatcharr_ranked_matchups/releases/download/v1.36.0/plugin.zip",
       "latest_url": "dispatcharr-ranked-matchups-1.36.0/dispatcharr-ranked-matchups-1.36.0.zip",
       "url": "dispatcharr-ranked-matchups-1.36.0/dispatcharr-ranked-matchups-1.36.0.zip",

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T19:58:32Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "stream-mapparr",
     "name": "Stream-Mapparr",
@@ -23,6 +23,7 @@
       "checksum_md5": "b424c81027fd9bb5052c788b8c8c14df",
       "checksum_sha256": "7cbe5837dbf7b300b86bae06871d8cb4cc2fd31aa9de2708351d4800b4022cc6",
       "min_dispatcharr_version": "v0.20.0",
+      "max_dispatcharr_version": "",
       "source_url": "https://github.com/PiratesIRC/Stream-Mapparr/releases/download/1.26.2911937/Stream-Mapparr.zip",
       "latest_url": "stream-mapparr-1.26.2911937/stream-mapparr-1.26.2911937.zip",
       "url": "stream-mapparr-1.26.2911937/stream-mapparr-1.26.2911937.zip",

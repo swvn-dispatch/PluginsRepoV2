@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T19:58:32Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "iptv-checker",
     "name": "IPTV Checker",
@@ -23,6 +23,7 @@
       "checksum_md5": "faca88cf2cfb2ace4ed681e9bd75af80",
       "checksum_sha256": "dfa15b723017d12efcb0855ca15dffebaac6c2aa30bc286556c01fdc87b31c9e",
       "min_dispatcharr_version": "v0.20.0",
+      "max_dispatcharr_version": "",
       "source_url": "https://github.com/PiratesIRC/Dispatcharr-IPTV-Checker-Plugin/releases/download/v1.26.2901902/iptv_checker-v1.26.2901902.zip",
       "latest_url": "iptv-checker-1.26.2901902/iptv-checker-1.26.2901902.zip",
       "url": "iptv-checker-1.26.2901902/iptv-checker-1.26.2901902.zip",

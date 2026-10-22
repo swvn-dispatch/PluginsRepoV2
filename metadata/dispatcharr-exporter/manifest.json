@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:57:36Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "dispatcharr-exporter",
     "name": "Dispatcharr Exporter",
@@ -22,6 +22,7 @@
       "checksum_md5": "612c99923f0a980396166ae92b58191a",
       "checksum_sha256": "ad554e863f7b776f4acf07f619375661bdd493728a673eb4902e51d917db79d8",
       "min_dispatcharr_version": "v0.22.0",
+      "max_dispatcharr_version": "",
       "latest_url": "dispatcharr-exporter-3.1.1/dispatcharr-exporter-3.1.1.zip",
       "url": "dispatcharr-exporter-3.1.1/dispatcharr-exporter-3.1.1.zip",
       "size": 143,

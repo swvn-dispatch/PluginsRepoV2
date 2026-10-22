@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:57:36Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "vod-probe",
     "name": "VOD Probe",
@@ -22,6 +22,8 @@
       "last_updated": "2026-10-10T10:04:01Z",
       "checksum_md5": "dd346d3865eae81d45a2c325fbe9479b",
       "checksum_sha256": "e2a068cbb7b264e16d5a8925fc2ca7c50fcf18bfc46d61450458c09f14f6ebc5",
+      "min_dispatcharr_version": "",
+      "max_dispatcharr_version": "",
       "source_url": "https://github.com/oxios0x00/dispatcharr-vod-probe/releases/download/v1.3.3/vod_probe.zip",
       "latest_url": "vod-probe-1.3.3/vod-probe-1.3.3.zip",
       "url": "vod-probe-1.3.3/vod-probe-1.3.3.zip",

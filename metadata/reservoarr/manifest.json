@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:57:36Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "reservoarr",
     "name": "reservoarr",
@@ -26,6 +26,7 @@
       "checksum_md5": "46d46419b3dc05bb88646de5e4bb1b0c",
       "checksum_sha256": "9a60fed3c2fc6ee7f145433d628f98a83ddeb6dbf0401ee066fefbbae31801be",
       "min_dispatcharr_version": "v0.25.0",
+      "max_dispatcharr_version": "",
       "source_url": "https://github.com/brko7/reservoarr/releases/download/v6.4.0/reservoarr-6.4.0.zip",
       "latest_url": "reservoarr-6.4.0/reservoarr-6.4.0.zip",
       "url": "reservoarr-6.4.0/reservoarr-6.4.0.zip",

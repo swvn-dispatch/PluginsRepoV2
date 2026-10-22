@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T19:58:32Z",
+  "generated_at": "2026-10-22T22:36:02Z",
   "manifest": {
     "slug": "epg-and-sports-editor",
     "name": "EPG & Sports Editor",
@@ -22,6 +22,8 @@
       "last_updated": "2026-10-22T05:17:14Z",
       "checksum_md5": "fc13eb90b28cd26124adf22ee06ee253",
       "checksum_sha256": "63a44bd7de1fe984be9a5b9945c22fcb47e9b9a22fd238364dd98745f4190e03",
+      "min_dispatcharr_version": "",
+      "max_dispatcharr_version": "",
       "source_url": "https://github.com/jstevenscl/epg-and-sports-editor/releases/download/v0.5.09/epg-and-sports-editor-v0.5.09.zip",
       "latest_url": "epg-and-sports-editor-0.5.09/epg-and-sports-editor-0.5.09.zip",
       "url": "epg-and-sports-editor-0.5.09/epg-and-sports-editor-0.5.09.zip",
