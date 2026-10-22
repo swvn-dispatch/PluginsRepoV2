@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-21T12:57:36Z",
+  "generated_at": "2026-10-22T19:58:32Z",
   "manifest": {
     "slug": "dispatcharr-ranked-matchups",
     "name": "Ranked Matchups (Top Games)",
@@ -13,7 +13,7 @@
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
     "last_updated": "2026-10-16T14:29:09Z",
-    "download_count": 0,
+    "download_count": 1,
     "latest": {
       "version": "1.36.0",
       "commit_sha": "aaac7b46076be8379e4bc9a0adc97e51807401c5",
@@ -27,7 +27,7 @@
       "latest_url": "dispatcharr-ranked-matchups-1.36.0/dispatcharr-ranked-matchups-1.36.0.zip",
       "url": "dispatcharr-ranked-matchups-1.36.0/dispatcharr-ranked-matchups-1.36.0.zip",
       "size": 787,
-      "download_count": 0
+      "download_count": 1
     },
     "versions": [
       {
@@ -42,7 +42,7 @@
         "source_url": "https://github.com/Jacob-Lasky/dispatcharr_ranked_matchups/releases/download/v1.36.0/plugin.zip",
         "url": "dispatcharr-ranked-matchups-1.36.0/dispatcharr-ranked-matchups-1.36.0.zip",
         "size": 787,
-        "download_count": 0
+        "download_count": 1
       },
       {
         "version": "1.35.0",
