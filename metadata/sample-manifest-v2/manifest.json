@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T22:56:35Z",
+  "generated_at": "2026-10-22T23:13:47Z",
   "manifest": {
     "slug": "sample-manifest-v2",
     "name": "Manifest v2 Example",
@@ -17,6 +17,7 @@
       "version": "1.0.0",
       "commit_sha": "336ba60835bd73cfaa4a45ebf7e9dfbf46facb13",
       "commit_sha_short": "336ba60",
+      "changelog": "463",
       "build_timestamp": "2026-10-22T22:56:27Z",
       "last_updated": "2026-10-22T18:55:56-04:00",
       "checksum_md5": "bd44ee7b262958fcd45bfaad92e317fb",
@@ -33,6 +34,7 @@
         "version": "1.0.0",
         "commit_sha": "336ba60835bd73cfaa4a45ebf7e9dfbf46facb13",
         "commit_sha_short": "336ba60",
+        "changelog": "463",
         "build_timestamp": "2026-10-22T22:56:27Z",
         "last_updated": "2026-10-22T18:55:56-04:00",
         "checksum_md5": "bd44ee7b262958fcd45bfaad92e317fb",

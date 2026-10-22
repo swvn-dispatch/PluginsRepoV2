@@ -452,7 +452,7 @@ Delay-buffer stream profile that absorbs IPTV CDN gaps so Plex Live TV stops dyi
 
 ### [Manifest v1 Example](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/sample-manifest-v1/README.md)
 
-**Version:** `1.0.0` | **Author:** Dispatcharr Team | **Last Updated:** Oct 22 2026, 22:55 UTC
+**Version:** `1.0.0` | **Author:** Dispatcharr Team | **Last Updated:** Oct 22 2026, 23:01 UTC
 
 Example of the version 1 capability declaration format.
 
@@ -462,14 +462,14 @@ Example of the version 1 capability declaration format.
 - [Latest Release (`1.0.0`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/sample-manifest-v1-1.0.0/sample-manifest-v1-1.0.0.zip)
 - [All Versions (1 available)](./metadata/sample-manifest-v1)
 
-**Maintainers:** sethwv | **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/sample-manifest-v1) | **Last Change:** [`336ba60`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/336ba60835bd73cfaa4a45ebf7e9dfbf46facb13)
+**Maintainers:** sethwv | **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/sample-manifest-v1) | **Last Change:** [`f01f575`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/f01f575bc5179f37597415b9ad1e496307b845d1)
 
 ---
 
 
 ### [Manifest v2 Example](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/sample-manifest-v2/README.md)
 
-**Version:** `1.0.0` | **Author:** Dispatcharr Team | **Last Updated:** Oct 22 2026, 22:55 UTC
+**Version:** `1.0.0` | **Author:** Dispatcharr Team | **Last Updated:** Oct 22 2026, 23:01 UTC
 
 Example of version 2 capability enforcement and durable plugin storage.
 
@@ -479,7 +479,7 @@ Example of version 2 capability enforcement and durable plugin storage.
 - [Latest Release (`1.0.0`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/sample-manifest-v2-1.0.0/sample-manifest-v2-1.0.0.zip)
 - [All Versions (1 available)](./metadata/sample-manifest-v2)
 
-**Maintainers:** sethwv | **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/sample-manifest-v2) | **Last Change:** [`336ba60`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/336ba60835bd73cfaa4a45ebf7e9dfbf46facb13)
+**Maintainers:** sethwv | **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/sample-manifest-v2) | **Last Change:** [`f01f575`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/f01f575bc5179f37597415b9ad1e496307b845d1)
 
 ---
 
@@ -715,4 +715,4 @@ curl https://raw.githubusercontent.com/swvn-dispatch/PluginsRepoV2/releases/mani
 
 ---
 
-*Last updated: Oct 22 2026, 22:56 UTC*
+*Last updated: Oct 22 2026, 23:13 UTC*

@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T22:56:35Z",
+  "generated_at": "2026-10-22T23:13:47Z",
   "manifest": {
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
@@ -379,6 +379,7 @@
         "last_updated": "2026-10-22T18:55:56-04:00",
         "download_count": 0,
         "latest_version": "1.0.0",
+        "latest_changelog": "463",
         "latest_md5": "50a7a4ea51b4a23e4e3aa127068d2b30",
         "latest_sha256": "23810a108c135c151cf0a6735f60faf75e6a1f9bf48493fbe7186eb8274213be",
         "latest_url": "sample-manifest-v1-1.0.0/sample-manifest-v1-1.0.0.zip",
@@ -395,6 +396,7 @@
         "last_updated": "2026-10-22T18:55:56-04:00",
         "download_count": 0,
         "latest_version": "1.0.0",
+        "latest_changelog": "463",
         "latest_md5": "bd44ee7b262958fcd45bfaad92e317fb",
         "latest_sha256": "d86d977cca5fbbd5e6f78e3dbc6cd05f21d3e69951524c4058b2c92a0fd70767",
         "latest_url": "sample-manifest-v2-1.0.0/sample-manifest-v2-1.0.0.zip",
