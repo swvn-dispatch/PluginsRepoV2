@@ -2,7 +2,7 @@
 
 # Ticker
 
-**Version:** `0.5.04` | **Author:** jstevenscl | **Last Updated:** Oct 13 2026, 03:29 UTC
+**Version:** `0.5.05` | **Author:** jstevenscl | **Last Updated:** Oct 22 2026, 23:29 UTC
 
 Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports Ticker, Custom Text, EAS/JAS Weather Alerts
 
@@ -12,20 +12,21 @@ Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports 
 
 ### Latest Release
 
-- **Download:** [`ticker-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/ticker-0.5.04/ticker-0.5.04.zip)
-- **Built:** Oct 15 2026, 20:24 UTC
-- **Source Commit:** [`12e6ac1`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/12e6ac1b921157e685777e5816a77a4959088aac)
+- **Download:** [`ticker-latest.zip`](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/ticker-0.5.05/ticker-0.5.05.zip)
+- **Built:** Oct 23 2026, 21:19 UTC
+- **Source Commit:** [`7685d8a`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/7685d8a0bc36087296f3ceff2e766e83fea5f6e6)
 
 **Checksums:**
 ```
-MD5:    1eee1c0cec68a26ac8ea5d4605641706
-SHA256: e005dfb1192b50bdb3839e155bba068617c96ab9ba2f5d8e90abdd245e69826e
+MD5:    c9f9040cad3064c4a0af277e85c931af
+SHA256: 47a3c00a1f27d7398ed1bf54fef56d028f3a3d6c4e2398bfa9129da725c2f005
 ```
 
 ### All Versions
 
 | Version | Download | Built | Commit | MD5 | SHA256 |
 |---------|----------|-------|--------|-----|--------|
+| `0.5.05` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/ticker-0.5.05/ticker-0.5.05.zip) | Oct 23 2026, 21:19 UTC | [`7685d8a`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/7685d8a0bc36087296f3ceff2e766e83fea5f6e6) | c9f9040cad3064c4a0af277e85c931af | 47a3c00a1f27d7398ed1bf54fef56d028f3a3d6c4e2398bfa9129da725c2f005 |
 | `0.5.04` | [Download](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/ticker-0.5.04/ticker-0.5.04.zip) | Oct 15 2026, 20:24 UTC | [`12e6ac1`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/12e6ac1b921157e685777e5816a77a4959088aac) | 1eee1c0cec68a26ac8ea5d4605641706 | e005dfb1192b50bdb3839e155bba068617c96ab9ba2f5d8e90abdd245e69826e |
 
 ---

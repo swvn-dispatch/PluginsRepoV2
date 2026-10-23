@@ -20,7 +20,7 @@ This branch contains all published plugin releases.
 | [`Ranked Matchups (Top Games)`](#ranked-matchups-top-games-) | `1.36.0` | Jacob-Lasky | MIT | Never miss a good game. Scores every upcoming game across 39 leagues, tours and competitions (22 of them soccer, plus NFL, NBA, MLB, NHL, NCAA D1 football and basketball, UFC, boxing, tennis, golf and motorsport), then builds a Top Matchups group holding only the ones worth watching and shows why each game ranked where it did in its EPG description. Finished games can clear themselves out and be replaced from a bench of the next-best fixtures. |
 | [`Dispatchwrapparr`](#dispatchwrapparr) | `1.7.8` | jordandalley | MIT | An intelligent DRM/Clearkey capable stream profile for Dispatcharr |
 | [`Dustarr`](#dustarr) | `1.26.2901903` | PiratesIRC | MIT | Records which channels are actually watched and reports the ones that are not, so you can turn off the dead weight in your lineup. Read only: it never changes a channel and never contacts your provider. |
-| [`EPG & Sports Editor`](#epg-sports-editor) | `0.5.09` | jstevenscl | MIT | Transform and clean your EPG data using regex and find/replace rules. Creates virtual copies of your sources — originals are never touched. Fills placeholder schedules for channels with no EPG, and includes a Sports Editor: automatically renames Auto Channel Sync-created sports channels, assigns matchup logos, and generates real Pregame/Live/Postgame EPG data by matching against a live public schedule (93 leagues — every major US team sport, 30+ soccer competitions, tennis, golf, NASCAR, F1, UFC/MMA/boxing/darts, and more). Renamed from EPGeditARR; existing installs carry their settings forward automatically. |
+| [`EPG & Sports Editor`](#epg-sports-editor) | `0.5.10` | jstevenscl | MIT | Transform and clean your EPG data using regex and find/replace rules. Creates virtual copies of your sources — originals are never touched. Fills placeholder schedules for channels with no EPG, and includes a Sports Editor: automatically renames Auto Channel Sync-created sports channels, assigns matchup logos, and generates real Pregame/Live/Postgame EPG data by matching against a live public schedule (93 leagues — every major US team sport, 30+ soccer competitions, tennis, golf, NASCAR, F1, UFC/MMA/boxing/darts, and more). Renamed from EPGeditARR; existing installs carry their settings forward automatically. |
 | [`EPG Janitor`](#epg-janitor) | `1.26.2901817` | PiratesIRC | MIT | Scans for channels with EPG assignments but no program data. Auto-matches EPG to channels using intelligent fuzzy matching with aliases, removes EPG from hidden channels, and manages EPG assignments. |
 | [`Event Channel Managarr`](#event-channel-managarr) | `1.26.2832019` | PiratesIRC | MIT | Automates channel visibility by hiding channels without events and showing those with events, based on EPG data and channel names. Optionally manages dummy EPG for channels without real EPG. |
 | [`Gluetun Rotate`](#gluetun-rotate) | `0.4.0` | PilaScat | MIT | Moves Gluetun to another VPN server when the IPTV provider refuses the current exit address. |
@@ -39,13 +39,12 @@ This branch contains all published plugin releases.
 | [`Stream Dripper`](#stream-dripper) | `2.0.0` | Megamannen | Artistic-2.0 | Automatically drops all active streams once per day at a configured time, with a manual drop-now button. |
 | [`Stream-Mapparr`](#stream-mapparr) | `1.26.2911937` | PiratesIRC | MIT | Automatically add matching streams to channels based on name similarity and quality precedence. Supports unlimited stream matching, channel visibility management, and CSV export cleanup. |
 | [`Telegram Alerts`](#telegram-alerts) | `0.4.5` | R3XCHRIS | MIT | Push Dispatcharr channel/stream/VOD events to a Telegram chat via a bot. Includes a manual test action, per-event toggles, and an optional cron-driven daily report (public IP + geo + speedtest + activity + source health). |
-| [`Ticker`](#ticker) | `0.5.04` | jstevenscl | MIT | Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports Ticker, Custom Text, EAS/JAS Weather Alerts |
+| [`Ticker`](#ticker) | `0.5.05` | jstevenscl | MIT | Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports Ticker, Custom Text, EAS/JAS Weather Alerts |
 | [`Twitcharr`](#twitcharr) | `1.3.2` | eliasbruno124-dev | MIT | Twitch live-TV plugin for Dispatcharr with automatic channels, streams, XMLTV guide data and Streamlink playback. |
 | [`Underfed`](#underfed) | `0.8.0` | PilaScat | MIT | Moves a channel off a source that is starving it, drifting its sound or refusing it: to the next source when the stream arrives at a fraction of its bitrate or with its timestamps apart, to the back of the chain when the provider answers 403. |
 | [`VOD Manager`](#vod-manager) | `2.6.4` | oxios0x00 | MIT | Curates Dispatcharr's VOD catalogue from vod-probe's measurements: keeps the versions matching your quality/language settings and prunes the rest. Optional .strm generation for Emby/Jellyfin. Needs vod-probe. Dry-run by default. |
 | [`VOD Probe`](#vod-probe) | `1.3.3` | oxios0x00 | MIT | Probes the real quality of each VOD relation (movies and every episode of every series version) with ffprobe in a background task and writes it into the relation's custom_properties, so every tool reading Dispatcharr's API can use it. Can also backfill missing tmdb_id/imdb_id from the provider's per-title detail endpoint, merging safely into an existing catalogue entry when one already has the id. Dry run by default. |
 | [`VOD to Media Library`](#vod-to-media-library) | `1.18.1` | R3XCHRIS | MIT | Generate .strm files (with optional NFO metadata) from your Dispatcharr VOD catalogue so Jellyfin / Emby / Kodi / ChannelsDVR can index your movies and series. Adds a cron-driven auto-rescan that picks up newly-added episodes nightly. Optional category-nested folder layout for genre-organised libraries. |
-| [`Waybill`](#waybill) | `1.3.0` | Matthew-Beckett | MIT | Waybill matches, renames, and organizes any streams no matter the provider. Infinitely configurable pipelines for total control. |
 | [`YouTubearr`](#youtubearr) | `1.40.1` | jeff-gooch | Unlicense | Zero-dependency YouTube livestream plugin with automatic monitoring and configurable numbering |
 
 ---
@@ -217,17 +216,17 @@ Records which channels are actually watched and reports the ones that are not, s
 
 ### [EPG & Sports Editor](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/epg-and-sports-editor/README.md)
 
-**Version:** `0.5.09` | **Author:** jstevenscl | **Last Updated:** Oct 22 2026, 05:17 UTC
+**Version:** `0.5.10` | **Author:** jstevenscl | **Last Updated:** Oct 23 2026, 03:06 UTC
 
 Transform and clean your EPG data using regex and find/replace rules. Creates virtual copies of your sources — originals are never touched. Fills placeholder schedules for channels with no EPG, and includes a Sports Editor: automatically renames Auto Channel Sync-created sports channels, assigns matchup logos, and generates real Pregame/Live/Postgame EPG data by matching against a live public schedule (93 leagues — every major US team sport, 30+ soccer competitions, tennis, golf, NASCAR, F1, UFC/MMA/boxing/darts, and more). Renamed from EPGeditARR; existing installs carry their settings forward automatically.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](https://spdx.org/licenses/MIT.html) [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/jstevenscl/epg-and-sports-editor)
 
 **Downloads:**
-- [Latest Release (`0.5.09`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/epg-and-sports-editor-0.5.09/epg-and-sports-editor-0.5.09.zip)
-- [All Versions (2 available)](./metadata/epg-and-sports-editor)
+- [Latest Release (`0.5.10`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/epg-and-sports-editor-0.5.10/epg-and-sports-editor-0.5.10.zip)
+- [All Versions (3 available)](./metadata/epg-and-sports-editor)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/epg-and-sports-editor) | **Last Change:** [`d65334e`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/d65334ec39a2697b3e826ff59da6f248d2a65232)
+**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/epg-and-sports-editor) | **Last Change:** [`eccf5d6`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/eccf5d608d5dad9d152464cd3e9ee9f16952e414)
 
 ---
 
@@ -560,17 +559,17 @@ Push Dispatcharr channel/stream/VOD events to a Telegram chat via a bot. Include
 
 ### [Ticker](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/ticker/README.md)
 
-**Version:** `0.5.04` | **Author:** jstevenscl | **Last Updated:** Oct 13 2026, 03:29 UTC
+**Version:** `0.5.05` | **Author:** jstevenscl | **Last Updated:** Oct 22 2026, 23:29 UTC
 
 Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports Ticker, Custom Text, EAS/JAS Weather Alerts
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](https://spdx.org/licenses/MIT.html) [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/jstevenscl/ticker)
 
 **Downloads:**
-- [Latest Release (`0.5.04`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/ticker-0.5.04/ticker-0.5.04.zip)
-- [All Versions (1 available)](./metadata/ticker)
+- [Latest Release (`0.5.05`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/ticker-0.5.05/ticker-0.5.05.zip)
+- [All Versions (2 available)](./metadata/ticker)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/ticker) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/ticker/README.md) | **Last Change:** [`12e6ac1`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/12e6ac1b921157e685777e5816a77a4959088aac)
+**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/ticker) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/ticker/README.md) | **Last Change:** [`7685d8a`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/7685d8a0bc36087296f3ceff2e766e83fea5f6e6)
 
 ---
 
@@ -662,25 +661,6 @@ Generate .strm files (with optional NFO metadata) from your Dispatcharr VOD cata
 ---
 
 
-### [Waybill](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/waybill/README.md)
-
-**Version:** `1.3.0` | **Author:** Matthew-Beckett | **Last Updated:** May 12 2026, 19:36 UTC
-
-Waybill matches, renames, and organizes any streams no matter the provider. Infinitely configurable pipelines for total control.
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](https://spdx.org/licenses/MIT.html) [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Matthew-Beckett/waybill)
-
-![Dispatcharr min](https://img.shields.io/badge/Dispatcharr_min-0.23.0-brightgreen?style=flat-square) ![Dispatcharr max](https://img.shields.io/badge/Dispatcharr_max-0.24.0-orange?style=flat-square)
-
-**Downloads:**
-- [Latest Release (`1.3.0`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/waybill-1.3.0/waybill-1.3.0.zip)
-- [All Versions (1 available)](./metadata/waybill)
-
-**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/waybill) | **Last Change:** [`cdd18dd`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/cdd18dd7f396035b9cd486d3e45375eed3bcc744)
-
----
-
-
 ### [YouTubearr](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/youtubearr/README.md)
 
 **Version:** `1.40.1` | **Author:** jeff-gooch | **Last Updated:** Sep 16 2026, 12:55 UTC
@@ -715,4 +695,4 @@ curl https://raw.githubusercontent.com/swvn-dispatch/PluginsRepoV2/releases/mani
 
 ---
 
-*Last updated: Oct 22 2026, 23:13 UTC*
+*Last updated: Oct 23 2026, 21:19 UTC*
