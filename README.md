@@ -21,7 +21,7 @@ This branch contains all published plugin releases.
 | [`Dispatchwrapparr`](#dispatchwrapparr) | `1.7.8` | jordandalley | MIT | An intelligent DRM/Clearkey capable stream profile for Dispatcharr |
 | [`Dustarr`](#dustarr) | `1.26.2901903` | PiratesIRC | MIT | Records which channels are actually watched and reports the ones that are not, so you can turn off the dead weight in your lineup. Read only: it never changes a channel and never contacts your provider. |
 | [`EPG & Sports Editor`](#epg-sports-editor) | `0.5.10` | jstevenscl | MIT | Transform and clean your EPG data using regex and find/replace rules. Creates virtual copies of your sources — originals are never touched. Fills placeholder schedules for channels with no EPG, and includes a Sports Editor: automatically renames Auto Channel Sync-created sports channels, assigns matchup logos, and generates real Pregame/Live/Postgame EPG data by matching against a live public schedule (93 leagues — every major US team sport, 30+ soccer competitions, tennis, golf, NASCAR, F1, UFC/MMA/boxing/darts, and more). Renamed from EPGeditARR; existing installs carry their settings forward automatically. |
-| [`EPG Janitor`](#epg-janitor) | `1.26.2901817` | PiratesIRC | MIT | Scans for channels with EPG assignments but no program data. Auto-matches EPG to channels using intelligent fuzzy matching with aliases, removes EPG from hidden channels, and manages EPG assignments. |
+| [`EPG Janitor`](#epg-janitor) | `1.26.2971048` | PiratesIRC | MIT | Scans for channels with EPG assignments but no program data. Auto-matches EPG to channels using intelligent fuzzy matching with aliases, removes EPG from hidden channels, and manages EPG assignments. |
 | [`Event Channel Managarr`](#event-channel-managarr) | `1.26.2832019` | PiratesIRC | MIT | Automates channel visibility by hiding channels without events and showing those with events, based on EPG data and channel names. Optionally manages dummy EPG for channels without real EPG. |
 | [`Gluetun Rotate`](#gluetun-rotate) | `0.4.0` | PilaScat | MIT | Moves Gluetun to another VPN server when the IPTV provider refuses the current exit address. |
 | [`IPTV Checker`](#iptv-checker) | `1.26.2901902` | PiratesIRC | MIT | Check IPTV stream status and quality with ffprobe, then rename, move, restore or delete channels based on the result. Judges a channel by all of its streams, so a working backup never marks it dead. |
@@ -43,7 +43,7 @@ This branch contains all published plugin releases.
 | [`Twitcharr`](#twitcharr) | `1.3.2` | eliasbruno124-dev | MIT | Twitch live-TV plugin for Dispatcharr with automatic channels, streams, XMLTV guide data and Streamlink playback. |
 | [`Underfed`](#underfed) | `0.8.0` | PilaScat | MIT | Moves a channel off a source that is starving it, drifting its sound or refusing it: to the next source when the stream arrives at a fraction of its bitrate or with its timestamps apart, to the back of the chain when the provider answers 403. |
 | [`VOD Manager`](#vod-manager) | `2.6.4` | oxios0x00 | MIT | Curates Dispatcharr's VOD catalogue from vod-probe's measurements: keeps the versions matching your quality/language settings and prunes the rest. Optional .strm generation for Emby/Jellyfin. Needs vod-probe. Dry-run by default. |
-| [`VOD Probe`](#vod-probe) | `1.3.3` | oxios0x00 | MIT | Probes the real quality of each VOD relation (movies and every episode of every series version) with ffprobe in a background task and writes it into the relation's custom_properties, so every tool reading Dispatcharr's API can use it. Can also backfill missing tmdb_id/imdb_id from the provider's per-title detail endpoint, merging safely into an existing catalogue entry when one already has the id. Dry run by default. |
+| [`VOD Probe`](#vod-probe) | `1.3.4` | oxios0x00 | MIT | Probes the real quality of each VOD relation (movies and every episode of every series version) with ffprobe in a background task and writes it into the relation's custom_properties, so every tool reading Dispatcharr's API can use it. Can also backfill missing tmdb_id/imdb_id from the provider's per-title detail endpoint, merging safely into an existing catalogue entry when one already has the id. Dry run by default. |
 | [`VOD to Media Library`](#vod-to-media-library) | `1.18.1` | R3XCHRIS | MIT | Generate .strm files (with optional NFO metadata) from your Dispatcharr VOD catalogue so Jellyfin / Emby / Kodi / ChannelsDVR can index your movies and series. Adds a cron-driven auto-rescan that picks up newly-added episodes nightly. Optional category-nested folder layout for genre-organised libraries. |
 | [`YouTubearr`](#youtubearr) | `1.40.1` | jeff-gooch | Unlicense | Zero-dependency YouTube livestream plugin with automatic monitoring and configurable numbering |
 
@@ -233,7 +233,7 @@ Transform and clean your EPG data using regex and find/replace rules. Creates vi
 
 ### [EPG Janitor](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/epg-janitor/README.md)
 
-**Version:** `1.26.2901817` | **Author:** PiratesIRC | **Last Updated:** Oct 17 2026, 18:25 UTC
+**Version:** `1.26.2971048` | **Author:** PiratesIRC | **Last Updated:** Oct 24 2026, 11:26 UTC
 
 Scans for channels with EPG assignments but no program data. Auto-matches EPG to channels using intelligent fuzzy matching with aliases, removes EPG from hidden channels, and manages EPG assignments.
 
@@ -242,10 +242,10 @@ Scans for channels with EPG assignments but no program data. Auto-matches EPG to
 ![Dispatcharr min](https://img.shields.io/badge/Dispatcharr_min-v0.20.0-brightgreen?style=flat-square)
 
 **Downloads:**
-- [Latest Release (`1.26.2901817`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/epg-janitor-1.26.2901817/epg-janitor-1.26.2901817.zip)
-- [All Versions (4 available)](./metadata/epg-janitor)
+- [Latest Release (`1.26.2971048`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/epg-janitor-1.26.2971048/epg-janitor-1.26.2971048.zip)
+- [All Versions (5 available)](./metadata/epg-janitor)
 
-**Maintainers:** PiratesIRC | **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/epg-janitor) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/epg-janitor/README.md) | **Last Change:** [`b55013e`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/b55013ef45a1ce624f6e27a3eb8bc254db92f285)
+**Maintainers:** PiratesIRC | **Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/epg-janitor) | [README](https://github.com/swvn-dispatch/PluginsRepoV2/blob/main/plugins/epg-janitor/README.md) | **Last Change:** [`e8dac58`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/e8dac58d086dcee24cf06c54932f2a4b23f0e711)
 
 ---
 
@@ -627,17 +627,17 @@ Curates Dispatcharr's VOD catalogue from vod-probe's measurements: keeps the ver
 
 ### [VOD Probe](https://github.com/swvn-dispatch/PluginsRepoV2/blob/releases/metadata/vod-probe/README.md)
 
-**Version:** `1.3.3` | **Author:** oxios0x00 | **Last Updated:** Oct 10 2026, 10:04 UTC
+**Version:** `1.3.4` | **Author:** oxios0x00 | **Last Updated:** Oct 24 2026, 07:02 UTC
 
 Probes the real quality of each VOD relation (movies and every episode of every series version) with ffprobe in a background task and writes it into the relation's custom_properties, so every tool reading Dispatcharr's API can use it. Can also backfill missing tmdb_id/imdb_id from the provider's per-title detail endpoint, merging safely into an existing catalogue entry when one already has the id. Dry run by default.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](https://spdx.org/licenses/MIT.html) [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/oxios0x00/dispatcharr-vod-probe)
 
 **Downloads:**
-- [Latest Release (`1.3.3`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/vod-probe-1.3.3/vod-probe-1.3.3.zip)
-- [All Versions (1 available)](./metadata/vod-probe)
+- [Latest Release (`1.3.4`)](https://github.com/swvn-dispatch/PluginsRepoV2/releases/download/vod-probe-1.3.4/vod-probe-1.3.4.zip)
+- [All Versions (2 available)](./metadata/vod-probe)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/vod-probe) | **Last Change:** [`b52f675`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/b52f675f54ab92cb0c6312aa53dce7b53d20c5b6)
+**Source:** [Browse](https://github.com/swvn-dispatch/PluginsRepoV2/tree/main/plugins/vod-probe) | **Last Change:** [`6aed020`](https://github.com/swvn-dispatch/PluginsRepoV2/commit/6aed02022cc080d7109f9519db52b6982313c0af)
 
 ---
 
@@ -695,4 +695,4 @@ curl https://raw.githubusercontent.com/swvn-dispatch/PluginsRepoV2/releases/mani
 
 ---
 
-*Last updated: Oct 23 2026, 22:06 UTC*
+*Last updated: Oct 24 2026, 13:00 UTC*
