@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-24T13:04:22Z",
+  "generated_at": "2026-10-24T13:44:47Z",
   "manifest": {
     "registry_url": "https://github.com/swvn-dispatch/PluginsRepoV2",
     "registry_name": "swvn-dispatch/PluginsRepoV2",
@@ -171,13 +171,13 @@
         "manifest_url": "https://raw.githubusercontent.com/swvn-dispatch/PluginsRepoV2/releases/metadata/epg-and-sports-editor/manifest.json",
         "author": "jstevenscl",
         "license": "MIT",
-        "last_updated": "2026-10-23T03:06:13Z",
+        "last_updated": "2026-10-24T13:12:16Z",
         "download_count": 0,
-        "latest_version": "0.5.10",
-        "latest_changelog": "469",
-        "latest_md5": "cc9049440ee211b2d2de6c077f9679f9",
-        "latest_sha256": "bfde3d21d7ff5251137cfb7b5e5b70cfd8b59ff7d013b931e34cba7f5a6f787c",
-        "latest_url": "epg-and-sports-editor-0.5.10/epg-and-sports-editor-0.5.10.zip",
+        "latest_version": "0.5.11",
+        "latest_changelog": "475",
+        "latest_md5": "985e581c0a802fa29398e72611c6236e",
+        "latest_sha256": "2019ccbf82d2602833cca16c296a54f721ffc52708e8b13c42c6465a8f411e7b",
+        "latest_url": "epg-and-sports-editor-0.5.11/epg-and-sports-editor-0.5.11.zip",
         "latest_size": 171
       },
       {
@@ -551,7 +551,7 @@
         "author": "oxios0x00",
         "license": "MIT",
         "last_updated": "2026-10-24T07:02:13Z",
-        "download_count": 0,
+        "download_count": 1,
         "latest_version": "1.3.4",
         "latest_changelog": "472",
         "latest_md5": "49cbe14431df756e75bfa8b984e01f29",
