@@ -154,10 +154,6 @@ SANDBOX_BYPASS_RULES: dict[str, dict[str, int | None]] = {
         "min_manifest_version": 2,
         "max_manifest_version": None,
     },
-    "plugin/sandbox-bypass/socket-convenience-api": {
-        "min_manifest_version": 2,
-        "max_manifest_version": None,
-    },
     "plugin/sandbox-bypass/sys-modules-tamper": {
         "min_manifest_version": 2,
         "max_manifest_version": None,

@@ -16,6 +16,11 @@ where
   (
     call = API::moduleImport("requests")
       .getMember(["get", "post", "put", "patch", "delete", "request"]).getACall() or
-    call = API::moduleImport("urllib.request").getMember(["urlopen", "urlretrieve"]).getACall()
+    call = API::moduleImport("urllib.request").getMember(["urlopen", "urlretrieve"]).getACall() or
+    call = API::moduleImport("http").getMember("client")
+      .getMember(["HTTPConnection", "HTTPSConnection"]).getACall() or
+    call = API::moduleImport("socket").getMember("create_connection").getACall() or
+    call = API::moduleImport("socket").getMember("socket").getACall().getReturn()
+      .getMember(["connect", "connect_ex", "send", "sendall", "sendmsg", "sendto"]).getACall()
   )
 select call, "This outbound network operation requires the `outbound_network` capability."

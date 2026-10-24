@@ -15,7 +15,7 @@ scanned runtime manifest is enforcing and omits the matching capability:
 |---|---|
 | `subprocess` | `subprocess` process-launch APIs without `subprocess` |
 | `network-listener` | Socket bind/listen calls without `network_listener` |
-| `outbound-network` | Selected HTTP or socket connection calls without `outbound_network` |
+| `outbound-network` | Selected HTTP connections and socket outbound operations without `outbound_network` |
 | `background-tasks` | `context["dispatch_task"]` without `background_tasks` |
 | `celery-dispatch` | `context["dispatch_internal_task"]` without `celery_dispatch` |
 | `persistent-service` | `on_leader_acquired` without `persistent_service` |
@@ -50,7 +50,6 @@ version range:
 | `builtins-mutation` | Mutation of `__builtins__` |
 | `direct-builtins-access` | Calling the original `builtins.open` or `builtins.__import__` |
 | `importlib-wrapped-module` | Loading a wrapped module through `importlib.import_module` |
-| `socket-convenience-api` | `socket.create_connection` outside the guarded constructor proxy |
 | `requests-session-api` | `requests.Session` or `requests.session` outside guarded module helpers |
 | `os-process-api` | Direct `os` process-launch APIs outside guarded `subprocess` |
 | `asyncio-process-api` | Asyncio subprocess APIs outside guarded `subprocess` |
