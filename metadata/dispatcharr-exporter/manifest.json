@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T19:30:56Z",
+  "generated_at": "2026-10-28T20:48:27Z",
   "manifest": {
     "slug": "dispatcharr-exporter",
     "name": "Dispatcharr Exporter",
@@ -7,7 +7,7 @@
     "author": "sethwv",
     "license": "MIT",
     "source_type": "external",
-    "source_url": "https://github.com/swvn-dispatch/dispatcharr-exporter/releases/download/dev-latest/dispatcharr-exporter-dev-latest.zip?version={version}",
+    "source_url": "https://github.com/swvn-dispatch/dispatcharr-exporter/releases/download/v{version}/dispatcharr-exporter-{version}.zip",
     "repo_url": "https://github.com/swvn-dispatch/dispatcharr-exporter",
     "discord_thread": "https://discord.com/channels/1340492560220684331/1451260201775923421",
     "registry_url": "https://github.com/swvn-dispatch/plugin-repo-dev",
@@ -43,6 +43,22 @@
         "min_dispatcharr_version": "v0.22.0",
         "url": "dispatcharr-exporter-3.1.0/dispatcharr-exporter-3.1.0.zip",
         "size": 143,
+        "download_count": 0
+      },
+      {
+        "version": "3.1.0-dev-3b0097e4",
+        "prerelease": true,
+        "commit_sha": "21844bbdf912cf7a31e04c6c5c2dabf7eafd9507",
+        "commit_sha_short": "21844bb",
+        "changelog": "497",
+        "build_timestamp": "2026-10-28T20:48:03Z",
+        "last_updated": "2026-10-28T19:29:49Z",
+        "checksum_md5": "60ba2a25ff6a4015d1d83d4fac8ec9eb",
+        "checksum_sha256": "68d6ddc6eaeb4c3dac868f50c72e80a5e952dccb804e699265ed2789c688729d",
+        "min_dispatcharr_version": "v0.22.0",
+        "source_url": "https://github.com/swvn-dispatch/dispatcharr-exporter/releases/download/v3.1.0-dev-3b0097e4/dispatcharr-exporter-3.1.0-dev-3b0097e4.zip",
+        "url": "dispatcharr-exporter-3.1.0-dev-3b0097e4/dispatcharr-exporter-3.1.0-dev-3b0097e4.zip",
+        "size": 156,
         "download_count": 0
       }
     ]

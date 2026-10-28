@@ -61,9 +61,9 @@ Speeds up channel startup for low-bitrate (usually audio only) streams by loweri
 
 **Downloads:**
 - [Latest Release (`0.3.5`)](https://github.com/swvn-dispatch/plugin-repo-dev/releases/download/audio-buffer-tuner-0.3.5/audio-buffer-tuner-0.3.5.zip)
-- [All Versions (1 available)](./metadata/audio-buffer-tuner)
+- [All Versions (2 available)](./metadata/audio-buffer-tuner)
 
-**Maintainers:** CtznSniiips | **Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/audio-buffer-tuner) | **Last Change:** [`3ceeddd`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/3ceeddd53b4d49d5d14584768f69121e8094d6df)
+**Maintainers:** CtznSniiips | **Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/audio-buffer-tuner) | **Last Change:** [`1e2c810`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/1e2c810e9854c54ef3ceb455ca47b40b7088ed99)
 
 ---
 
@@ -190,9 +190,9 @@ Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitori
 
 **Downloads:**
 - [Latest Release (`3.1.0`)](https://github.com/swvn-dispatch/plugin-repo-dev/releases/download/dispatcharr-exporter-3.1.0/dispatcharr-exporter-3.1.0.zip)
-- [All Versions (1 available)](./metadata/dispatcharr-exporter)
+- [All Versions (2 available)](./metadata/dispatcharr-exporter)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/dispatcharr-exporter) | **Last Change:** [`2f5f05a`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/2f5f05a5d7c9fd9bc02cd6711744896097e6b2f0)
+**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/dispatcharr-exporter) | **Last Change:** [`21844bb`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/21844bbdf912cf7a31e04c6c5c2dabf7eafd9507)
 
 ---
 
@@ -699,4 +699,4 @@ curl https://raw.githubusercontent.com/swvn-dispatch/plugin-repo-dev/releases/ma
 
 ---
 
-*Last updated: Oct 28 2026, 19:30 UTC*
+*Last updated: Oct 28 2026, 20:48 UTC*

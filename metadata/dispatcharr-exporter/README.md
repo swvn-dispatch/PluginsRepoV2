@@ -29,6 +29,7 @@ SHA256: 2e1f102d32fd92ff6760daf81f9fb49da3d4233d985f58ba6ba53b07e4b3f93b
 | Version | Download | Built | Commit | MD5 | SHA256 |
 |---------|----------|-------|--------|-----|--------|
 | `3.1.0` | [Download](https://github.com/swvn-dispatch/plugin-repo-dev/releases/download/dispatcharr-exporter-3.1.0/dispatcharr-exporter-3.1.0.zip) | Oct 28 2026, 13:34 UTC | [`ddffa49`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/ddffa49420c5dd513a9a7876998a72ce295e2242) | d9d81b71a5774ec54e4e5d1a6bbb3cb9 | 2e1f102d32fd92ff6760daf81f9fb49da3d4233d985f58ba6ba53b07e4b3f93b |
+| `3.1.0-dev-3b0097e4` | [Download](https://github.com/swvn-dispatch/plugin-repo-dev/releases/download/dispatcharr-exporter-3.1.0-dev-3b0097e4/dispatcharr-exporter-3.1.0-dev-3b0097e4.zip) | Oct 28 2026, 20:48 UTC | [`21844bb`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/21844bbdf912cf7a31e04c6c5c2dabf7eafd9507) | 60ba2a25ff6a4015d1d83d4fac8ec9eb | 68d6ddc6eaeb4c3dac868f50c72e80a5e952dccb804e699265ed2789c688729d |
 
 ---
 
