@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T14:05:10Z",
+  "generated_at": "2026-10-28T14:09:57Z",
   "manifest": {
     "slug": "dispatcharr-exporter",
     "name": "Dispatcharr Exporter",
@@ -44,17 +44,17 @@
         "download_count": 0
       },
       {
-        "version": "3.1.0-pre.1",
+        "version": "3.1.0-pre.2",
         "prerelease": true,
-        "commit_sha": "19cffb3f11e68e945b806c3e3ca05356484da7a9",
-        "commit_sha_short": "19cffb3",
-        "changelog": "13",
-        "build_timestamp": "2026-10-28T14:04:49Z",
-        "last_updated": "2026-10-28T09:58:19-04:00",
-        "checksum_md5": "dff8fa8b76a669940c1496bff0968675",
-        "checksum_sha256": "2abe763b96b4e53ba291751b11ef40c847a71c206ec7d86d701254736110c500",
+        "commit_sha": "0000cb4afe506ca2a9ec0b46d7eee083a180c3fa",
+        "commit_sha_short": "0000cb4",
+        "changelog": "14",
+        "build_timestamp": "2026-10-28T14:09:37Z",
+        "last_updated": "2026-10-28T10:09:23-04:00",
+        "checksum_md5": "06dbdca993fd65855145b41a7bdecb2d",
+        "checksum_sha256": "d37c7e70412ee7967b7b46dc468256272b2a82b23e740cb25519ed274941fa68",
         "min_dispatcharr_version": "v0.22.0",
-        "url": "dispatcharr-exporter-3.1.0-pre.1/dispatcharr-exporter-3.1.0-pre.1.zip",
+        "url": "dispatcharr-exporter-3.1.0-pre.2/dispatcharr-exporter-3.1.0-pre.2.zip",
         "size": 143,
         "download_count": 0
       }
