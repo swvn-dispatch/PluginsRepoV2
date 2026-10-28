@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T14:32:31Z",
+  "generated_at": "2026-10-28T14:38:11Z",
   "manifest": {
     "slug": "dispatcharr-exporter",
     "name": "Dispatcharr Exporter",
@@ -49,10 +49,10 @@
         "commit_sha": "b42014ce76c1e9364574ad6d6b29e3dc8da1a2d3",
         "commit_sha_short": "b42014c",
         "changelog": "15",
-        "build_timestamp": "2026-10-28T14:32:13Z",
+        "build_timestamp": "2026-10-28T14:37:51Z",
         "last_updated": "2026-10-28T10:31:57-04:00",
-        "checksum_md5": "00a79a2edffd9003f938aac57a63d289",
-        "checksum_sha256": "d1414ead59dd612ed7e7df787c6627856489614da758892239231168c9bf5d32",
+        "checksum_md5": "9b4ebd907e3e278b12effdbbe34f2247",
+        "checksum_sha256": "bc2de4b42b0b3736b6633fefb11a49388339ffa9b44b0e5cf01af6c6b2eda52b",
         "min_dispatcharr_version": "v0.22.0",
         "url": "dispatcharr-exporter-3.1.0-asdf/dispatcharr-exporter-3.1.0-asdf.zip",
         "size": 143,
