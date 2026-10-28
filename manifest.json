@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T14:48:46Z",
+  "generated_at": "2026-10-28T14:58:14Z",
   "manifest": {
     "registry_url": "https://github.com/swvn-dispatch/plugin-repo-dev",
     "registry_name": "swvn-dispatch/plugin-repo-dev",
@@ -30,6 +30,23 @@
         "latest_url": "audio-buffer-tuner-0.3.5/audio-buffer-tuner-0.3.5.zip",
         "latest_size": 95,
         "min_dispatcharr_version": "v0.31.0"
+      },
+      {
+        "slug": "automap-channelarr",
+        "name": "Automap Channelarr",
+        "description": "Deterministic rule-based channel mapper: pools each M3U group's streams by normalized name and lays them out as channels from a configured start number. Event groups become schedule-ordered, self-c...",
+        "manifest_url": "https://raw.githubusercontent.com/swvn-dispatch/plugin-repo-dev/releases/metadata/automap-channelarr/manifest.json",
+        "author": "Megamannen",
+        "license": "Artistic-2.0",
+        "last_updated": "2026-10-27T20:30:32-04:00",
+        "download_count": 0,
+        "latest_version": "0.2.0",
+        "latest_changelog": "491",
+        "latest_md5": "bc88c07dda1ae2c33185b859608b9619",
+        "latest_sha256": "d85faa0d8673afda9a6e2d9d495afd33dac2bf5559cc65b036faafc4df3cfd85",
+        "latest_url": "automap-channelarr-0.2.0/automap-channelarr-0.2.0.zip",
+        "latest_size": 320,
+        "min_dispatcharr_version": "0.20.0"
       },
       {
         "slug": "channel-mapparr",
@@ -188,14 +205,14 @@
         "manifest_url": "https://raw.githubusercontent.com/swvn-dispatch/plugin-repo-dev/releases/metadata/epg-and-sports-editor/manifest.json",
         "author": "jstevenscl",
         "license": "MIT",
-        "last_updated": "2026-10-24T20:36:50Z",
+        "last_updated": "2026-10-26T19:16:03Z",
         "download_count": 0,
-        "latest_version": "0.5.13",
-        "latest_changelog": "481",
-        "latest_md5": "83a52e2fd11841a233abe884177beca7",
-        "latest_sha256": "691697805a286fb1c862d2466bdacc61619d2b7920030966c4ac1cda2e0e9ec9",
-        "latest_url": "epg-and-sports-editor-0.5.13/epg-and-sports-editor-0.5.13.zip",
-        "latest_size": 172
+        "latest_version": "0.5.14",
+        "latest_changelog": "490",
+        "latest_md5": "5766709ad3fcc549fcc4c2ea9150e631",
+        "latest_sha256": "adfb07eecb75f11e62ffd6740d567f4d6f66dbcc65d62ebfd7aed7c02a61087a",
+        "latest_url": "epg-and-sports-editor-0.5.14/epg-and-sports-editor-0.5.14.zip",
+        "latest_size": 174
       },
       {
         "slug": "epg-janitor",
@@ -337,14 +354,14 @@
         "manifest_url": "https://raw.githubusercontent.com/swvn-dispatch/plugin-repo-dev/releases/metadata/packet-slapper/manifest.json",
         "author": "write-erase",
         "license": "MIT",
-        "last_updated": "2026-10-15T21:43:06Z",
+        "last_updated": "2026-10-28T01:36:04Z",
         "download_count": 0,
-        "latest_version": "1.0.4",
-        "latest_changelog": "445",
-        "latest_md5": "2be84dbd3f27df76bf6a281d423891ac",
-        "latest_sha256": "dae9f339c9b4ef100e8e1996921a8d89fe9de5078ad05cca466a2254f9b25c9a",
-        "latest_url": "packet-slapper-1.0.4/packet-slapper-1.0.4.zip",
-        "latest_size": 42
+        "latest_version": "1.1.0",
+        "latest_changelog": "492",
+        "latest_md5": "97b7f1293f574e5b6db622fd5f74d5cb",
+        "latest_sha256": "0464043954e3a51f4ea34c4bdf66b7983d34cbee0da7dffbc128eab3df9ce410",
+        "latest_url": "packet-slapper-1.1.0/packet-slapper-1.1.0.zip",
+        "latest_size": 43
       },
       {
         "slug": "pirate-weatharr-station",

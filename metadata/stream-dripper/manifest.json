@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-10-28T13:36:32Z",
+  "generated_at": "2026-10-28T14:58:14Z",
   "manifest": {
     "slug": "stream-dripper",
     "name": "Stream Dripper",
     "description": "Automatically drops all active streams once per day at a configured time, with a manual drop-now button.",
     "author": "Megamannen",
     "license": "Artistic-2.0",
-    "repo_url": "https://github.com/Megamannen/dispatcharr-plugin-stream-dripper/",
+    "repo_url": "https://github.com/Megamannen/dispatcharr-plugins/",
     "registry_url": "https://github.com/swvn-dispatch/plugin-repo-dev",
     "registry_name": "swvn-dispatch/plugin-repo-dev",
     "last_updated": "2026-09-15T16:02:35-04:00",

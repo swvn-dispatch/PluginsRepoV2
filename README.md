@@ -12,6 +12,7 @@ This branch contains all published plugin releases.
 | Plugin | Version | Author | License | Description |
 |--------|---------|-------|---------|-------------|
 | [`Audio Buffer Tuner`](#audio-buffer-tuner) | `0.3.5` | CtznSniiips | MIT | Speeds up channel startup for low-bitrate (usually audio only) streams by lowering the TS-proxy prebuffer for chosen Channel Groups. |
+| [`Automap Channelarr`](#automap-channelarr) | `0.2.0` | Megamannen | Artistic-2.0 | Deterministic rule-based channel mapper: pools each M3U group's streams by normalized name and lays them out as channels from a configured start number. Event groups become schedule-ordered, self-cleaning channel blocks. Replaces the built-in automapper. |
 | [`Channel Mapparr`](#channel-mapparr) | `1.26.2971911` | PiratesIRC | MIT | Standardizes broadcast (OTA) and premium/cable channel names using network data and channel lists. Supports M3U stream import, category organization, and fuzzy matching across about 42,600 channels in 13 countries. |
 | [`Channel Name Cleaner`](#channel-name-cleaner) | `0.2.0` | noodlemctwoodle | MIT | Clean up messy IPTV channel names — strip pipe/bracket quality tags (| HD |, (1080p), [VIP]) and junk separators, with a dry-run preview, per-group scope, a protect-list, a collision strategy, stats, bulk apply, undo and an optional scheduler. |
 | [`Clapparr`](#clapparr) | `1.3.0` | v8eta | MIT | The metadata slate for your DVR: writes Kodi/Plex NFO sidecars, posters and episode thumbnails so recordings present with real titles, summaries and artwork instead of 'Episode 08-18'. |
@@ -21,7 +22,7 @@ This branch contains all published plugin releases.
 | [`Ranked Matchups (Top Games)`](#ranked-matchups-top-games-) | `1.36.0` | Jacob-Lasky | MIT | Never miss a good game. Scores every upcoming game across 39 leagues, tours and competitions (22 of them soccer, plus NFL, NBA, MLB, NHL, NCAA D1 football and basketball, UFC, boxing, tennis, golf and motorsport), then builds a Top Matchups group holding only the ones worth watching and shows why each game ranked where it did in its EPG description. Finished games can clear themselves out and be replaced from a bench of the next-best fixtures. |
 | [`Dispatchwrapparr`](#dispatchwrapparr) | `1.7.8` | jordandalley | MIT | An intelligent DRM/Clearkey capable stream profile for Dispatcharr |
 | [`Dustarr`](#dustarr) | `1.26.2901903` | PiratesIRC | MIT | Records which channels are actually watched and reports the ones that are not, so you can turn off the dead weight in your lineup. Read only: it never changes a channel and never contacts your provider. |
-| [`EPG & Sports Editor`](#epg-sports-editor) | `0.5.13` | jstevenscl | MIT | Transform and clean your EPG data using regex and find/replace rules. Creates virtual copies of your sources — originals are never touched. Fills placeholder schedules for channels with no EPG, and includes a Sports Editor: automatically renames Auto Channel Sync-created sports channels, assigns matchup logos, and generates real Pregame/Live/Postgame EPG data by matching against a live public schedule (93 leagues — every major US team sport, 30+ soccer competitions, tennis, golf, NASCAR, F1, UFC/MMA/boxing/darts, and more). Renamed from EPGeditARR; existing installs carry their settings forward automatically. |
+| [`EPG & Sports Editor`](#epg-sports-editor) | `0.5.14` | jstevenscl | MIT | Transform and clean your EPG data using regex and find/replace rules. Creates virtual copies of your sources — originals are never touched. Fills placeholder schedules for channels with no EPG, and includes a Sports Editor: automatically renames Auto Channel Sync-created sports channels, assigns matchup logos, and generates real Pregame/Live/Postgame EPG data by matching against a live public schedule (93 leagues — every major US team sport, 30+ soccer competitions, tennis, golf, NASCAR, F1, UFC/MMA/boxing/darts, and more). Renamed from EPGeditARR; existing installs carry their settings forward automatically. |
 | [`EPG Janitor`](#epg-janitor) | `1.26.2971931` | PiratesIRC | MIT | Scans for channels with EPG assignments but no program data. Auto-matches EPG to channels using intelligent fuzzy matching with aliases, removes EPG from hidden channels, and manages EPG assignments. |
 | [`Event Channel Managarr`](#event-channel-managarr) | `1.26.2981641` | PiratesIRC | MIT | Automates channel visibility by hiding channels without events and showing those with events, based on EPG data and channel names. Optionally manages dummy EPG for channels without real EPG. |
 | [`Gluetun Rotate`](#gluetun-rotate) | `0.4.0` | PilaScat | MIT | Moves Gluetun to another VPN server when the IPTV provider refuses the current exit address. |
@@ -30,7 +31,7 @@ This branch contains all published plugin releases.
 | [`M3U Expiration Notifier`](#m3u-expiration-notifier) | `1.0.0` | barryanderson | MIT | Checks your M3U account expiration dates on a schedule and emails you before (and when) they expire. |
 | [`Multiview`](#multiview) | `0.5.0` | sethwv | MIT | Tile multiple Dispatcharr channel streams into multi-view outputs using FFmpeg |
 | [`Newsflasharr`](#newsflasharr) | `1.26.2832058` | PiratesIRC | MIT | Central notification service: other plugins drop events, Newsflasharr routes them to Discord, a webhook, ntfy, Apprise, email, a Dispatcharr Connect Integration, or an on-screen banner over live TV, with deduplication, storm throttling, quiet hours and per-channel retry. |
-| [`Packet Slapper`](#packet-slapper) | `1.0.4` | write-erase | MIT | Runs scheduled or on-demand Ookla Speedtests through Dispatcharr to measure speed and latency. |
+| [`Packet Slapper`](#packet-slapper) | `1.1.0` | write-erase | MIT | Runs scheduled or on-demand Ookla Speedtests through Dispatcharr to measure speed and latency. |
 | [`PWS - Pirate Weatharr Station`](#pws-pirate-weatharr-station) | `1.6.0` | dexdeadly | MIT | TV-style weather channels powered by the Pirate Weather API & NOAA. Runs up to three stations, each with its own location and Dispatcharr channel. |
 | [`Profilarr`](#profilarr) | `2.1.6` | Tw1zT3d2four7 | MIT | Hybrid ffmpeg + cvlc stream profiles. ffmpeg fetches the provider stream directly with a custom user-agent and reconnect handling, and regenerates timestamps (+genpts+igndts+discardcorrupt); cvlc then buffers and delivers the already-clean stream, so downstream players don't freeze on a CDN-hiccup discontinuity. |
 | [`reservoarr`](#reservoarr) | `6.5.0` | brko7 | MIT | Delay-buffer stream profile that absorbs IPTV CDN gaps so Plex Live TV stops dying |
@@ -63,6 +64,25 @@ Speeds up channel startup for low-bitrate (usually audio only) streams by loweri
 - [All Versions (1 available)](./metadata/audio-buffer-tuner)
 
 **Maintainers:** CtznSniiips | **Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/audio-buffer-tuner) | **Last Change:** [`3ceeddd`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/3ceeddd53b4d49d5d14584768f69121e8094d6df)
+
+---
+
+
+### [Automap Channelarr](https://github.com/swvn-dispatch/plugin-repo-dev/blob/releases/metadata/automap-channelarr/README.md)
+
+**Version:** `0.2.0` | **Author:** Megamannen | **Last Updated:** Oct 28 2026, 00:30 UTC
+
+Deterministic rule-based channel mapper: pools each M3U group's streams by normalized name and lays them out as channels from a configured start number. Event groups become schedule-ordered, self-cleaning channel blocks. Replaces the built-in automapper.
+
+[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic--2.0-blue?style=flat-square)](https://spdx.org/licenses/Artistic-2.0.html) [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Megamannen/dispatcharr-plugins/)
+
+![Dispatcharr min](https://img.shields.io/badge/Dispatcharr_min-0.20.0-brightgreen?style=flat-square)
+
+**Downloads:**
+- [Latest Release (`0.2.0`)](https://github.com/swvn-dispatch/plugin-repo-dev/releases/download/automap-channelarr-0.2.0/automap-channelarr-0.2.0.zip)
+- [All Versions (1 available)](./metadata/automap-channelarr)
+
+**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/automap-channelarr) | [README](https://github.com/swvn-dispatch/plugin-repo-dev/blob/main/plugins/automap-channelarr/README.md) | **Last Change:** [`11962f9`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/11962f98d23be75084ab4c565f834e547c2ad0a3)
 
 ---
 
@@ -170,9 +190,9 @@ Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitori
 
 **Downloads:**
 - [Latest Release (`3.1.0`)](https://github.com/swvn-dispatch/plugin-repo-dev/releases/download/dispatcharr-exporter-3.1.0/dispatcharr-exporter-3.1.0.zip)
-- [All Versions (2 available)](./metadata/dispatcharr-exporter)
+- [All Versions (1 available)](./metadata/dispatcharr-exporter)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/dispatcharr-exporter) | **Last Change:** [`b42014c`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/b42014ce76c1e9364574ad6d6b29e3dc8da1a2d3)
+**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/dispatcharr-exporter) | **Last Change:** [`ddffa49`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/ddffa49420c5dd513a9a7876998a72ce295e2242)
 
 ---
 
@@ -234,17 +254,17 @@ Records which channels are actually watched and reports the ones that are not, s
 
 ### [EPG & Sports Editor](https://github.com/swvn-dispatch/plugin-repo-dev/blob/releases/metadata/epg-and-sports-editor/README.md)
 
-**Version:** `0.5.13` | **Author:** jstevenscl | **Last Updated:** Oct 24 2026, 20:36 UTC
+**Version:** `0.5.14` | **Author:** jstevenscl | **Last Updated:** Oct 26 2026, 19:16 UTC
 
 Transform and clean your EPG data using regex and find/replace rules. Creates virtual copies of your sources — originals are never touched. Fills placeholder schedules for channels with no EPG, and includes a Sports Editor: automatically renames Auto Channel Sync-created sports channels, assigns matchup logos, and generates real Pregame/Live/Postgame EPG data by matching against a live public schedule (93 leagues — every major US team sport, 30+ soccer competitions, tennis, golf, NASCAR, F1, UFC/MMA/boxing/darts, and more). Renamed from EPGeditARR; existing installs carry their settings forward automatically.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](https://spdx.org/licenses/MIT.html) [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/jstevenscl/epg-and-sports-editor)
 
 **Downloads:**
-- [Latest Release (`0.5.13`)](https://github.com/swvn-dispatch/plugin-repo-dev/releases/download/epg-and-sports-editor-0.5.13/epg-and-sports-editor-0.5.13.zip)
-- [All Versions (1 available)](./metadata/epg-and-sports-editor)
+- [Latest Release (`0.5.14`)](https://github.com/swvn-dispatch/plugin-repo-dev/releases/download/epg-and-sports-editor-0.5.14/epg-and-sports-editor-0.5.14.zip)
+- [All Versions (2 available)](./metadata/epg-and-sports-editor)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/epg-and-sports-editor) | **Last Change:** [`1d630df`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/1d630dff11c0274a70d30a0a4ae3937122e4a155)
+**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/epg-and-sports-editor) | **Last Change:** [`252b220`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/252b220511758c2794b5f27a35517d932d4e3cce)
 
 ---
 
@@ -399,17 +419,17 @@ Central notification service: other plugins drop events, Newsflasharr routes the
 
 ### [Packet Slapper](https://github.com/swvn-dispatch/plugin-repo-dev/blob/releases/metadata/packet-slapper/README.md)
 
-**Version:** `1.0.4` | **Author:** write-erase | **Last Updated:** Oct 15 2026, 21:43 UTC
+**Version:** `1.1.0` | **Author:** write-erase | **Last Updated:** Oct 28 2026, 01:36 UTC
 
 Runs scheduled or on-demand Ookla Speedtests through Dispatcharr to measure speed and latency.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue?style=flat-square)](https://spdx.org/licenses/MIT.html) [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/write-erase/packet-slapper)
 
 **Downloads:**
-- [Latest Release (`1.0.4`)](https://github.com/swvn-dispatch/plugin-repo-dev/releases/download/packet-slapper-1.0.4/packet-slapper-1.0.4.zip)
-- [All Versions (1 available)](./metadata/packet-slapper)
+- [Latest Release (`1.1.0`)](https://github.com/swvn-dispatch/plugin-repo-dev/releases/download/packet-slapper-1.1.0/packet-slapper-1.1.0.zip)
+- [All Versions (2 available)](./metadata/packet-slapper)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/packet-slapper) | [README](https://github.com/swvn-dispatch/plugin-repo-dev/blob/main/plugins/packet-slapper/README.md) | **Last Change:** [`172f4b4`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/172f4b44d3b7063dca5a8fc1ccb005be67ab2611)
+**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/packet-slapper) | [README](https://github.com/swvn-dispatch/plugin-repo-dev/blob/main/plugins/packet-slapper/README.md) | **Last Change:** [`74d1275`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/74d1275ed7cc80b37e8cbf6152d4563789007108)
 
 ---
 
@@ -490,7 +510,7 @@ HLS-segmenting stream profile for Dispatcharr: splits XC/URL provider streams in
 
 Automatically drops all active streams once per day at a configured time, with a manual drop-now button.
 
-[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic--2.0-blue?style=flat-square)](https://spdx.org/licenses/Artistic-2.0.html) [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Megamannen/dispatcharr-plugin-stream-dripper/)
+[![License: Artistic-2.0](https://img.shields.io/badge/License-Artistic--2.0-blue?style=flat-square)](https://spdx.org/licenses/Artistic-2.0.html) [![Repository](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/Megamannen/dispatcharr-plugins/)
 
 ![Dispatcharr min](https://img.shields.io/badge/Dispatcharr_min-0.25.0-brightgreen?style=flat-square)
 
@@ -498,7 +518,7 @@ Automatically drops all active streams once per day at a configured time, with a
 - [Latest Release (`2.0.0`)](https://github.com/swvn-dispatch/plugin-repo-dev/releases/download/stream-dripper-2.0.0/stream-dripper-2.0.0.zip)
 - [All Versions (1 available)](./metadata/stream-dripper)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/stream-dripper) | **Last Change:** [`846d0fe`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/846d0fea839c1e3c2ebad8e8744c3cb4a0927eaf)
+**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/stream-dripper) | **Last Change:** [`11962f9`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/11962f98d23be75084ab4c565f834e547c2ad0a3)
 
 ---
 
@@ -679,4 +699,4 @@ curl https://raw.githubusercontent.com/swvn-dispatch/plugin-repo-dev/releases/ma
 
 ---
 
-*Last updated: Oct 28 2026, 14:48 UTC*
+*Last updated: Oct 28 2026, 14:58 UTC*
