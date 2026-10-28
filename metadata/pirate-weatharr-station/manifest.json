@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-10-28T13:36:32Z",
+  "manifest": {
+    "slug": "pirate-weatharr-station",
+    "name": "PWS - Pirate Weatharr Station",
+    "description": "TV-style weather channels powered by the Pirate Weather API & NOAA. Runs up to three stations, each with its own location and Dispatcharr channel.",
+    "author": "dexdeadly",
+    "license": "MIT",
+    "source_type": "external",
+    "source_url": "https://github.com/dexdeadly/pirate-weatharr-station/releases/download/v{version}/pirate-weatharr-station-{version}.zip",
+    "repo_url": "https://github.com/dexdeadly/pirate-weatharr-station/",
+    "registry_url": "https://github.com/swvn-dispatch/plugin-repo-dev",
+    "registry_name": "swvn-dispatch/plugin-repo-dev",
+    "last_updated": "2026-10-06T08:09:42Z",
+    "download_count": 0,
+    "latest": {
+      "version": "1.6.0",
+      "commit_sha": "c2e3d69ab46b4bfc91ed80ae219cb234a7c7c60c",
+      "commit_sha_short": "c2e3d69",
+      "changelog": "388",
+      "build_timestamp": "2026-10-28T13:35:24Z",
+      "last_updated": "2026-10-06T08:09:42Z",
+      "checksum_md5": "9b47a3a8242e744b93a2a8a424bebe22",
+      "checksum_sha256": "5b22d97a3526bc1e74f9f7b6b9cd449d65e485a6a0989f497c13427517cee64b",
+      "min_dispatcharr_version": "",
+      "max_dispatcharr_version": "",
+      "source_url": "https://github.com/dexdeadly/pirate-weatharr-station/releases/download/v1.6.0/pirate-weatharr-station-1.6.0.zip",
+      "latest_url": "pirate-weatharr-station-1.6.0/pirate-weatharr-station-1.6.0.zip",
+      "url": "pirate-weatharr-station-1.6.0/pirate-weatharr-station-1.6.0.zip",
+      "size": 35837,
+      "download_count": 0
+    },
+    "versions": [
+      {
+        "version": "1.6.0",
+        "commit_sha": "c2e3d69ab46b4bfc91ed80ae219cb234a7c7c60c",
+        "commit_sha_short": "c2e3d69",
+        "changelog": "388",
+        "build_timestamp": "2026-10-28T13:35:24Z",
+        "last_updated": "2026-10-06T08:09:42Z",
+        "checksum_md5": "9b47a3a8242e744b93a2a8a424bebe22",
+        "checksum_sha256": "5b22d97a3526bc1e74f9f7b6b9cd449d65e485a6a0989f497c13427517cee64b",
+        "source_url": "https://github.com/dexdeadly/pirate-weatharr-station/releases/download/v1.6.0/pirate-weatharr-station-1.6.0.zip",
+        "url": "pirate-weatharr-station-1.6.0/pirate-weatharr-station-1.6.0.zip",
+        "size": 35837,
+        "download_count": 0
+      }
+    ]
+  }
+}

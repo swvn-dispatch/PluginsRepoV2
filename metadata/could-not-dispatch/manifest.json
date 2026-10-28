@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-10-28T13:36:32Z",
+  "manifest": {
+    "slug": "could-not-dispatch",
+    "name": "Could Not Dispatch",
+    "description": "Plays a looping image or video when every real stream on a channel has failed, so viewers see a message instead of a black screen. With an API key, it later sends the channel back to its first stream.",
+    "author": "PilaScat",
+    "license": "MIT",
+    "source_type": "external",
+    "source_url": "https://github.com/PilaScat/could-not-dispatch/releases/download/v{version}/could-not-dispatch-{version}.zip",
+    "repo_url": "https://github.com/PilaScat/could-not-dispatch",
+    "registry_url": "https://github.com/swvn-dispatch/plugin-repo-dev",
+    "registry_name": "swvn-dispatch/plugin-repo-dev",
+    "last_updated": "2026-10-25T00:10:46Z",
+    "download_count": 0,
+    "latest": {
+      "version": "0.6.0",
+      "commit_sha": "a137c8a20c712352f11477ed6251fdfdbd025bee",
+      "commit_sha_short": "a137c8a",
+      "changelog": "482",
+      "build_timestamp": "2026-10-28T13:34:18Z",
+      "last_updated": "2026-10-25T00:10:46Z",
+      "checksum_md5": "c1834c471dc81cb08f40e710a486af24",
+      "checksum_sha256": "097a6a6337a556bea054c63608267b3f0d17ec7e3bfea88dbc0088f43de2d89b",
+      "min_dispatcharr_version": "",
+      "max_dispatcharr_version": "",
+      "source_url": "https://github.com/PilaScat/could-not-dispatch/releases/download/v0.6.0/could-not-dispatch-0.6.0.zip",
+      "latest_url": "could-not-dispatch-0.6.0/could-not-dispatch-0.6.0.zip",
+      "url": "could-not-dispatch-0.6.0/could-not-dispatch-0.6.0.zip",
+      "size": 65,
+      "download_count": 0
+    },
+    "versions": [
+      {
+        "version": "0.6.0",
+        "commit_sha": "a137c8a20c712352f11477ed6251fdfdbd025bee",
+        "commit_sha_short": "a137c8a",
+        "changelog": "482",
+        "build_timestamp": "2026-10-28T13:34:18Z",
+        "last_updated": "2026-10-25T00:10:46Z",
+        "checksum_md5": "c1834c471dc81cb08f40e710a486af24",
+        "checksum_sha256": "097a6a6337a556bea054c63608267b3f0d17ec7e3bfea88dbc0088f43de2d89b",
+        "source_url": "https://github.com/PilaScat/could-not-dispatch/releases/download/v0.6.0/could-not-dispatch-0.6.0.zip",
+        "url": "could-not-dispatch-0.6.0/could-not-dispatch-0.6.0.zip",
+        "size": 65,
+        "download_count": 0
+      }
+    ]
+  }
+}

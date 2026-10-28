@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-10-28T13:36:32Z",
+  "manifest": {
+    "slug": "ticker",
+    "name": "Ticker",
+    "description": "Dynamic text overlays for IPTV channels — Satellite Radio Now Playing, Sports Ticker, Custom Text, EAS/JAS Weather Alerts",
+    "author": "jstevenscl",
+    "license": "MIT",
+    "source_type": "external",
+    "source_url": "https://github.com/jstevenscl/ticker/releases/download/v{version}/ticker-{version}.zip",
+    "repo_url": "https://github.com/jstevenscl/ticker",
+    "registry_url": "https://github.com/swvn-dispatch/plugin-repo-dev",
+    "registry_name": "swvn-dispatch/plugin-repo-dev",
+    "last_updated": "2026-10-22T23:29:00Z",
+    "download_count": 0,
+    "latest": {
+      "version": "0.5.05",
+      "commit_sha": "7685d8a0bc36087296f3ceff2e766e83fea5f6e6",
+      "commit_sha_short": "7685d8a",
+      "changelog": "464",
+      "build_timestamp": "2026-10-28T13:36:00Z",
+      "last_updated": "2026-10-22T23:29:00Z",
+      "checksum_md5": "c9f9040cad3064c4a0af277e85c931af",
+      "checksum_sha256": "47a3c00a1f27d7398ed1bf54fef56d028f3a3d6c4e2398bfa9129da725c2f005",
+      "min_dispatcharr_version": "",
+      "max_dispatcharr_version": "",
+      "source_url": "https://github.com/jstevenscl/ticker/releases/download/v0.5.05/ticker-0.5.05.zip",
+      "latest_url": "ticker-0.5.05/ticker-0.5.05.zip",
+      "url": "ticker-0.5.05/ticker-0.5.05.zip",
+      "size": 2142,
+      "download_count": 0
+    },
+    "versions": [
+      {
+        "version": "0.5.05",
+        "commit_sha": "7685d8a0bc36087296f3ceff2e766e83fea5f6e6",
+        "commit_sha_short": "7685d8a",
+        "changelog": "464",
+        "build_timestamp": "2026-10-28T13:36:00Z",
+        "last_updated": "2026-10-22T23:29:00Z",
+        "checksum_md5": "c9f9040cad3064c4a0af277e85c931af",
+        "checksum_sha256": "47a3c00a1f27d7398ed1bf54fef56d028f3a3d6c4e2398bfa9129da725c2f005",
+        "source_url": "https://github.com/jstevenscl/ticker/releases/download/v0.5.05/ticker-0.5.05.zip",
+        "url": "ticker-0.5.05/ticker-0.5.05.zip",
+        "size": 2142,
+        "download_count": 0
+      }
+    ]
+  }
+}

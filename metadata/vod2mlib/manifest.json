@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-10-28T13:36:32Z",
+  "manifest": {
+    "slug": "vod2mlib",
+    "name": "VOD to Media Library",
+    "description": "Generate .strm files (with optional NFO metadata) from your Dispatcharr VOD catalogue so Jellyfin / Emby / Kodi / ChannelsDVR can index your movies and series. Adds a cron-driven auto-rescan that picks up newly-added episodes nightly. Optional category-nested folder layout for genre-organised libraries.",
+    "author": "R3XCHRIS",
+    "license": "MIT",
+    "source_type": "external",
+    "source_url": "https://github.com/R3XCHRIS/VOD2MLIB/releases/download/v{version}/plugin-vod2mlib-v{version}.zip",
+    "repo_url": "https://github.com/R3XCHRIS/VOD2MLIB",
+    "discord_thread": "https://discord.com/channels/1340492560220684331/1503076618078261374",
+    "registry_url": "https://github.com/swvn-dispatch/plugin-repo-dev",
+    "registry_name": "swvn-dispatch/plugin-repo-dev",
+    "last_updated": "2026-10-05T21:29:03Z",
+    "download_count": 0,
+    "latest": {
+      "version": "1.18.1",
+      "commit_sha": "5a85167a421f22ad9e0ec161b31662374deadc07",
+      "commit_sha_short": "5a85167",
+      "changelog": "386",
+      "build_timestamp": "2026-10-28T13:36:19Z",
+      "last_updated": "2026-10-05T21:29:03Z",
+      "checksum_md5": "d8cbd43789c5bf36e450516c4f30ec6f",
+      "checksum_sha256": "8a978d4363a10f4e3df872ce733379e52d6e17e25552e9a6fef609375192a592",
+      "min_dispatcharr_version": "v0.24.0",
+      "max_dispatcharr_version": "",
+      "source_url": "https://github.com/R3XCHRIS/VOD2MLIB/releases/download/v1.18.1/plugin-vod2mlib-v1.18.1.zip",
+      "latest_url": "vod2mlib-1.18.1/vod2mlib-1.18.1.zip",
+      "url": "vod2mlib-1.18.1/vod2mlib-1.18.1.zip",
+      "size": 168,
+      "download_count": 0
+    },
+    "versions": [
+      {
+        "version": "1.18.1",
+        "commit_sha": "5a85167a421f22ad9e0ec161b31662374deadc07",
+        "commit_sha_short": "5a85167",
+        "changelog": "386",
+        "build_timestamp": "2026-10-28T13:36:19Z",
+        "last_updated": "2026-10-05T21:29:03Z",
+        "checksum_md5": "d8cbd43789c5bf36e450516c4f30ec6f",
+        "checksum_sha256": "8a978d4363a10f4e3df872ce733379e52d6e17e25552e9a6fef609375192a592",
+        "min_dispatcharr_version": "v0.24.0",
+        "source_url": "https://github.com/R3XCHRIS/VOD2MLIB/releases/download/v1.18.1/plugin-vod2mlib-v1.18.1.zip",
+        "url": "vod2mlib-1.18.1/vod2mlib-1.18.1.zip",
+        "size": 168,
+        "download_count": 0
+      }
+    ]
+  }
+}

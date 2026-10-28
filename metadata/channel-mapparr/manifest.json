@@ -1,0 +1,55 @@
+{
+  "generated_at": "2026-10-28T13:36:32Z",
+  "manifest": {
+    "slug": "channel-mapparr",
+    "name": "Channel Mapparr",
+    "description": "Standardizes broadcast (OTA) and premium/cable channel names using network data and channel lists. Supports M3U stream import, category organization, and fuzzy matching across about 42,600 channels in 13 countries.",
+    "author": "PiratesIRC",
+    "maintainers": [
+      "PiratesIRC"
+    ],
+    "license": "MIT",
+    "source_type": "external",
+    "source_url": "https://github.com/PiratesIRC/Dispatcharr-Channel-Maparr-Plugin/releases/download/{version}/Channel-Maparr.zip",
+    "repo_url": "https://github.com/PiratesIRC/Dispatcharr-Channel-Maparr-Plugin",
+    "discord_thread": "https://discord.com/channels/1340492560220684331/1422963882548265110",
+    "registry_url": "https://github.com/swvn-dispatch/plugin-repo-dev",
+    "registry_name": "swvn-dispatch/plugin-repo-dev",
+    "last_updated": "2026-10-24T15:39:07Z",
+    "download_count": 0,
+    "latest": {
+      "version": "1.26.2971911",
+      "commit_sha": "b786c1415f1c629c25bb5c2356ad9d7c2e7e8377",
+      "commit_sha_short": "b786c14",
+      "changelog": "477",
+      "build_timestamp": "2026-10-28T13:34:07Z",
+      "last_updated": "2026-10-24T15:39:07Z",
+      "checksum_md5": "77211ee6ccd7ab69867fdea305bf4636",
+      "checksum_sha256": "7e8c41a78efe6b87adb9243d6cda864c53adbdd2b934580ea0139b58c73456bc",
+      "min_dispatcharr_version": "v0.20.0",
+      "max_dispatcharr_version": "",
+      "source_url": "https://github.com/PiratesIRC/Dispatcharr-Channel-Maparr-Plugin/releases/download/1.26.2971911/Channel-Maparr.zip",
+      "latest_url": "channel-mapparr-1.26.2971911/channel-mapparr-1.26.2971911.zip",
+      "url": "channel-mapparr-1.26.2971911/channel-mapparr-1.26.2971911.zip",
+      "size": 767,
+      "download_count": 0
+    },
+    "versions": [
+      {
+        "version": "1.26.2971911",
+        "commit_sha": "b786c1415f1c629c25bb5c2356ad9d7c2e7e8377",
+        "commit_sha_short": "b786c14",
+        "changelog": "477",
+        "build_timestamp": "2026-10-28T13:34:07Z",
+        "last_updated": "2026-10-24T15:39:07Z",
+        "checksum_md5": "77211ee6ccd7ab69867fdea305bf4636",
+        "checksum_sha256": "7e8c41a78efe6b87adb9243d6cda864c53adbdd2b934580ea0139b58c73456bc",
+        "min_dispatcharr_version": "v0.20.0",
+        "source_url": "https://github.com/PiratesIRC/Dispatcharr-Channel-Maparr-Plugin/releases/download/1.26.2971911/Channel-Maparr.zip",
+        "url": "channel-mapparr-1.26.2971911/channel-mapparr-1.26.2971911.zip",
+        "size": 767,
+        "download_count": 0
+      }
+    ]
+  }
+}

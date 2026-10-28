@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-10-28T13:36:32Z",
+  "manifest": {
+    "slug": "sample-manifest-v1",
+    "name": "Manifest v1 Example",
+    "description": "Example of the version 1 capability declaration format.",
+    "author": "Dispatcharr Team",
+    "maintainers": [
+      "sethwv"
+    ],
+    "license": "Unlicense",
+    "registry_url": "https://github.com/swvn-dispatch/plugin-repo-dev",
+    "registry_name": "swvn-dispatch/plugin-repo-dev",
+    "last_updated": "2026-10-26T10:14:22-04:00",
+    "download_count": 0,
+    "latest": {
+      "version": "1.0.0",
+      "commit_sha": "51b524c5b3ac4cb1310faf857f9120ed8831d9ec",
+      "commit_sha_short": "51b524c",
+      "changelog": "488",
+      "build_timestamp": "2026-10-28T13:35:38Z",
+      "last_updated": "2026-10-26T10:14:22-04:00",
+      "checksum_md5": "e346bae536166f6f4429713a64ff657b",
+      "checksum_sha256": "90a9606370c1fede121c83fda88bf657b5af812af8a7fd67725d37eab4664f8d",
+      "min_dispatcharr_version": "v0.34.0",
+      "max_dispatcharr_version": "",
+      "latest_url": "sample-manifest-v1-1.0.0/sample-manifest-v1-1.0.0.zip",
+      "url": "sample-manifest-v1-1.0.0/sample-manifest-v1-1.0.0.zip",
+      "size": 1,
+      "download_count": 0
+    },
+    "versions": [
+      {
+        "version": "1.0.0",
+        "commit_sha": "51b524c5b3ac4cb1310faf857f9120ed8831d9ec",
+        "commit_sha_short": "51b524c",
+        "changelog": "488",
+        "build_timestamp": "2026-10-28T13:35:38Z",
+        "last_updated": "2026-10-26T10:14:22-04:00",
+        "checksum_md5": "e346bae536166f6f4429713a64ff657b",
+        "checksum_sha256": "90a9606370c1fede121c83fda88bf657b5af812af8a7fd67725d37eab4664f8d",
+        "min_dispatcharr_version": "v0.34.0",
+        "url": "sample-manifest-v1-1.0.0/sample-manifest-v1-1.0.0.zip",
+        "size": 1,
+        "download_count": 0
+      }
+    ]
+  }
+}

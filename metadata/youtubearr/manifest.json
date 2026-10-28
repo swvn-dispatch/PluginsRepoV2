@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-10-28T13:36:32Z",
+  "manifest": {
+    "slug": "youtubearr",
+    "name": "YouTubearr",
+    "description": "Zero-dependency YouTube livestream plugin with automatic monitoring and configurable numbering",
+    "author": "jeff-gooch",
+    "license": "Unlicense",
+    "repo_url": "https://github.com/jeff-gooch/youtubearr",
+    "registry_url": "https://github.com/swvn-dispatch/plugin-repo-dev",
+    "registry_name": "swvn-dispatch/plugin-repo-dev",
+    "last_updated": "2026-09-16T12:55:53Z",
+    "download_count": 0,
+    "latest": {
+      "version": "1.40.1",
+      "commit_sha": "e14ea92d80763c52784047f843aa76069b45c7c1",
+      "commit_sha_short": "e14ea92",
+      "changelog": "307",
+      "build_timestamp": "2026-10-28T13:36:28Z",
+      "last_updated": "2026-09-16T12:55:53Z",
+      "checksum_md5": "0582ba1a786c569d06fdc2d28692c157",
+      "checksum_sha256": "7647053ef39ff64a51399f4edf947b6321e8f9418cc1c9bdaaf41e4560994caf",
+      "min_dispatcharr_version": "v0.20.0",
+      "max_dispatcharr_version": "",
+      "latest_url": "youtubearr-1.40.1/youtubearr-1.40.1.zip",
+      "url": "youtubearr-1.40.1/youtubearr-1.40.1.zip",
+      "size": 5017,
+      "download_count": 0
+    },
+    "versions": [
+      {
+        "version": "1.40.1",
+        "commit_sha": "e14ea92d80763c52784047f843aa76069b45c7c1",
+        "commit_sha_short": "e14ea92",
+        "changelog": "307",
+        "build_timestamp": "2026-10-28T13:36:28Z",
+        "last_updated": "2026-09-16T12:55:53Z",
+        "checksum_md5": "0582ba1a786c569d06fdc2d28692c157",
+        "checksum_sha256": "7647053ef39ff64a51399f4edf947b6321e8f9418cc1c9bdaaf41e4560994caf",
+        "min_dispatcharr_version": "v0.20.0",
+        "url": "youtubearr-1.40.1/youtubearr-1.40.1.zip",
+        "size": 5017,
+        "download_count": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-10-28T13:36:32Z",
+  "manifest": {
+    "slug": "epg-and-sports-editor",
+    "name": "EPG & Sports Editor",
+    "description": "Transform and clean your EPG data using regex and find/replace rules. Creates virtual copies of your sources — originals are never touched. Fills placeholder schedules for channels with no EPG, and includes a Sports Editor: automatically renames Auto Channel Sync-created sports channels, assigns matchup logos, and generates real Pregame/Live/Postgame EPG data by matching against a live public schedule (93 leagues — every major US team sport, 30+ soccer competitions, tennis, golf, NASCAR, F1, UFC/MMA/boxing/darts, and more). Renamed from EPGeditARR; existing installs carry their settings forward automatically.",
+    "author": "jstevenscl",
+    "license": "MIT",
+    "source_type": "external",
+    "source_url": "https://github.com/jstevenscl/epg-and-sports-editor/releases/download/v{version}/epg-and-sports-editor-v{version}.zip",
+    "repo_url": "https://github.com/jstevenscl/epg-and-sports-editor",
+    "registry_url": "https://github.com/swvn-dispatch/plugin-repo-dev",
+    "registry_name": "swvn-dispatch/plugin-repo-dev",
+    "last_updated": "2026-10-24T20:36:50Z",
+    "download_count": 0,
+    "latest": {
+      "version": "0.5.13",
+      "commit_sha": "1d630dff11c0274a70d30a0a4ae3937122e4a155",
+      "commit_sha_short": "1d630df",
+      "changelog": "481",
+      "build_timestamp": "2026-10-28T13:34:45Z",
+      "last_updated": "2026-10-24T20:36:50Z",
+      "checksum_md5": "83a52e2fd11841a233abe884177beca7",
+      "checksum_sha256": "691697805a286fb1c862d2466bdacc61619d2b7920030966c4ac1cda2e0e9ec9",
+      "min_dispatcharr_version": "",
+      "max_dispatcharr_version": "",
+      "source_url": "https://github.com/jstevenscl/epg-and-sports-editor/releases/download/v0.5.13/epg-and-sports-editor-v0.5.13.zip",
+      "latest_url": "epg-and-sports-editor-0.5.13/epg-and-sports-editor-0.5.13.zip",
+      "url": "epg-and-sports-editor-0.5.13/epg-and-sports-editor-0.5.13.zip",
+      "size": 172,
+      "download_count": 0
+    },
+    "versions": [
+      {
+        "version": "0.5.13",
+        "commit_sha": "1d630dff11c0274a70d30a0a4ae3937122e4a155",
+        "commit_sha_short": "1d630df",
+        "changelog": "481",
+        "build_timestamp": "2026-10-28T13:34:45Z",
+        "last_updated": "2026-10-24T20:36:50Z",
+        "checksum_md5": "83a52e2fd11841a233abe884177beca7",
+        "checksum_sha256": "691697805a286fb1c862d2466bdacc61619d2b7920030966c4ac1cda2e0e9ec9",
+        "source_url": "https://github.com/jstevenscl/epg-and-sports-editor/releases/download/v0.5.13/epg-and-sports-editor-v0.5.13.zip",
+        "url": "epg-and-sports-editor-0.5.13/epg-and-sports-editor-0.5.13.zip",
+        "size": 172,
+        "download_count": 0
+      }
+    ]
+  }
+}

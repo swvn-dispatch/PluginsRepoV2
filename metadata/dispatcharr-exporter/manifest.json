@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-10-28T13:36:32Z",
+  "manifest": {
+    "slug": "dispatcharr-exporter",
+    "name": "Dispatcharr Exporter",
+    "description": "Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitoring",
+    "author": "sethwv",
+    "license": "MIT",
+    "repo_url": "https://github.com/swvn-dispatch/dispatcharr-exporter",
+    "discord_thread": "https://discord.com/channels/1340492560220684331/1451260201775923421",
+    "registry_url": "https://github.com/swvn-dispatch/plugin-repo-dev",
+    "registry_name": "swvn-dispatch/plugin-repo-dev",
+    "last_updated": "2026-07-18T13:29:39-04:00",
+    "download_count": 0,
+    "latest": {
+      "version": "3.1.0",
+      "commit_sha": "ddffa49420c5dd513a9a7876998a72ce295e2242",
+      "commit_sha_short": "ddffa49",
+      "changelog": "183",
+      "build_timestamp": "2026-10-28T13:34:26Z",
+      "last_updated": "2026-07-18T13:29:39-04:00",
+      "checksum_md5": "d9d81b71a5774ec54e4e5d1a6bbb3cb9",
+      "checksum_sha256": "2e1f102d32fd92ff6760daf81f9fb49da3d4233d985f58ba6ba53b07e4b3f93b",
+      "min_dispatcharr_version": "v0.22.0",
+      "max_dispatcharr_version": "",
+      "latest_url": "dispatcharr-exporter-3.1.0/dispatcharr-exporter-3.1.0.zip",
+      "url": "dispatcharr-exporter-3.1.0/dispatcharr-exporter-3.1.0.zip",
+      "size": 143,
+      "download_count": 0
+    },
+    "versions": [
+      {
+        "version": "3.1.0",
+        "commit_sha": "ddffa49420c5dd513a9a7876998a72ce295e2242",
+        "commit_sha_short": "ddffa49",
+        "changelog": "183",
+        "build_timestamp": "2026-10-28T13:34:26Z",
+        "last_updated": "2026-07-18T13:29:39-04:00",
+        "checksum_md5": "d9d81b71a5774ec54e4e5d1a6bbb3cb9",
+        "checksum_sha256": "2e1f102d32fd92ff6760daf81f9fb49da3d4233d985f58ba6ba53b07e4b3f93b",
+        "min_dispatcharr_version": "v0.22.0",
+        "url": "dispatcharr-exporter-3.1.0/dispatcharr-exporter-3.1.0.zip",
+        "size": 143,
+        "download_count": 0
+      }
+    ]
+  }
+}

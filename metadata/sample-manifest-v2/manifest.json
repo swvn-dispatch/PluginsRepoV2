@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-10-28T13:36:32Z",
+  "manifest": {
+    "slug": "sample-manifest-v2",
+    "name": "Manifest v2 Example",
+    "description": "Example of version 2 capability enforcement and durable plugin storage.",
+    "author": "Dispatcharr Team",
+    "maintainers": [
+      "sethwv"
+    ],
+    "license": "Unlicense",
+    "registry_url": "https://github.com/swvn-dispatch/plugin-repo-dev",
+    "registry_name": "swvn-dispatch/plugin-repo-dev",
+    "last_updated": "2026-10-26T10:14:10-04:00",
+    "download_count": 0,
+    "latest": {
+      "version": "1.0.0",
+      "commit_sha": "bb72d0dde8e796f88a562813f3fb580fa878ce85",
+      "commit_sha_short": "bb72d0d",
+      "changelog": "489",
+      "build_timestamp": "2026-10-28T13:35:42Z",
+      "last_updated": "2026-10-26T10:14:10-04:00",
+      "checksum_md5": "0b0ac01e1682951ccb97d66cf82ef322",
+      "checksum_sha256": "5af5ea251b4571ddb74bff342821e1cba9b8b7a7e1fcc54626d273d99e26b77d",
+      "min_dispatcharr_version": "v0.34.0",
+      "max_dispatcharr_version": "",
+      "latest_url": "sample-manifest-v2-1.0.0/sample-manifest-v2-1.0.0.zip",
+      "url": "sample-manifest-v2-1.0.0/sample-manifest-v2-1.0.0.zip",
+      "size": 1,
+      "download_count": 0
+    },
+    "versions": [
+      {
+        "version": "1.0.0",
+        "commit_sha": "bb72d0dde8e796f88a562813f3fb580fa878ce85",
+        "commit_sha_short": "bb72d0d",
+        "changelog": "489",
+        "build_timestamp": "2026-10-28T13:35:42Z",
+        "last_updated": "2026-10-26T10:14:10-04:00",
+        "checksum_md5": "0b0ac01e1682951ccb97d66cf82ef322",
+        "checksum_sha256": "5af5ea251b4571ddb74bff342821e1cba9b8b7a7e1fcc54626d273d99e26b77d",
+        "min_dispatcharr_version": "v0.34.0",
+        "url": "sample-manifest-v2-1.0.0/sample-manifest-v2-1.0.0.zip",
+        "size": 1,
+        "download_count": 0
+      }
+    ]
+  }
+}

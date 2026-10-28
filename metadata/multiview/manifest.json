@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-10-28T13:36:32Z",
+  "manifest": {
+    "slug": "multiview",
+    "name": "Multiview",
+    "description": "Tile multiple Dispatcharr channel streams into multi-view outputs using FFmpeg",
+    "author": "sethwv",
+    "license": "MIT",
+    "repo_url": "https://github.com/swvn-dispatch/dispatcharr-multiview",
+    "discord_thread": "https://discord.com/channels/1340492560220684331/1509200002407465001",
+    "registry_url": "https://github.com/swvn-dispatch/plugin-repo-dev",
+    "registry_name": "swvn-dispatch/plugin-repo-dev",
+    "last_updated": "2026-10-15T19:58:49Z",
+    "download_count": 0,
+    "latest": {
+      "version": "0.5.0",
+      "commit_sha": "db79a9f0d2accf70c4fc923bbdf5a6ef734427bb",
+      "commit_sha_short": "db79a9f",
+      "changelog": "441",
+      "build_timestamp": "2026-10-28T13:35:12Z",
+      "last_updated": "2026-10-15T19:58:49Z",
+      "checksum_md5": "fd94aa4f77330852a820cc0bab410513",
+      "checksum_sha256": "cb76b131c835112b3878fc0817bb0fb3da314bcf5d4106eeae5e9b3331e649bc",
+      "min_dispatcharr_version": "v0.27.0",
+      "max_dispatcharr_version": "",
+      "latest_url": "multiview-0.5.0/multiview-0.5.0.zip",
+      "url": "multiview-0.5.0/multiview-0.5.0.zip",
+      "size": 377,
+      "download_count": 0
+    },
+    "versions": [
+      {
+        "version": "0.5.0",
+        "commit_sha": "db79a9f0d2accf70c4fc923bbdf5a6ef734427bb",
+        "commit_sha_short": "db79a9f",
+        "changelog": "441",
+        "build_timestamp": "2026-10-28T13:35:12Z",
+        "last_updated": "2026-10-15T19:58:49Z",
+        "checksum_md5": "fd94aa4f77330852a820cc0bab410513",
+        "checksum_sha256": "cb76b131c835112b3878fc0817bb0fb3da314bcf5d4106eeae5e9b3331e649bc",
+        "min_dispatcharr_version": "v0.27.0",
+        "url": "multiview-0.5.0/multiview-0.5.0.zip",
+        "size": 377,
+        "download_count": 0
+      }
+    ]
+  }
+}
