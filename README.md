@@ -172,7 +172,7 @@ Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitori
 - [Latest Release (`3.1.0`)](https://github.com/swvn-dispatch/plugin-repo-dev/releases/download/dispatcharr-exporter-3.1.0/dispatcharr-exporter-3.1.0.zip)
 - [All Versions (2 available)](./metadata/dispatcharr-exporter)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/dispatcharr-exporter) | **Last Change:** [`0000cb4`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/0000cb4afe506ca2a9ec0b46d7eee083a180c3fa)
+**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/dispatcharr-exporter) | **Last Change:** [`b42014c`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/b42014ce76c1e9364574ad6d6b29e3dc8da1a2d3)
 
 ---
 
@@ -679,4 +679,4 @@ curl https://raw.githubusercontent.com/swvn-dispatch/plugin-repo-dev/releases/ma
 
 ---
 
-*Last updated: Oct 28 2026, 14:26 UTC*
+*Last updated: Oct 28 2026, 14:32 UTC*
