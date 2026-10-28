@@ -17,7 +17,7 @@ This branch contains all published plugin releases.
 | [`Clapparr`](#clapparr) | `1.3.0` | v8eta | MIT | The metadata slate for your DVR: writes Kodi/Plex NFO sidecars, posters and episode thumbnails so recordings present with real titles, summaries and artwork instead of 'Episode 08-18'. |
 | [`Could Not Dispatch`](#could-not-dispatch) | `0.6.0` | PilaScat | MIT | Plays a looping image or video when every real stream on a channel has failed, so viewers see a message instead of a black screen. With an API key, it later sends the channel back to its first stream. |
 | [`Decypharr VOD`](#decypharr-vod) | `1.0.7` | Tw1zT3d2four7 | MIT | Native Dispatcharr VOD integration for Decypharr media, providing automatic scanning and organization of movies, series, seasons, and episodes. |
-| [`Dispatcharr Exporter`](#dispatcharr-exporter) | `3.1.0-pre.1` | sethwv | MIT | Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitoring |
+| [`Dispatcharr Exporter`](#dispatcharr-exporter) | `3.1.0` | sethwv | MIT | Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitoring |
 | [`Ranked Matchups (Top Games)`](#ranked-matchups-top-games-) | `1.36.0` | Jacob-Lasky | MIT | Never miss a good game. Scores every upcoming game across 39 leagues, tours and competitions (22 of them soccer, plus NFL, NBA, MLB, NHL, NCAA D1 football and basketball, UFC, boxing, tennis, golf and motorsport), then builds a Top Matchups group holding only the ones worth watching and shows why each game ranked where it did in its EPG description. Finished games can clear themselves out and be replaced from a bench of the next-best fixtures. |
 | [`Dispatchwrapparr`](#dispatchwrapparr) | `1.7.8` | jordandalley | MIT | An intelligent DRM/Clearkey capable stream profile for Dispatcharr |
 | [`Dustarr`](#dustarr) | `1.26.2901903` | PiratesIRC | MIT | Records which channels are actually watched and reports the ones that are not, so you can turn off the dead weight in your lineup. Read only: it never changes a channel and never contacts your provider. |
@@ -160,7 +160,7 @@ Native Dispatcharr VOD integration for Decypharr media, providing automatic scan
 
 ### [Dispatcharr Exporter](https://github.com/swvn-dispatch/plugin-repo-dev/blob/releases/metadata/dispatcharr-exporter/README.md)
 
-**Version:** `3.1.0-pre.1` | **Author:** sethwv | **Last Updated:** Oct 28 2026, 13:58 UTC
+**Version:** `3.1.0` | **Author:** sethwv | **Last Updated:** Jul 18 2026, 17:29 UTC
 
 Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitoring
 
@@ -169,7 +169,7 @@ Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitori
 ![Dispatcharr min](https://img.shields.io/badge/Dispatcharr_min-v0.22.0-brightgreen?style=flat-square)
 
 **Downloads:**
-- [Latest Release (`3.1.0-pre.1`)](https://github.com/swvn-dispatch/plugin-repo-dev/releases/download/dispatcharr-exporter-3.1.0/dispatcharr-exporter-3.1.0.zip)
+- [Latest Release (`3.1.0`)](https://github.com/swvn-dispatch/plugin-repo-dev/releases/download/dispatcharr-exporter-3.1.0/dispatcharr-exporter-3.1.0.zip)
 - [All Versions (2 available)](./metadata/dispatcharr-exporter)
 
 **Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/dispatcharr-exporter) | **Last Change:** [`19cffb3`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/19cffb3f11e68e945b806c3e3ca05356484da7a9)
@@ -679,4 +679,4 @@ curl https://raw.githubusercontent.com/swvn-dispatch/plugin-repo-dev/releases/ma
 
 ---
 
-*Last updated: Oct 28 2026, 13:58 UTC*
+*Last updated: Oct 28 2026, 14:05 UTC*
