@@ -19,7 +19,7 @@ from typing import Optional
 
 from ..core import actions, gh, git
 from ..core.version import (is_prerelease_semver, is_semver, is_dispatcharr_version,
-                            prerelease_base, sort_versions_desc, version_greater_than)
+                            prerelease_base, version_greater_than)
 from .detect import METADATA_ONLY_FIELDS, author_in_plugin_json, changed_json_fields, is_safe_name
 
 _GH_DOWNLOAD_RE = re.compile(r"^https://github\.com/([^/]+)/([^/]+)/releases/download/([^/]+)/")
@@ -90,6 +90,16 @@ def count_source_files(plugin_dir: str) -> int:
             if fn not in ignore:
                 count += 1
     return count
+
+
+def current_stable_base(base_raw: Optional[dict]) -> str:
+    """Return the stable base from the base branch's plugin metadata."""
+    if base_raw is None:
+        return ""
+    previous = str(base_raw.get("version") or "")
+    if is_semver(previous):
+        return previous
+    return prerelease_base(previous) or ""
 
 
 def run(plugin_name: str, pr_author: str, base_ref: str, output_file: str,
@@ -175,7 +185,7 @@ def run(plugin_name: str, pr_author: str, base_ref: str, output_file: str,
     maintainers = [str(m) for m in (raw.get("maintainers") or []) if m is not None]
     maintainers_sp = " ".join(maintainers)
     version = jq_r(raw.get("version"))
-    prerelease = raw.get("prerelease", False)
+    is_prerelease = is_prerelease_semver(version)
 
     # Base branch plugin.json (for version bump + compare link)
     base_json_text = git.show(f"origin/{base_ref}:{plugin_json_path}")
@@ -217,7 +227,7 @@ def run(plugin_name: str, pr_author: str, base_ref: str, output_file: str,
                         "(e.g. `.../v{version}/plugin.zip`) |")
             failed = True
         else:
-            if is_semver(version) or (prerelease is True and is_prerelease_semver(version)):
+            if is_semver(version) or is_prerelease:
                 resolved_url = ext_source_url.replace("{version}", version)
                 code = http_status(resolved_url)
                 if code == "200":
@@ -297,18 +307,11 @@ def run(plugin_name: str, pr_author: str, base_ref: str, output_file: str,
             failed = True
 
     # Version format and prerelease contract
-    if prerelease is not True and prerelease is not False:
-        rows.append("| `prerelease` | ❌ | Must be a boolean when supplied |")
+    if "prerelease" in raw:
+        rows.append("| `prerelease` | ❌ | Do not set this field in `plugin.json`; prereleases are detected from `version` |")
         failed = True
-    if prerelease is True:
-        if is_prerelease_semver(version):
-            rows.append(f"| Prerelease | ✅ | `{version}` will be manually selectable beside the stable release |")
-        else:
-            rows.append(f"| Prerelease | ❌ | `{version}` must be `X.Y.Z` followed by a nonempty prerelease suffix |")
-            failed = True
-    elif is_prerelease_semver(version):
-        rows.append(f"| Version | ❌ | `{version}` is a prerelease; set `\"prerelease\": true` |")
-        failed = True
+    if is_prerelease:
+        rows.append(f"| Prerelease | ✅ | `{version}` will be manually selectable beside the stable release |")
     elif is_semver(version):
         rows.append(f"| Version | ✅ | `{version}` |")
     else:
@@ -316,16 +319,8 @@ def run(plugin_name: str, pr_author: str, base_ref: str, output_file: str,
         failed = True
 
     # Version bump
-    if prerelease is True:
-        stable_versions = []
-        if repo:
-            for release in gh.release_list(repo):
-                tag = str(release.get("tag", ""))
-                if tag.startswith(f"{plugin_name}-") and not release.get("prerelease"):
-                    candidate = tag[len(f"{plugin_name}-"):]
-                    if is_semver(candidate):
-                        stable_versions.append(candidate)
-        current_stable = sort_versions_desc(stable_versions)[0] if stable_versions else ""
+    if is_prerelease:
+        current_stable = current_stable_base(base_raw)
         if not current_stable:
             rows.append("| Prerelease base | ❌ | Publish a stable release before submitting a prerelease |")
             failed = True
@@ -333,7 +328,7 @@ def run(plugin_name: str, pr_author: str, base_ref: str, output_file: str,
             rows.append(f"| Prerelease base | ❌ | `{version}` must use current stable base `{current_stable}` |")
             failed = True
         else:
-            rows.append(f"| Prerelease base | ✅ | Targets stable `{current_stable}`; replaces the current candidate after publication |")
+            rows.append(f"| Prerelease base | ✅ | `{current_stable}` |")
     elif base_raw is not None:
         old_stable_version = prerelease_base(old_version) or old_version
         if version_greater_than(version, old_stable_version):
@@ -407,7 +402,7 @@ def run(plugin_name: str, pr_author: str, base_ref: str, output_file: str,
         repo_url,
         discord_thread,
         "fail" if failed else "pass",
-        "true" if prerelease is True else "false",
+        "true" if is_prerelease else "false",
     ]
     meta_row = f"<!--META_ROW:{tsv(meta_fields)}-->"
 
