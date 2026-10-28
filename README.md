@@ -192,7 +192,7 @@ Expose Dispatcharr metrics in Prometheus exporter-compatible format for monitori
 - [Latest Release (`3.1.0`)](https://github.com/swvn-dispatch/plugin-repo-dev/releases/download/dispatcharr-exporter-3.1.0/dispatcharr-exporter-3.1.0.zip)
 - [All Versions (1 available)](./metadata/dispatcharr-exporter)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/dispatcharr-exporter) | **Last Change:** [`ddffa49`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/ddffa49420c5dd513a9a7876998a72ce295e2242)
+**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/dispatcharr-exporter) | **Last Change:** [`2f5f05a`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/2f5f05a5d7c9fd9bc02cd6711744896097e6b2f0)
 
 ---
 
@@ -391,9 +391,9 @@ Tile multiple Dispatcharr channel streams into multi-view outputs using FFmpeg
 
 **Downloads:**
 - [Latest Release (`0.5.0`)](https://github.com/swvn-dispatch/plugin-repo-dev/releases/download/multiview-0.5.0/multiview-0.5.0.zip)
-- [All Versions (1 available)](./metadata/multiview)
+- [All Versions (2 available)](./metadata/multiview)
 
-**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/multiview) | **Last Change:** [`db79a9f`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/db79a9f0d2accf70c4fc923bbdf5a6ef734427bb)
+**Source:** [Browse](https://github.com/swvn-dispatch/plugin-repo-dev/tree/main/plugins/multiview) | **Last Change:** [`0e90fcc`](https://github.com/swvn-dispatch/plugin-repo-dev/commit/0e90fcc9d57acafbb0dbb166cfbdf4574a7c2d59)
 
 ---
 
@@ -699,4 +699,4 @@ curl https://raw.githubusercontent.com/swvn-dispatch/plugin-repo-dev/releases/ma
 
 ---
 
-*Last updated: Oct 28 2026, 14:58 UTC*
+*Last updated: Oct 28 2026, 19:30 UTC*
